@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+    
+                                                                            
+                 
+                       
+                                                                        
+           
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white" android:tag="layout/create_account_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/AccountCreationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account!"
+        android:textSize="18sp"
+        android:textColor="@color/red"/>
+    <EditText
+        android:id="@+id/userFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="First Name"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:layout_marginTop="110dp"
+        android:inputType="text"
+        android:tag="binding_1"              />
+    <EditText
+        android:id="@+id/userLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Last Name"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:tag="binding_2"                  />
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:tag="binding_3"               />
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Age"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:tag="binding_4"                            />
+    <EditText
+        android:id="@+id/userWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Weight"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:tag="binding_5"                               />
+    <Spinner
+        android:id="@+id/sportlist"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+                           
+        android:layout_marginTop="10dp"
+        android:tag="binding_6"         
+                                                                         />
+
+    <Spinner
+        android:id="@+id/experiencelevellist"
+        android:layout_width="220dp"
+        android:layout_height="30dp"
+        android:tag="binding_7"       
+        android:layout_marginTop="10dp"
+                                        
+                                                                                />
+
+    <Button
+        android:id="@+id/Buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@color/black"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName2" />
+
+</LinearLayout>
+         

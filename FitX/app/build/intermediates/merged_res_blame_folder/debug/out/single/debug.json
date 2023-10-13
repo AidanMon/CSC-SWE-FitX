@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_create_account.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\create_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-50:/layout_create_account.xml.flat",
+        "source": "com.example.fitx.app-main-52:/layout/create_account.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_login__screen.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\login__screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_fragment_first.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\fragment_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_fragment_second.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\fragment_second.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\drawable_fitx_logo.png.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\drawable\\fitx_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\drawable_fitx_login_text.png.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\drawable\\fitx_login_text.png"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-pngs-46:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-50:\\layout_home_page.xml.flat",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\home_page.xml"
+    }
+]
