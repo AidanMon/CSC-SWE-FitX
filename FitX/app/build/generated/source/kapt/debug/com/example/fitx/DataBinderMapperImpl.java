@@ -7,6 +7,7 @@ import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
 import com.example.fitx.databinding.CreateAccountBindingImpl;
+import com.example.fitx.databinding.LoginScreenBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -20,10 +21,13 @@ import java.util.List;
 public class DataBinderMapperImpl extends DataBinderMapper {
   private static final int LAYOUT_CREATEACCOUNT = 1;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(1);
+  private static final int LAYOUT_LOGINSCREEN = 2;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(2);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.fitx.R.layout.create_account, LAYOUT_CREATEACCOUNT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.fitx.R.layout.login__screen, LAYOUT_LOGINSCREEN);
   }
 
   @Override
@@ -40,6 +44,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new CreateAccountBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for create_account is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LOGINSCREEN: {
+          if ("layout/login__screen_0".equals(tag)) {
+            return new LoginScreenBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for login__screen is invalid. Received: " + tag);
         }
       }
     }
@@ -86,18 +96,21 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerBrLookup {
-    static final SparseArray<String> sKeys = new SparseArray<String>(1);
+    static final SparseArray<String> sKeys = new SparseArray<String>(3);
 
     static {
       sKeys.put(0, "_all");
+      sKeys.put(1, "login");
+      sKeys.put(2, "user");
     }
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(1);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(2);
 
     static {
       sKeys.put("layout/create_account_0", com.example.fitx.R.layout.create_account);
+      sKeys.put("layout/login__screen_0", com.example.fitx.R.layout.login__screen);
     }
   }
 }

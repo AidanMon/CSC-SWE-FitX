@@ -23,10 +23,10 @@ public abstract class CreateAccountBinding extends ViewDataBinding {
   public final TextView AccountCreationTextView;
 
   @NonNull
-  public final Button Buttonlogin;
+  public final Spinner experiencelevellist;
 
   @NonNull
-  public final Spinner experiencelevellist;
+  public final Button signupbutton;
 
   @NonNull
   public final Spinner sportlist;
@@ -50,13 +50,13 @@ public abstract class CreateAccountBinding extends ViewDataBinding {
   protected CreateAccountViewModel mUser;
 
   protected CreateAccountBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView AccountCreationTextView, Button Buttonlogin, Spinner experiencelevellist,
+      TextView AccountCreationTextView, Spinner experiencelevellist, Button signupbutton,
       Spinner sportlist, EditText userAge, EditText userEmail, EditText userFirstName,
       EditText userLastName, EditText userWeight) {
     super(_bindingComponent, _root, _localFieldCount);
     this.AccountCreationTextView = AccountCreationTextView;
-    this.Buttonlogin = Buttonlogin;
     this.experiencelevellist = experiencelevellist;
+    this.signupbutton = signupbutton;
     this.sportlist = sportlist;
     this.userAge = userAge;
     this.userEmail = userEmail;

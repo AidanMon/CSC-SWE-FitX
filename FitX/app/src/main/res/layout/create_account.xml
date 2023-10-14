@@ -34,7 +34,7 @@
         android:textColorHint="@color/red"
         android:layout_marginTop="110dp"
         android:inputType="text"
-        android:text="@={user.userData.firstName}"/>
+        android:text="@{user.userFirstName}"/>
     <EditText
         android:id="@+id/userLastName"
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:textColorHint="@color/red"
         android:layout_marginTop="10dp"
         android:inputType="text"
-        android:text="@={user.userData.lastName}"/>
+        android:text="@{user.userLastName}"/>
     <EditText
         android:id="@+id/userEmail"
         android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
         android:textColorHint="@color/red"
         android:layout_marginTop="10dp"
         android:inputType="text"
-        android:text="@={user.userData.email}"/>
+        android:text="@{user.userEmail}"/>
     <EditText
         android:id="@+id/userAge"
         android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
         android:textColorHint="@color/red"
         android:layout_marginTop="10dp"
         android:inputType="number"
-        android:text="@{String.valueOf(user.userData.age)}"/>
+        android:text="@{user.userAgeString}"/>
     <EditText
         android:id="@+id/userWeight"
         android:layout_width="wrap_content"
@@ -78,7 +78,7 @@
         android:textColorHint="@color/red"
         android:layout_marginTop="10dp"
         android:inputType="number"
-        android:text="@{String.valueOf(user.userData.weight)}"/>
+        android:text="@{user.userWeightString}"/>
     <Spinner
         android:id="@+id/sportlist"
         android:layout_width="220dp"
@@ -98,7 +98,7 @@
         android:selectedItemPosition="@={user.selectedExperienceLevelPosition}" />
 
     <Button
-        android:id="@+id/Buttonlogin"
+        android:id="@+id/signupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -109,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@id/userPassword" />
 
 </LinearLayout>
 </layout>

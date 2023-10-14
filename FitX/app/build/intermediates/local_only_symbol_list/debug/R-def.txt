@@ -12,7 +12,6 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 id AccountCreationTextView
 id Button_login
-id Buttonlogin
 id CreateAccountView
 id HomePage
 id LoginScreen
@@ -22,13 +21,12 @@ id action_settings
 id button_first
 id button_second
 id createAccountTextView
-id editTextTextPersonName
-id editTextTextPersonName2
 id experiencelevellist
 id imageView
 id loginMessageTextView
 id nav_graph
 id nav_host_fragment_content_main
+id signupbutton
 id sportlist
 id textview_first
 id textview_second
@@ -37,6 +35,8 @@ id userAge
 id userEmail
 id userFirstName
 id userLastName
+id userName
+id userPassword
 id userWeight
 layout activity_main
 layout content_main

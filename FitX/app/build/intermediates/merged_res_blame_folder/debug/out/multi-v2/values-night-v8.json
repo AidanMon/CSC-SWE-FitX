@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-48:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-49:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\8d84fd92310784769bd5fac3f3db88d9\\transformed\\material-1.8.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,6 +21,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "316"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "162"
+                    }
+                },
+                {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\ea81018398a5eb9877f0ba4a04db551f\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -35,25 +54,6 @@
                         "startOffsets": "167,237,321,405,501,603,705,3560",
                         "endColumns": "69,83,83,95,101,101,93,88",
                         "endOffsets": "232,316,400,496,598,700,794,3644"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\zenze\\AndroidStudioProjects\\FitX\\app\\src\\main\\res\\values-night\\themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "311"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "162"
                     }
                 }
             ]

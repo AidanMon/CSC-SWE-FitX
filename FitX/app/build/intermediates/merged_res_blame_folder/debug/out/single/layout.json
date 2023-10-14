@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\home_page.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\home_page.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\content_main.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\fragment_first.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\fragment_first.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\login__screen.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\login__screen.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\content_main.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\content_main.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\login__screen.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\login__screen.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-50:/layout/login__screen.xml",
+        "source": "com.example.fitx.app-main-53:/layout/login__screen.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\fragment_second.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\fragment_second.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\home_page.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\home_page.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\create_account.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\create_account.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\fragment_second.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\fragment_second.xml"
     },
     {
-        "merged": "com.example.fitx.app-mergeDebugResources-49:/layout/create_account.xml",
-        "source": "com.example.fitx.app-main-52:/layout/create_account.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\fragment_first.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\fragment_first.xml"
     },
     {
-        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-49:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-52:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-50:\\layout\\create_account.xml",
+        "source": "C:\\Users\\zenze\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-53:\\layout\\create_account.xml"
     }
 ]

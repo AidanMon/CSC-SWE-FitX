@@ -1,40 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-48:/values/values.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-49:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zenze\\AndroidStudioProjects\\FitX\\app\\src\\main\\res\\values\\dimens.xml",
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "41",
-                        "endOffsets": "53"
+                        "startLines": "2,8,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "102,384,444",
+                        "endLines": "6,8,14",
+                        "endColumns": "12,56,12",
+                        "endOffsets": "376,436,557"
                     },
                     "to": {
-                        "startLines": "1049",
-                        "startColumns": "4",
-                        "startOffsets": "60975",
-                        "endColumns": "41",
-                        "endOffsets": "61012"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\zenze\\AndroidStudioProjects\\FitX\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2,4,3",
+                        "startLines": "2351,6149,8780",
                         "startColumns": "4,4,4",
-                        "startOffsets": "55,139,97",
-                        "endColumns": "41,37,41",
-                        "endOffsets": "92,172,134"
-                    },
-                    "to": {
-                        "startLines": "639,891,904",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "32272,50525,51381",
-                        "endColumns": "41,37,41",
-                        "endOffsets": "32309,50558,51418"
+                        "startOffsets": "161656,423727,600020",
+                        "endLines": "2355,6149,8784",
+                        "endColumns": "12,55,12",
+                        "endOffsets": "161820,423778,600129"
                     }
                 },
                 {
@@ -74,41 +59,20 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\zenze\\AndroidStudioProjects\\FitX\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "16,9,2,1,4,22,6,7,5",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "582,377,58,16,162,736,292,330,226",
-                        "endLines": "20,15,2,1,4,57,6,7,5",
-                        "endColumns": "19,19,48,41,63,13,37,45,65",
-                        "endOffsets": "730,577,102,53,221,3876,325,371,287"
+                        "startLines": "2,4,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "57,143,100",
+                        "endColumns": "41,37,41",
+                        "endOffsets": "94,176,137"
                     },
                     "to": {
-                        "startLines": "2,7,1825,1827,1846,1850,1989,1995,2002",
-                        "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "150,303,116548,116680,118966,119396,137722,138562,139169",
-                        "endLines": "6,13,1825,1827,1846,1885,1989,1995,2002",
-                        "endColumns": "19,19,48,41,63,13,37,45,65",
-                        "endOffsets": "298,503,116592,116717,119025,122536,137755,138603,139230"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\zenze\\AndroidStudioProjects\\FitX\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "2,8,10",
+                        "startLines": "639,891,904",
                         "startColumns": "4,4,4",
-                        "startOffsets": "100,376,434",
-                        "endLines": "6,8,14",
-                        "endColumns": "12,56,12",
-                        "endOffsets": "370,428,543"
-                    },
-                    "to": {
-                        "startLines": "2351,6149,8780",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "161656,423727,600020",
-                        "endLines": "2355,6149,8784",
-                        "endColumns": "12,55,12",
-                        "endOffsets": "161820,423778,600129"
+                        "startOffsets": "32272,50525,51381",
+                        "endColumns": "41,37,41",
+                        "endOffsets": "32309,50558,51418"
                     }
                 },
                 {
@@ -334,6 +298,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "16,9,2,1,4,22,6,7,5",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "598,386,60,17,166,758,298,337,231",
+                        "endLines": "20,15,2,1,4,57,6,7,5",
+                        "endColumns": "19,19,48,41,63,13,37,45,65",
+                        "endOffsets": "750,592,104,54,225,3933,331,378,292"
+                    },
+                    "to": {
+                        "startLines": "2,7,1825,1827,1846,1850,1989,1995,2002",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "150,303,116548,116680,118966,119396,137722,138562,139169",
+                        "endLines": "6,13,1825,1827,1846,1885,1989,1995,2002",
+                        "endColumns": "19,19,48,41,63,13,37,45,65",
+                        "endOffsets": "298,503,116592,116717,119025,122536,137755,138603,139230"
+                    }
+                },
+                {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\0a86b0cb03ce109ff070daa02d18a129\\transformed\\fragment-1.5.4\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,10",
@@ -456,6 +439,23 @@
                         "startOffsets": "110227",
                         "endColumns": "49",
                         "endOffsets": "110272"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "41",
+                        "endOffsets": "54"
+                    },
+                    "to": {
+                        "startLines": "1049",
+                        "startColumns": "4",
+                        "startOffsets": "60975",
+                        "endColumns": "41",
+                        "endOffsets": "61012"
                     }
                 },
                 {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-48:/values-es/values-es.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-49:/values-es/values-es.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\c0448ca6f2267acd4af771c830b677c4\\transformed\\navigation-ui-2.5.3\\res\\values-es\\values-es.xml",
