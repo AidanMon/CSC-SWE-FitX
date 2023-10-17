@@ -27,7 +27,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.fitx.R.layout.create_account, LAYOUT_CREATEACCOUNT);
-    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.fitx.R.layout.login__screen, LAYOUT_LOGINSCREEN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.fitx.R.layout.login_screen, LAYOUT_LOGINSCREEN);
   }
 
   @Override
@@ -46,10 +46,10 @@ public class DataBinderMapperImpl extends DataBinderMapper {
           throw new IllegalArgumentException("The tag for create_account is invalid. Received: " + tag);
         }
         case  LAYOUT_LOGINSCREEN: {
-          if ("layout/login__screen_0".equals(tag)) {
+          if ("layout/login_screen_0".equals(tag)) {
             return new LoginScreenBindingImpl(component, view);
           }
-          throw new IllegalArgumentException("The tag for login__screen is invalid. Received: " + tag);
+          throw new IllegalArgumentException("The tag for login_screen is invalid. Received: " + tag);
         }
       }
     }
@@ -110,7 +110,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
     static {
       sKeys.put("layout/create_account_0", com.example.fitx.R.layout.create_account);
-      sKeys.put("layout/login__screen_0", com.example.fitx.R.layout.login__screen);
+      sKeys.put("layout/login_screen_0", com.example.fitx.R.layout.login_screen);
     }
   }
 }

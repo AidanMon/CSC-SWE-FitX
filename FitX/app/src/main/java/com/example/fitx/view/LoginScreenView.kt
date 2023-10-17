@@ -7,15 +7,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.fitx.R
 import com.example.fitx.databinding.LoginScreenBinding
-import com.example.fitx.view_model.CreateAccountViewModel
 import com.example.fitx.view_model.LoginScreenViewModel
-import kotlin.math.log
 
 class LoginScreenView : Fragment() {
     private val loginScreenViewModel: LoginScreenViewModel by viewModels()
@@ -30,7 +30,7 @@ class LoginScreenView : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = DataBindingUtil.inflate(inflater, R.layout.login__screen, container, false)
+        _binding = DataBindingUtil.inflate(inflater, R.layout.login_screen, container, false)
 
         // Set the ViewModel for the binding
         _binding?.login = loginScreenViewModel
@@ -47,6 +47,7 @@ class LoginScreenView : Fragment() {
 
         binding.userName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                binding.authenticationtext.text = ""
                 // No action needed
             }
 
@@ -61,6 +62,7 @@ class LoginScreenView : Fragment() {
         })
         binding.userPassword.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                binding.authenticationtext.text = ""
                 // No action needed
             }
 
@@ -75,8 +77,12 @@ class LoginScreenView : Fragment() {
         })
 
        binding.ButtonLogin.setOnClickListener {
-           findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
-           loginScreenViewModel.getLoginInfo()
+               if(loginScreenViewModel.getLoginInfo()){
+                   findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
+               }
+           else{
+                   binding.authenticationtext.text = loginScreenViewModel.changeAuthString()
+               }
        }
         binding.createAccountTextView.setOnClickListener {
             findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)
@@ -85,8 +91,6 @@ class LoginScreenView : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d("LoginScreenView","UserName: "+loginScreenViewModel.getLoginInfo().username)
-        Log.d("LoginScreenView","Password: "+loginScreenViewModel.getLoginInfo().password)
         _binding = null
     }
 }

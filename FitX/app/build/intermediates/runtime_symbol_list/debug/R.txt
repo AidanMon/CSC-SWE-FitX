@@ -2941,6 +2941,7 @@ int id anticipate 0x7f090058
 int id arc 0x7f090059
 int id asConfigured 0x7f09005a
 int id async 0x7f09005b
+int id authenticationtext 0x7f090214
 int id auto 0x7f09005c
 int id autoComplete 0x7f09005d
 int id autoCompleteToEnd 0x7f09005e
@@ -3510,7 +3511,7 @@ int layout design_text_input_start_icon 0x7f0c002e
 int layout fragment_first 0x7f0c002f
 int layout fragment_second 0x7f0c0030
 int layout home_page 0x7f0c0031
-int layout login__screen 0x7f0c0032
+int layout login_screen 0x7f0c0032
 int layout m3_alert_dialog 0x7f0c0033
 int layout m3_alert_dialog_actions 0x7f0c0034
 int layout m3_alert_dialog_title 0x7f0c0035

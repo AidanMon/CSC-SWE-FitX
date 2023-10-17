@@ -23,6 +23,9 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
   public final Button ButtonLogin;
 
   @NonNull
+  public final TextView authenticationtext;
+
+  @NonNull
   public final TextView createAccountTextView;
 
   @NonNull
@@ -38,10 +41,11 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
   protected LoginScreenViewModel mLogin;
 
   protected LoginScreenBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button ButtonLogin, TextView createAccountTextView, ImageView imageView, EditText userName,
-      EditText userPassword) {
+      Button ButtonLogin, TextView authenticationtext, TextView createAccountTextView,
+      ImageView imageView, EditText userName, EditText userPassword) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ButtonLogin = ButtonLogin;
+    this.authenticationtext = authenticationtext;
     this.createAccountTextView = createAccountTextView;
     this.imageView = imageView;
     this.userName = userName;
@@ -66,13 +70,13 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
    * type DataBindingComponent to avoid causing too many compilation errors if
    * compilation fails for another reason.
    * https://issuetracker.google.com/issues/116541301
-   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.login__screen, root, attachToRoot, component)
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.login_screen, root, attachToRoot, component)
    */
   @NonNull
   @Deprecated
   public static LoginScreenBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable ViewGroup root, boolean attachToRoot, @Nullable Object component) {
-    return ViewDataBinding.<LoginScreenBinding>inflateInternal(inflater, R.layout.login__screen, root, attachToRoot, component);
+    return ViewDataBinding.<LoginScreenBinding>inflateInternal(inflater, R.layout.login_screen, root, attachToRoot, component);
   }
 
   @NonNull
@@ -85,13 +89,13 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
    * type DataBindingComponent to avoid causing too many compilation errors if
    * compilation fails for another reason.
    * https://issuetracker.google.com/issues/116541301
-   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.login__screen, null, false, component)
+   * @Deprecated Use DataBindingUtil.inflate(inflater, R.layout.login_screen, null, false, component)
    */
   @NonNull
   @Deprecated
   public static LoginScreenBinding inflate(@NonNull LayoutInflater inflater,
       @Nullable Object component) {
-    return ViewDataBinding.<LoginScreenBinding>inflateInternal(inflater, R.layout.login__screen, null, false, component);
+    return ViewDataBinding.<LoginScreenBinding>inflateInternal(inflater, R.layout.login_screen, null, false, component);
   }
 
   public static LoginScreenBinding bind(@NonNull View view) {
@@ -107,6 +111,6 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
    */
   @Deprecated
   public static LoginScreenBinding bind(@NonNull View view, @Nullable Object component) {
-    return (LoginScreenBinding)bind(component, view, R.layout.login__screen);
+    return (LoginScreenBinding)bind(component, view, R.layout.login_screen);
   }
 }

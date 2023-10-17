@@ -8,8 +8,10 @@ import com.example.fitx.model.User
 import com.example.fitx.model.UserLogin
 import com.example.fitx.model.enums.ExperienceLevel
 import com.example.fitx.model.enums.SportName
+import com.example.fitx.repository.UserRepository
 
 class LoginScreenViewModel: ViewModel() {
+    private val userRepository = UserRepository()
     private val _userLoginData = MutableLiveData<UserLogin?>(null)
     private val _userName = MutableLiveData<String?>(null)
     val userName: LiveData<String?> = _userName
@@ -19,6 +21,8 @@ class LoginScreenViewModel: ViewModel() {
 
     val userNameString: String = ""
     val passwordString: String = ""
+
+    var authString: String = ""
 
     fun setUserName(userName: String) {
         _userName.value = userName
@@ -30,7 +34,7 @@ class LoginScreenViewModel: ViewModel() {
         Log.d("TwoWayBinding", "Password changed to: $password")
     }
 
-    fun getLoginInfo(): UserLogin {
+    fun getLoginInfo(): Boolean {
         val currentUserData = _userLoginData.value ?: UserLogin("","")
 
         var updateUserName = currentUserData.username
@@ -44,7 +48,11 @@ class LoginScreenViewModel: ViewModel() {
         Log.d("LoginScreenViewModel","Password: "+ updatePassword)
 
         // Create a new User object with the updated data
-        return UserLogin(updateUserName, updatePassword)
+        val authValue = userRepository.Signin(updateUserName, updatePassword)
+        return authValue
+    }
+    fun changeAuthString(): String{
+        return "Authentication Failed Try again"
     }
 
 }

@@ -18,6 +18,7 @@ id LoginScreen
 id action_LoginScreen_to_HomePage
 id action_loginScreen_to_CreateAccount
 id action_settings
+id authenticationtext
 id button_first
 id button_second
 id createAccountTextView
@@ -44,7 +45,7 @@ layout create_account
 layout fragment_first
 layout fragment_second
 layout home_page
-layout login__screen
+layout login_screen
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round

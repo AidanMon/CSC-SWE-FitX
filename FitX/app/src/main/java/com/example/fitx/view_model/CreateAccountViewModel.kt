@@ -39,17 +39,6 @@ class CreateAccountViewModel : ViewModel() {
     val userAgeString: String = ""
     val userWeightString: String = ""
 
-    /*
-    fun setUser(user: User) {
-        _userData.value = user
-    }
-
-    fun getUserDataFromRepository(){
-        val cUser = userRepository.getUser()
-        setUser(cUser)
-    }
-     */
-
     fun setUserFirstName(firstName: String) {
         _userFirstName.value = firstName
         Log.d("TwoWayBinding", "First Name changed to: $firstName")

@@ -2942,6 +2942,7 @@ id anticipate
 id arc
 id asConfigured
 id async
+id authenticationtext
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -3511,7 +3512,7 @@ layout design_text_input_start_icon
 layout fragment_first
 layout fragment_second
 layout home_page
-layout login__screen
+layout login_screen
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
