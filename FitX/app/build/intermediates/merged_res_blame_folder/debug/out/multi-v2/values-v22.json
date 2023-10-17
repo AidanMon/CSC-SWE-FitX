@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-49:/values-v22/values-v22.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-54:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\ea81018398a5eb9877f0ba4a04db551f\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\19a91b6dfd3a08d64986b078be06808d\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

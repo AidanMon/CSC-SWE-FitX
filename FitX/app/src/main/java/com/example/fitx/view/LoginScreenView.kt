@@ -15,11 +15,17 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.fitx.R
 import com.example.fitx.databinding.LoginScreenBinding
+import com.example.fitx.repository.UserRepository
 import com.example.fitx.view_model.LoginScreenViewModel
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthException
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginScreenView : Fragment() {
     private val loginScreenViewModel: LoginScreenViewModel by viewModels()
     private var _binding: LoginScreenBinding? = null
+    private val userRepository = UserRepository()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -48,17 +54,13 @@ class LoginScreenView : Fragment() {
         binding.userName.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 binding.authenticationtext.text = ""
-                // No action needed
             }
-
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                loginScreenViewModel.setUserName(s.toString())
             }
 
             override fun afterTextChanged(s: Editable?) {
                 // No action needed
             }
-
         })
         binding.userPassword.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -67,7 +69,6 @@ class LoginScreenView : Fragment() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                loginScreenViewModel.setUserPassword(s.toString())
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -76,13 +77,16 @@ class LoginScreenView : Fragment() {
 
         })
 
+
        binding.ButtonLogin.setOnClickListener {
-               if(loginScreenViewModel.getLoginInfo()){
+           userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
+               if(isSuccessful){
                    findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
                }
-           else{
-                   binding.authenticationtext.text = loginScreenViewModel.changeAuthString()
+               else{
+                   binding.authenticationtext.text = "Authentication Failed Try again"
                }
+           }
        }
         binding.createAccountTextView.setOnClickListener {
             findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)
@@ -92,6 +96,9 @@ class LoginScreenView : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+    fun signIN(){
+
     }
 }
 

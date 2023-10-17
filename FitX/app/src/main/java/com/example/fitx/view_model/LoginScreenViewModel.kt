@@ -34,7 +34,7 @@ class LoginScreenViewModel: ViewModel() {
         Log.d("TwoWayBinding", "Password changed to: $password")
     }
 
-    fun getLoginInfo(): Boolean {
+    fun getLoginInfo(){
         val currentUserData = _userLoginData.value ?: UserLogin("","")
 
         var updateUserName = currentUserData.username
@@ -47,9 +47,6 @@ class LoginScreenViewModel: ViewModel() {
         Log.d("LoginScreenViewModel","UserName: "+ updateUserName)
         Log.d("LoginScreenViewModel","Password: "+ updatePassword)
 
-        // Create a new User object with the updated data
-        val authValue = userRepository.Signin(updateUserName, updatePassword)
-        return authValue
     }
     fun changeAuthString(): String{
         return "Authentication Failed Try again"

@@ -7,16 +7,20 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.fitx.R
 import com.example.fitx.databinding.CreateAccountBinding
 import com.example.fitx.view_model.CreateAccountViewModel
+import androidx.navigation.fragment.findNavController
+import com.example.fitx.repository.UserRepository
 
 class CreateAccountView: Fragment() {
     private val createAccountVM: CreateAccountViewModel by viewModels()
     private var _binding: CreateAccountBinding? = null
+    private var userRepository = UserRepository()
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -126,10 +130,26 @@ class CreateAccountView: Fragment() {
 
 
 
-        /*binding.loginButton.setOnClickListener {
-             findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
+        binding.signupbutton.setOnClickListener() {
+            createAccountVM.userWeight.value?.let { it1 ->
+                createAccountVM.userAge.value?.let { it2 ->
+                    userRepository.SignUp(binding.userEmail.text.toString(),
+                        "test1234",
+                        binding.userFirstName.text.toString(),
+                        binding.userLastName.text.toString(),
+                        it2,
+                        it1,
+                        binding.sportlist.selectedItem.toString(),
+                        binding.experiencelevellist.selectedItem.toString()){ isSuccessful ->
+                        if(isSuccessful){
+                            Toast.makeText(requireActivity(), "You are Registered!", Toast.LENGTH_LONG).show()
+                        }
+                        Toast.makeText(requireActivity(), "Failed to Register", Toast.LENGTH_LONG).show()
+                    }
+                }
+            }
          }
-         */
+
     }
 
     override fun onDestroyView() {

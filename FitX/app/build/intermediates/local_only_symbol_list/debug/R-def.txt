@@ -52,10 +52,17 @@ mipmap ic_launcher_round
 navigation nav_graph
 string action_logout
 string app_name
+string firebase_database_url
 string first_fragment_label
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string lorem_ipsum
 string next
 string previous
+string project_id
 string second_fragment_label
 style Base.Theme.FitX
 style Theme.FitX

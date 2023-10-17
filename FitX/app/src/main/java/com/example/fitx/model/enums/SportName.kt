@@ -1,6 +1,6 @@
 package com.example.fitx.model.enums
 
-enum class SportName() {
+enum class SportName {
     Football,
     Basketball,
     Soccer,
