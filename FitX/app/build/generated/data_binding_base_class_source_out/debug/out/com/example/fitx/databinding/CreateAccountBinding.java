@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
@@ -19,9 +18,6 @@ import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class CreateAccountBinding extends ViewDataBinding {
-  @NonNull
-  public final TextView AccountCreationTextView;
-
   @NonNull
   public final Spinner experiencelevellist;
 
@@ -44,17 +40,19 @@ public abstract class CreateAccountBinding extends ViewDataBinding {
   public final EditText userLastName;
 
   @NonNull
+  public final EditText userPassword;
+
+  @NonNull
   public final EditText userWeight;
 
   @Bindable
   protected CreateAccountViewModel mUser;
 
   protected CreateAccountBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      TextView AccountCreationTextView, Spinner experiencelevellist, Button signupbutton,
-      Spinner sportlist, EditText userAge, EditText userEmail, EditText userFirstName,
-      EditText userLastName, EditText userWeight) {
+      Spinner experiencelevellist, Button signupbutton, Spinner sportlist, EditText userAge,
+      EditText userEmail, EditText userFirstName, EditText userLastName, EditText userPassword,
+      EditText userWeight) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.AccountCreationTextView = AccountCreationTextView;
     this.experiencelevellist = experiencelevellist;
     this.signupbutton = signupbutton;
     this.sportlist = sportlist;
@@ -62,6 +60,7 @@ public abstract class CreateAccountBinding extends ViewDataBinding {
     this.userEmail = userEmail;
     this.userFirstName = userFirstName;
     this.userLastName = userLastName;
+    this.userPassword = userPassword;
     this.userWeight = userWeight;
   }
 

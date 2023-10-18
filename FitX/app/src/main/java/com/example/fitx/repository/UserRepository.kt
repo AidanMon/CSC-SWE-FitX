@@ -1,8 +1,5 @@
 package com.example.fitx.repository
-import com.example.fitx.model.enums.ExperienceLevel
-import com.example.fitx.model.enums.SportName
-import com.example.fitx.model.User
-import com.example.fitx.model.UserLogin
+import android.util.Log
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -10,12 +7,22 @@ class UserRepository {
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
 
-    fun getUser(): User {
-        return User("", "", 0, 0, "", ExperienceLevel.Beginner, SportName.Tennis)
-    }
-
-    fun UserLoginInfo(): UserLogin {
-        return UserLogin("AriKey1234", "1234")
+    fun getCurrentUserFullName(callback: (String) -> Unit) {
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
+        firestore = FirebaseFirestore.getInstance()
+        user?.uid?.let {
+            firestore.collection("users").document(it).get()
+                .addOnSuccessListener { documentSnapShot ->
+                    if (documentSnapShot.exists()) {
+                        val userData = documentSnapShot.data
+                        val firstName = userData?.get("First Name");
+                        val lastName = userData?.get("Last Name")
+                        val fullName = firstName.toString() + " " + lastName.toString()
+                        callback(fullName)
+                    }
+                }
+        }
     }
 
     fun Signin(email: String, password: String,callback: (Boolean) -> Unit){
@@ -35,6 +42,7 @@ class UserRepository {
                     callback(num as Number)
             }
         }
+
     }
 
     fun SignUp(email: String, password: String, fname:String, lname: String, age:Number, weight:Number, sport: String, experienceLevel: String, callback: (Boolean) -> Unit){
@@ -49,17 +57,23 @@ class UserRepository {
                 userMap["Last Name"] = lname
                 userMap["Age"] = age
                 userMap["Weight"] = weight
-                userMap["SportID"] = sport
+                Log.d("Hashmap",userMap.toString())
                 userMap["ExpLevel"] = experienceLevel
+                getSportID(sport) {
+                    Log.d("SportID", it.toString())
+                    userMap["Sport ID"] = it.toInt()
 
-                firestore.collection("users")
-                    .document(user?.uid ?: "")
-                    .set(userMap)
+                    firestore.collection("users")
+                        .document(user?.uid ?: "")
+                        .set(userMap)
+                }
+
            }
             callback(isRegistered)
         }
     }
     fun SignOut(){
-     auth.signOut()
+        auth = FirebaseAuth.getInstance()
+        auth.signOut()
     }
 }

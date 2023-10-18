@@ -17,99 +17,138 @@
     android:gravity="center"
     android:background="@color/white">
 
-    <TextView
-        android:id="@+id/AccountCreationTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Account!"
-        android:textSize="18sp"
-        android:textColor="@color/red"/>
     <EditText
         android:id="@+id/userFirstName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
         android:hint="First Name"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:layout_marginTop="110dp"
-        android:inputType="text"
-        android:text="@{user.userFirstName}"/>
+        android:text="@{user.userFirstName}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/userLastName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
         android:hint="Last Name"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userFirstName"
         android:text="@{user.userLastName}"/>
+
     <EditText
         android:id="@+id/userEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Email"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:layout_marginTop="10dp"
-        android:inputType="text"
-        android:text="@{user.userEmail}"/>
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:text="@{user.userEmail}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLastName" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
     <EditText
         android:id="@+id/userAge"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
         android:hint="Age"
+        android:inputType="number"
+        android:text="@{user.userAgeString}"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:layout_marginTop="10dp"
-        android:inputType="number"
-        android:text="@{user.userAgeString}"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
     <EditText
         android:id="@+id/userWeight"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
         android:hint="Weight"
+        android:inputType="number"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:layout_marginTop="10dp"
-        android:inputType="number"
-        android:text="@{user.userWeightString}"/>
+        android:text="@{user.userWeightString}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAge" />
+
     <Spinner
         android:id="@+id/sportlist"
-        android:layout_width="220dp"
-        android:layout_height="30dp"
-        android:tag="Sport"
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Select Sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:entries="@{user.sports}"
-        android:selectedItemPosition="@={user.selectedSportNamePosition}"/>
+        app:layout_constraintTop_toBottomOf="@+id/userWeight" />
 
     <Spinner
         android:id="@+id/experiencelevellist"
-        android:layout_width="220dp"
-        android:layout_height="30dp"
-        android:tag="Experience Level"
-        android:layout_marginTop="10dp"
-        android:entries="@{user.levels}"
-        android:selectedItemPosition="@={user.selectedExperienceLevelPosition}" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Select Experience Level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportlist"
+        android:entries="@{user.levels}"/>
 
     <Button
         android:id="@+id/signupbutton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:background="@color/black"
-        android:text="Sign Up"
-        android:textColor="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Register"
         app:backgroundTint="@color/red"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/experiencelevellist" />
 
 </LinearLayout>
 </layout>

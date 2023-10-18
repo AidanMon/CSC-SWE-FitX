@@ -10,11 +10,11 @@ drawable fitx_login_text
 drawable fitx_logo
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-id AccountCreationTextView
 id Button_login
 id CreateAccountView
 id HomePage
 id LoginScreen
+id action_HomePage_to_LoginScreen
 id action_LoginScreen_to_HomePage
 id action_loginScreen_to_CreateAccount
 id action_settings
@@ -25,6 +25,7 @@ id createAccountTextView
 id experiencelevellist
 id imageView
 id loginMessageTextView
+id logoutButton
 id nav_graph
 id nav_host_fragment_content_main
 id signupbutton

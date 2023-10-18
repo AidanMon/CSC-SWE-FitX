@@ -2895,7 +2895,6 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
-id AccountCreationTextView
 id BOTTOM_END
 id BOTTOM_START
 id Button_login
@@ -2950,6 +2949,7 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_HomePage_to_LoginScreen
 id action_LoginScreen_to_HomePage
 id action_bar
 id action_bar_activity_content
@@ -3159,6 +3159,7 @@ id listMode
 id list_item
 id locale
 id loginMessageTextView
+id logoutButton
 id ltr
 id m3_side_sheet
 id marquee

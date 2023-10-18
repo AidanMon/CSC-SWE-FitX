@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
@@ -45,48 +46,29 @@ class LoginScreenView : Fragment() {
         _binding?.lifecycleOwner = viewLifecycleOwner
 
         return _binding?.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.userName.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                binding.authenticationtext.text = ""
-            }
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // No action needed
-            }
-        })
-        binding.userPassword.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                binding.authenticationtext.text = ""
-                // No action needed
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // No action needed
-            }
-
-        })
-
-
        binding.ButtonLogin.setOnClickListener {
-           userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
-               if(isSuccessful){
-                   findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
-               }
-               else{
-                   binding.authenticationtext.text = "Authentication Failed Try again"
+           if(binding.userName.text.toString().trim().isEmpty()){
+               Toast.makeText(requireActivity(), "Email Required", Toast.LENGTH_LONG).show()
+           }
+           else if(binding.userPassword.text.toString().trim().isEmpty()){
+               Toast.makeText(requireActivity(), "Password Required", Toast.LENGTH_LONG).show()
+           }
+           else{
+               userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
+                   if(isSuccessful){
+                       findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
+                   }
+                   else{
+                       Toast.makeText(requireActivity(), "Authentication Failed Try again", Toast.LENGTH_LONG).show()
+                   }
                }
            }
+
        }
         binding.createAccountTextView.setOnClickListener {
             findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)

@@ -46,47 +46,6 @@ class CreateAccountView: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.userFirstName.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // No action needed
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                createAccountVM.setUserFirstName(s.toString())
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // No action needed
-            }
-
-        })
-        binding.userLastName.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // No action needed
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                createAccountVM.setUserLastName(s.toString())
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // No action needed
-            }
-        })
-        binding.userEmail.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // No action needed
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                createAccountVM.setUserEmail(s.toString())
-            }
-
-            override fun afterTextChanged(s: Editable?) {
-                // No action needed
-            }
-        })
-
         binding.userAge.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // No action needed
@@ -119,48 +78,34 @@ class CreateAccountView: Fragment() {
             }
         })
 
-
-        createAccountVM.selectedExperienceLevelPosition.observe(viewLifecycleOwner) { _ ->
-            createAccountVM.updateSelectedExperienceLevel()
-        }
-
-        createAccountVM.selectedSportNamePosition.observe(viewLifecycleOwner) { _ ->
-            createAccountVM.updateSelectedSportName()
-        }
-
-
-
         binding.signupbutton.setOnClickListener() {
-            createAccountVM.userWeight.value?.let { it1 ->
-                createAccountVM.userAge.value?.let { it2 ->
-                    userRepository.SignUp(binding.userEmail.text.toString(),
-                        "test1234",
-                        binding.userFirstName.text.toString(),
-                        binding.userLastName.text.toString(),
-                        it2,
-                        it1,
-                        binding.sportlist.selectedItem.toString(),
-                        binding.experiencelevellist.selectedItem.toString()){ isSuccessful ->
-                        if(isSuccessful){
-                            Toast.makeText(requireActivity(), "You are Registered!", Toast.LENGTH_LONG).show()
+            if(binding.userPassword.text.length < 8){
+                Toast.makeText(requireActivity(), "Password must be 8 characters", Toast.LENGTH_LONG).show()
+            }else{
+                createAccountVM.userWeight.value?.let { it1 ->
+                    createAccountVM.userAge.value?.let { it2 ->
+                        userRepository.SignUp(binding.userEmail.text.toString(),
+                            binding.userPassword.text.toString(),
+                            binding.userFirstName.text.toString(),
+                            binding.userLastName.text.toString(),
+                            it2,
+                            it1,
+                            binding.sportlist.selectedItem.toString(),
+                            binding.experiencelevellist.selectedItem.toString()){ isSuccessful ->
+                            if(isSuccessful){
+                                Toast.makeText(requireActivity(), "You are Registered!", Toast.LENGTH_LONG).show()
+                            }else{
+                                Toast.makeText(requireActivity(), "Failed to Register", Toast.LENGTH_LONG).show()
+                            }
                         }
-                        Toast.makeText(requireActivity(), "Failed to Register", Toast.LENGTH_LONG).show()
                     }
                 }
             }
          }
-
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.d("CreateAccountView","First Name: "+createAccountVM.createUserWithUpdatedData().firstName)
-        Log.d("CreateAccountView","Last Name: "+createAccountVM.createUserWithUpdatedData().lastName)
-        Log.d("CreateAccountView","Email Address: "+createAccountVM.createUserWithUpdatedData().email)
-        Log.d("CreateAccountView","Age: "+createAccountVM.createUserWithUpdatedData().age)
-        Log.d("CreateAccountView","weight: "+createAccountVM.createUserWithUpdatedData().weight)
-        Log.d("CreateAccountView","Experience Level: "+createAccountVM.createUserWithUpdatedData().experienceLevel.toString())
-        Log.d("CreateAccountView","Sport: "+createAccountVM.createUserWithUpdatedData().sport.toString())
         _binding = null
     }
 }

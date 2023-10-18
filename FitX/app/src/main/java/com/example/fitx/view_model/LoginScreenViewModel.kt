@@ -21,7 +21,6 @@ class LoginScreenViewModel: ViewModel() {
 
     val userNameString: String = ""
     val passwordString: String = ""
-
     var authString: String = ""
 
     fun setUserName(userName: String) {

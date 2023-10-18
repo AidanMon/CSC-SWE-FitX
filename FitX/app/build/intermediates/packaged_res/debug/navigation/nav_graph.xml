@@ -24,7 +24,12 @@
         android:id="@+id/HomePage"
         android:name="com.example.fitx.HomePage"
         android:label="Home Page"
-        tools:layout="@layout/home_page"/>
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_HomePage_to_LoginScreen"
+            app:destination="@id/LoginScreen"
+            />
+    </fragment>
 
     <fragment
         android:id="@+id/CreateAccountView"

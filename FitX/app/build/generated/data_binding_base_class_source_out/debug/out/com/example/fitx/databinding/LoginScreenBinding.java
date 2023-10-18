@@ -26,7 +26,7 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
   public final TextView authenticationtext;
 
   @NonNull
-  public final TextView createAccountTextView;
+  public final Button createAccountTextView;
 
   @NonNull
   public final ImageView imageView;
@@ -41,7 +41,7 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
   protected LoginScreenViewModel mLogin;
 
   protected LoginScreenBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button ButtonLogin, TextView authenticationtext, TextView createAccountTextView,
+      Button ButtonLogin, TextView authenticationtext, Button createAccountTextView,
       ImageView imageView, EditText userName, EditText userPassword) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ButtonLogin = ButtonLogin;
