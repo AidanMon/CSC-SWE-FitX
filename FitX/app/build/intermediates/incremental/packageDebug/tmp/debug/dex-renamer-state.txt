@@ -1,4 +1,4 @@
-#Tue Oct 17 22:31:36 EDT 2023
+#Wed Oct 18 19:31:23 EDT 2023
 base.0=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex

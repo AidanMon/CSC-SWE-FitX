@@ -15,8 +15,14 @@ import com.example.fitx.R
 import com.example.fitx.databinding.CreateAccountBinding
 import com.example.fitx.view_model.CreateAccountViewModel
 import androidx.navigation.fragment.findNavController
+import com.example.fitx.model.enums.ExperienceLevel
+import com.example.fitx.model.enums.SportName
 import com.example.fitx.repository.UserRepository
 
+/**
+ * Create Account View holds all the text change and button click events to move to other views for send
+ * data to the firebase database
+ */
 class CreateAccountView: Fragment() {
     private val createAccountVM: CreateAccountViewModel by viewModels()
     private var _binding: CreateAccountBinding? = null
@@ -26,6 +32,9 @@ class CreateAccountView: Fragment() {
     // onDestroyView.
      private val binding get() = _binding!!
 
+    /**
+     * OnCreateView
+     */
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -43,9 +52,15 @@ class CreateAccountView: Fragment() {
         return _binding?.root
     }
 
+    /**
+     * OnViewCreated
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /**
+         * Binds to the UserAge text to get any changes from the user
+         */
         binding.userAge.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // No action needed
@@ -62,6 +77,9 @@ class CreateAccountView: Fragment() {
             }
         })
 
+        /**
+         * Binds to the UserWeight text to get any changes from the user
+         */
         binding.userWeight.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // No action needed
@@ -78,6 +96,10 @@ class CreateAccountView: Fragment() {
             }
         })
 
+        /**
+         * Click Lister to detect if button was click and go through conditions to properly register a new
+         * user.
+         */
         binding.signupbutton.setOnClickListener() {
             if(binding.userPassword.text.length < 8){
                 Toast.makeText(requireActivity(), "Password must be 8 characters", Toast.LENGTH_LONG).show()
@@ -104,6 +126,9 @@ class CreateAccountView: Fragment() {
          }
     }
 
+    /**
+     * OnDestroyView
+     */
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

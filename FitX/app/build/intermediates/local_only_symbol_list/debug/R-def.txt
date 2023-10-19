@@ -18,7 +18,6 @@ id action_HomePage_to_LoginScreen
 id action_LoginScreen_to_HomePage
 id action_loginScreen_to_CreateAccount
 id action_settings
-id authenticationtext
 id button_first
 id button_second
 id createAccountTextView

@@ -23,6 +23,10 @@ import com.google.firebase.auth.FirebaseAuthException
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
+/**
+ * Login Screen View holds all the text change and button click events to move to other views for send
+ * data to the firebase database
+ */
 class LoginScreenView : Fragment() {
     private val loginScreenViewModel: LoginScreenViewModel by viewModels()
     private var _binding: LoginScreenBinding? = null
@@ -32,6 +36,9 @@ class LoginScreenView : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    /**
+     * onCreateView
+     */
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,9 +55,15 @@ class LoginScreenView : Fragment() {
         return _binding?.root
     }
 
+    /**
+     * onViewCreated
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        /**
+         * Login button Lister, checks if all conditions are meet before trying to login into the app
+         */
        binding.ButtonLogin.setOnClickListener {
            if(binding.userName.text.toString().trim().isEmpty()){
                Toast.makeText(requireActivity(), "Email Required", Toast.LENGTH_LONG).show()
@@ -70,17 +83,20 @@ class LoginScreenView : Fragment() {
            }
 
        }
+        /**
+         * Registration button lister to navigate to the Create Account View
+         */
         binding.createAccountTextView.setOnClickListener {
             findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)
         }
     }
 
+    /**
+     * onDestroyView
+     */
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
-    fun signIN(){
-
     }
 }
 

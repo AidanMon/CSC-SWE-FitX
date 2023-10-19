@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/HomePage"
-        android:name="com.example.fitx.HomePage"
+        android:name="com.example.fitx.view.HomePage"
         android:label="Home Page"
         tools:layout="@layout/home_page">
         <action

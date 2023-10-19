@@ -3,6 +3,10 @@ package com.example.fitx.model
 import com.example.fitx.model.enums.ExperienceLevel
 import com.example.fitx.model.enums.SportName
 
+/**
+ * User is a data class to view the available information that can
+ * be received about a user
+ */
 data class User(
     var firstName: String,
 

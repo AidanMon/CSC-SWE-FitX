@@ -2988,7 +2988,6 @@ id anticipate
 id arc
 id asConfigured
 id async
-id authenticationtext
 id auto
 id autoComplete
 id autoCompleteToEnd

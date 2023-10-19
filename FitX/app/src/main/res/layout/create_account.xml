@@ -87,7 +87,7 @@
         android:layout_marginEnd="16dp"
         android:hint="Age"
         android:inputType="number"
-        android:text="@{user.userAgeString}"
+        android:text="@{user.userAge.toString()}"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,7 +105,7 @@
         android:inputType="number"
         android:textColor="@color/red"
         android:textColorHint="@color/red"
-        android:text="@{user.userWeightString}"
+        android:text="@{user.userWeight.toString()}"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userAge" />

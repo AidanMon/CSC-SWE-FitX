@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
@@ -21,9 +20,6 @@ import java.lang.Object;
 public abstract class LoginScreenBinding extends ViewDataBinding {
   @NonNull
   public final Button ButtonLogin;
-
-  @NonNull
-  public final TextView authenticationtext;
 
   @NonNull
   public final Button createAccountTextView;
@@ -41,11 +37,10 @@ public abstract class LoginScreenBinding extends ViewDataBinding {
   protected LoginScreenViewModel mLogin;
 
   protected LoginScreenBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      Button ButtonLogin, TextView authenticationtext, Button createAccountTextView,
-      ImageView imageView, EditText userName, EditText userPassword) {
+      Button ButtonLogin, Button createAccountTextView, ImageView imageView, EditText userName,
+      EditText userPassword) {
     super(_bindingComponent, _root, _localFieldCount);
     this.ButtonLogin = ButtonLogin;
-    this.authenticationtext = authenticationtext;
     this.createAccountTextView = createAccountTextView;
     this.imageView = imageView;
     this.userName = userName;

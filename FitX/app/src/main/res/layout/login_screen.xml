@@ -25,22 +25,6 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:id="@+id/authenticationtext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-10dp"
-            android:layout_marginBottom="10dp"
-            android:text="@{login.authString}"
-            android:textColor="@color/red"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toTopOf="@id/userName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imageView"
-            tools:ignore="MissingConstraints" />
-
         <EditText
             android:id="@+id/userName"
             android:layout_width="match_parent"
@@ -55,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@{login.userName}"/>
+            android:text="@{login.userEmail}"/>
 
         <EditText
             android:id="@+id/userPassword"
