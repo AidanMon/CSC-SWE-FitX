@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FootballUpperBody"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--Everything is in a constraint layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="16dp">
+
+        <!--Fullscreen video button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enterFullScreenButton"
+            android:layout_width="159dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:text="Fullscreen Video"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/swimmingHeader"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/fullScreenNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="**May have to \npress a few times "
+            app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
+
+        <!--Baseball header-->
+        <TextView
+            android:id="@+id/swimmingHeader"
+            android:layout_width="296dp"
+            android:layout_height="45dp"
+            android:text="Swimming Exercises"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0"/>
+
+        <!--Main youtube player-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/theVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:autoPlay="false"
+            app:layout_constraintTop_toBottomOf="@+id/enterFullScreenButton"
+            app:videoId="0cXAp6WhSj4"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+        <!--Fullscreen layout-->
+        <FrameLayout
+            android:id="@+id/full_screen_view_container"
+            android:layout_width="409dp"
+            android:layout_height="640dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enterFullScreenButton"
+            android:elevation="10dp"
+            tools:visibility="gone">
+        </FrameLayout>
+
+        <!--Contraint layout for squats-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/squatsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/theVideoPlayer">
+
+            <!--Title for squats-->
+            <TextView
+                android:id="@+id/squatsText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Squats"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Squats Video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/squatsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/squatsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End squats layout-->
+
+        <!--squatJumps layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/squatJumpsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/squatsLayout">
+
+            <!--Title for squatJumps-->
+            <TextView
+                android:id="@+id/squatJumpsText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Squat Jumps"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/squatJumpsLayout"/>
+
+            <!--squatJumps video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/squatJumpsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/squatJumpsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End squatJumps layout-->
+
+        <!--deadlifts layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/deadliftsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/squatJumpsLayout">
+
+            <!--Title for deadlifts-->
+            <TextView
+                android:id="@+id/deadliftsText"
+                android:layout_width="379dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Deadlifts"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/deadliftsLayout"/>
+
+            <!--deadlifts video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/deadliftsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/deadliftsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End deadlifts layout-->
+
+        <!--Lunges layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/lungesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/deadliftsLayout">
+
+            <!--Title for lunges-->
+            <TextView
+                android:id="@+id/lungesText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Lunges"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/lungesLayout"/>
+
+            <!--Lunges video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lungesPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/lungesText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End lunges layout-->
+
+        <!--flutterKicks layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/flutterKicksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/lungesLayout">
+
+            <!--Title for flutterKicks-->
+            <TextView
+                android:id="@+id/flutterKicksText"
+                android:layout_width="379dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Flutter Kicks"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/flutterKicksLayout"/>
+
+            <!--flutterKicks video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/flutterKicksPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/flutterKicksText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End flutterKicks layout-->
+
+        <!--pullUps layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pullUpsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/flutterKicksLayout">
+
+            <!--Title for pullUps-->
+            <TextView
+                android:id="@+id/pullUpsText"
+                android:layout_width="379dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Pull Ups"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pullUpsLayout"/>
+
+            <!--pullUps video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pullUpsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pullUpsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End pullUps layout-->
+
+        <!--Skull crushers layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/skullCrushersLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/pullUpsLayout">
+
+            <!--Title for skull crushers-->
+            <TextView
+                android:id="@+id/skullCrushersText"
+                android:layout_width="379dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Skull Crushers"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/skullCrushersLayout"/>
+
+            <!--Sets/Reps for skull crushers-->
+
+            <!--Skull crushers video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skullCrushersPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/skullCrushersText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End skull crushers layout-->
+
+        <!--planks layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/planksLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/skullCrushersLayout">
+
+            <!--Title for planks-->
+            <TextView
+                android:id="@+id/planksText"
+                android:layout_width="379dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Planks"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/planksLayout"/>
+
+            <!--planks video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/planksPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/planksText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End planks layout-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

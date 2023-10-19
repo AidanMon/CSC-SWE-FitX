@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">SportsWorkouts</string>
+    <string name="logout">Logout</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="sport_workouts_label">Sport Specific Workouts</string>
+    <!-- Sport Strings -->
+    <string name="baseball_workouts_label">Baseball Exercises</string>
+    <string name="basketball_workouts_label">Basketball Exercises</string>
+    <string name="football_workouts_label">Football Workouts</string>
+    <string name="soccer_workouts_label">Soccer Exercises</string>
+    <string name="swimming_workouts_label">Swimming Exercises</string>
+    <string name="tennis_workouts_label">Tennis Exercises</string>
+    <string name="volleyball_workouts_label">Volleyball Exercises</string>
+
+    <!-- Sub Football strings -->
+    <string name="football_lower_body">Lower Body Football</string>
+    <string name="football_upper_body">Upper Body Football</string>
+    <string name="football_speed_and_agility">Speed and Agility Football</string>
+    <string name="football_full_body_explosive_strength">Explosive Strength Football</string>
+
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="description">Description</string>
+    <string name="example">Example</string>
+
+    <string name="football_workouts_description">
+        Here are our recommendations for a full week of football workouts. If you decide to include all of these workouts into your weekly
+        regimen we recommend that you intersperse your days off throughout the week to give yourself time to rest in-between these difficult exercises.
+        If you are feeling as though you could push yourself even further after having tried a week on this plan, we recommend you spend one of your rest days
+        in the gym focusing on steady state cardio for 30-60 minutes.
+    </string>
+</resources>

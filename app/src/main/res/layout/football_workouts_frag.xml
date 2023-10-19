@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FootballWorkouts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Football header-->
+        <TextView
+            android:id="@+id/footballHeader"
+            android:layout_width="380dp"
+            android:layout_height="117dp"
+            android:text="Football Workout Plan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <!--Workout plan description-->
+        <TextView
+            android:id="@+id/footballWorkoutsDescription"
+            android:layout_width="406dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:text="@string/football_workouts_description"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/footballHeader" />
+
+        <!--Upper body workout-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toFootballUpperBody"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Upper Body Workout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/footballWorkoutsDescription" />
+
+        <!--Lower body workout-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toFootballLowerBody"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Lower Body Workout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toFootballUpperBody" />
+
+        <!--Speed and agility workout-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toFootballSpeedAndAgility"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Speed and Agility"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toFootballLowerBody" />
+
+        <!--Lower body workout-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toFootballFullBodyExplosiveStrength"
+            android:layout_width="380dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Full Body Explosive Strength"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toFootballSpeedAndAgility" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
