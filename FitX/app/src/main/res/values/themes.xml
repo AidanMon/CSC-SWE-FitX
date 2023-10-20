@@ -3,8 +3,10 @@
     <style name="Base.Theme.FitX" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:textColor">@color/red</item>
+        <item name="android:textColor">@color/black</item>
     </style>
+
+    <!--Changed color to black from red^^^^^^^^-->
 
     <style name="Theme.FitX" parent="Base.Theme.FitX" />
 

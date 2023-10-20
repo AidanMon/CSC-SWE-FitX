@@ -40,12 +40,37 @@ class HomePage: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-       binding.logoutButton.setOnClickListener {
-           userRepository.SignOut()
-           Toast.makeText(requireActivity(), "Logged Out", Toast.LENGTH_SHORT).show()
-           findNavController().navigate(R.id.action_HomePage_to_LoginScreen)
-               }
-           }
+        binding.logoutButton.setOnClickListener {
+            userRepository.SignOut()
+            Toast.makeText(requireActivity(), "Logged Out", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_HomePage_to_LoginScreen)
+        }
+
+        //Button to go from home to sport workouts page
+        binding.toSports.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_SportsWorkouts))
+        }
+
+        //Button for user sport
+        binding.userSport.setOnClickListener {
+            //Code to find user sport and go to that page
+            userRepository.getCurrentUser { user ->
+                when (user.sportId.toInt()) {
+                    0 -> findNavController().navigate(R.id.action_HomePage_to_BasketballWorkouts)
+                    1 -> findNavController().navigate(R.id.action_HomePage_to_BaseballWorkouts)
+                    2 -> findNavController().navigate(R.id.action_HomePage_to_SwimmingWorkouts)
+                    3 -> findNavController().navigate(R.id.action_HomePage_to_SoccerWorkouts)
+                    4 -> findNavController().navigate(R.id.action_HomePage_to_FootballWorkouts)
+                    5 -> findNavController().navigate(R.id.action_HomePage_to_VolleyballWorkouts)
+                    6 -> findNavController().navigate(R.id.action_HomePage_to_TennisWorkouts)
+                }
+            }
+
+
+        }
+
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

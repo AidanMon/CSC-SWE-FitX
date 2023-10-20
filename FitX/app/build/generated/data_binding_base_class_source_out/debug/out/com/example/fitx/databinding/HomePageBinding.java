@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.fitx.R;
@@ -26,11 +27,20 @@ public final class HomePageBinding implements ViewBinding {
   @NonNull
   public final Button logoutButton;
 
+  @NonNull
+  public final AppCompatButton toSports;
+
+  @NonNull
+  public final AppCompatButton userSport;
+
   private HomePageBinding(@NonNull LinearLayout rootView, @NonNull TextView loginMessageTextView,
-      @NonNull Button logoutButton) {
+      @NonNull Button logoutButton, @NonNull AppCompatButton toSports,
+      @NonNull AppCompatButton userSport) {
     this.rootView = rootView;
     this.loginMessageTextView = loginMessageTextView;
     this.logoutButton = logoutButton;
+    this.toSports = toSports;
+    this.userSport = userSport;
   }
 
   @Override
@@ -72,7 +82,20 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomePageBinding((LinearLayout) rootView, loginMessageTextView, logoutButton);
+      id = R.id.toSports;
+      AppCompatButton toSports = ViewBindings.findChildViewById(rootView, id);
+      if (toSports == null) {
+        break missingId;
+      }
+
+      id = R.id.userSport;
+      AppCompatButton userSport = ViewBindings.findChildViewById(rootView, id);
+      if (userSport == null) {
+        break missingId;
+      }
+
+      return new HomePageBinding((LinearLayout) rootView, loginMessageTextView, logoutButton,
+          toSports, userSport);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

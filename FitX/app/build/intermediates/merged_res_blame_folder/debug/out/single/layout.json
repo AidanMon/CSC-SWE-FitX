@@ -4,6 +4,10 @@
         "source": "com.example.fitx.app-main-59:/layout/login_screen.xml"
     },
     {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/sport_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/sport_workouts_frag.xml"
+    },
+    {
         "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/fragment_second.xml",
         "source": "com.example.fitx.app-main-59:/layout/fragment_second.xml"
     },

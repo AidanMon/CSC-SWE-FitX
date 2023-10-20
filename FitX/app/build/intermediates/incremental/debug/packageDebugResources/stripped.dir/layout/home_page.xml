@@ -13,8 +13,29 @@
         android:id="@+id/loginMessageTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:textColor="@color/red"/>
+        android:textColor="@color/red"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/userSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/workout_border"
+        android:text="My Sport"
+        android:textColor="@color/red"
+        android:textSize="32sp"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/toSports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/workout_border"
+        android:text="Sport Specific Workouts"
+        android:textColor="@color/red"
+        android:textSize="32sp"
+        android:layout_marginTop="24dp"/>
+
     <Button
         android:id="@+id/logoutButton"
         android:layout_width="match_parent"
@@ -27,4 +48,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginMessageTextView" />
+
 </LinearLayout>

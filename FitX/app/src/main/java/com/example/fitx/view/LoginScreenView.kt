@@ -1,16 +1,11 @@
 package com.example.fitx.view
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -18,10 +13,6 @@ import com.example.fitx.R
 import com.example.fitx.databinding.LoginScreenBinding
 import com.example.fitx.repository.UserRepository
 import com.example.fitx.view_model.LoginScreenViewModel
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthException
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
 /**
  * Login Screen View holds all the text change and button click events to move to other views for send
@@ -74,17 +65,8 @@ class LoginScreenView : Fragment() {
            else{
                userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
                    if(isSuccessful){
-                       userRepository.getCurrentUser { user ->
-                           when(user.sportId.toInt()){
-                               0 -> findNavController().navigate(R.id.action_loginScreen_to_BasketballWorkouts)
-                               1 -> findNavController().navigate(R.id.action_loginScreen_to_BaseballWorkouts)
-                               2 -> findNavController().navigate(R.id.action_loginScreen_to_SwimmingWorkouts)
-                               3 -> findNavController().navigate(R.id.action_loginScreen_to_SoccerWorkouts)
-                               4 -> findNavController().navigate(R.id.action_loginScreen_to_FootballWorkouts)
-                               5 -> findNavController().navigate(R.id.action_loginScreen_to_VolleyballWorkouts)
-                               6 -> findNavController().navigate(R.id.action_loginScreen_to_TennisWorkouts)
-                           }
-                       }
+                       //Changed
+                       findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
                    }
                    else{
                        Toast.makeText(requireActivity(), "Authentication Failed Try again", Toast.LENGTH_LONG).show()

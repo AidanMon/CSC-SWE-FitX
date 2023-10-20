@@ -51,6 +51,70 @@
             android:id="@+id/action_HomePage_to_LoginScreen"
             app:destination="@id/LoginScreen"
             />
+        <action
+            android:id="@+id/action_HomePage_to_SportsWorkouts"
+            app:destination="@id/SportWorkouts"/>
+
+        <!--Added all these actions-->
+        <action
+            android:id="@+id/action_HomePage_to_BaseballWorkouts"
+            app:destination="@id/BaseballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_BasketballWorkouts"
+            app:destination="@id/BasketballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_SoccerWorkouts"
+            app:destination="@id/SoccerWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_TennisWorkouts"
+            app:destination="@id/TennisWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_VolleyballWorkouts"
+            app:destination="@id/VolleyballWorkouts" />
+
+        <action
+            android:id="@+id/action_HomePage_to_SwimmingWorkouts"
+            app:destination="@id/SwimmingWorkouts" />
+    </fragment>
+
+    <!--Added-->
+    <!--Sport selector Fragment-->
+    <fragment
+        android:id="@+id/SportWorkouts"
+        android:name="com.example.fitx.view.sports.SportWorkouts"
+        android:label="@string/sport_workouts_label"
+        tools:layout="@layout/sport_workouts_frag">
+        <!--To football workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <!--To baseball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_BaseballWorkouts"
+            app:destination="@+id/BaseballWorkouts"/>
+        <!--To basketball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_BasketballWorkouts"
+            app:destination="@+id/BasketballWorkouts"/>
+        <!--To soccer workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_SoccerWorkouts"
+            app:destination="@+id/SoccerWorkouts"/>
+        <!--To swimming workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_SwimmingWorkouts"
+            app:destination="@+id/SwimmingWorkouts"/>
+        <!--To tennis workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_TennisWorkouts"
+            app:destination="@+id/TennisWorkouts"/>
+        <!--To volleyball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_VolleyballWorkouts"
+            app:destination="@+id/VolleyballWorkouts"/>
     </fragment>
 
     <fragment
