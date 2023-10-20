@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+    
+                                                                            
+                 
+                       
+                                                                        
+           
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/white" android:tag="layout/create_account_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <EditText
+        android:id="@+id/userFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="16dp"
+        android:hint="First Name"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:tag="binding_1"             
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Last Name"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userFirstName"
+        android:tag="binding_2"            />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:tag="binding_3"         
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLastName" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <EditText
+        android:id="@+id/userAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Age"
+        android:inputType="number"
+        android:tag="binding_4"                  
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <EditText
+        android:id="@+id/userWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Weight"
+        android:inputType="number"
+        android:textColor="@color/red"
+        android:textColorHint="@color/red"
+        android:tag="binding_5"                     
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userAge" />
+
+    <Spinner
+        android:id="@+id/sportlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Select Sport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tag="binding_6"         
+        app:layout_constraintTop_toBottomOf="@+id/userWeight" />
+
+    <Spinner
+        android:id="@+id/experiencelevellist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Select Experience Level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportlist"
+        android:tag="binding_7"         />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="Register"
+        app:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/experiencelevellist" />
+
+</LinearLayout>
+         

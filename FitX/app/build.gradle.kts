@@ -3,6 +3,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id ("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 
@@ -50,11 +51,19 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.8.1")
     // implementation("androidx.databinding:baseLibrary:3.2.0-alpha11")
     // implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel:2.3.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata:2.3.1")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.4.1")
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-analytics-ktx")
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-auth-ktx")
 /*
     val lifecycle_version = "2.6.2"
     val arch_version = "2.2.0"

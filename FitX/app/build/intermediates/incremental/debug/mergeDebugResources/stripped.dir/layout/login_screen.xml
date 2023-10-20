@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+    
+                                                                          
+                 
+                        
+                                                                     
+           
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" android:tag="layout/login_screen_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/fitx_login_text"
+            app:layout_constraintBottom_toTopOf="@+id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="231dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:tag="binding_1"          />
+
+        <EditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/red"
+            android:textColorHint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:tag="binding_2"             
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <Button
+            android:id="@+id/Button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="109dp"
+            android:layout_marginEnd="16dp"
+            android:text="Log In"
+            app:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+        <Button
+            android:id="@+id/createAccountTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="16dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/red"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Button_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

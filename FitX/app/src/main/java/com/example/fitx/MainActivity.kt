@@ -10,9 +10,10 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.example.fitx.databinding.ActivityMainBinding
+import com.example.fitx.repository.UserRepository
 
 class MainActivity : AppCompatActivity() {
-
+    private var userRepository = UserRepository()
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
          */
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

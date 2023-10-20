@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/LoginScreen"
-        android:name="com.example.fitx.LoginScreen"
+        android:name="com.example.fitx.view.LoginScreenView"
         android:label="Login Screen"
         tools:layout="@layout/fragment_first">
 
@@ -22,13 +22,18 @@
 
     <fragment
         android:id="@+id/HomePage"
-        android:name="com.example.fitx.HomePage"
+        android:name="com.example.fitx.view.HomePage"
         android:label="Home Page"
-        tools:layout="@layout/home_page"/>
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_HomePage_to_LoginScreen"
+            app:destination="@id/LoginScreen"
+            />
+    </fragment>
 
     <fragment
         android:id="@+id/CreateAccountView"
-        android:name="com.example.fitx.CreateAccountView"
+        android:name="com.example.fitx.view.CreateAccountView"
         android:label="Create Account"
         tools:layout="@layout/create_account">
 
