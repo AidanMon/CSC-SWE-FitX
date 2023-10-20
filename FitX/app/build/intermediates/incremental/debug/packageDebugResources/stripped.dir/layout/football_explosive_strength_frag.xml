@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.sports.FootballUpperBody"
+    android:layout_gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <!--Everything is in a constraint layout-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="16dp">
+
+        <!--Fullscreen video button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enterFullScreenButton"
+            android:layout_width="159dp"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_button"
+            android:text="Fullscreen Video"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/footballLowerBodyHeader"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/fullScreenNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="**May have to \npress a few times "
+            app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
+            app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
+
+        <!--Lower body workout header-->
+        <TextView
+            android:id="@+id/footballLowerBodyHeader"
+            android:layout_width="296dp"
+            android:layout_height="45dp"
+            android:text="Explosive Strength"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0"/>
+
+        <!--Main youtube player-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/theVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            app:autoPlay="false"
+            app:layout_constraintTop_toBottomOf="@+id/enterFullScreenButton"
+            app:videoId="0cXAp6WhSj4"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+        <!--Fullscreen layout-->
+        <FrameLayout
+            android:id="@+id/full_screen_view_container"
+            android:layout_width="409dp"
+            android:layout_height="640dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/enterFullScreenButton"
+            android:elevation="10dp"
+            tools:visibility="gone">
+        </FrameLayout>
+
+        <!--Contraint layout for power cleans-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/powerCleansLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/theVideoPlayer">
+
+            <!--Title for power cleans-->
+            <TextView
+                android:id="@+id/powerCleansText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Power Cleans"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--Set/Reps for power cleans-->
+            <TextView
+                android:id="@+id/powerCleansInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="3 sets of 8"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Power cleans Video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/powerCleansPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/powerCleansText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End power cleans layout-->
+
+        <!--Box jumps layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/boxJumpsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/powerCleansLayout">
+
+            <!--Title for box jumps-->
+            <TextView
+                android:id="@+id/boxJumpsText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Box Jumps"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/boxJumpsLayout" />
+
+            <!--Sets/Reps for box jumps-->
+            <TextView
+                android:id="@+id/boxJumpsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="3 sets of 8"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Box jumps video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/boxJumpsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/boxJumpsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End box jumps layout-->
+
+        <!--Snatches layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/snatchesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/boxJumpsLayout">
+
+            <!--Title for snatches-->
+            <TextView
+                android:id="@+id/snatchesText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Snatches"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/snatchesLayout"/>
+
+            <!--Sets/Reps for snatches-->
+            <TextView
+                android:id="@+id/snatchesInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="3 sets of 8"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Snatches video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/snatchesPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/snatchesText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End snatches layout-->
+
+        <!--Medicine ball throw situps layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/medicineBallThrowSitupsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/snatchesLayout">
+
+            <!--Title for medicine ball throw situps-->
+            <TextView
+                android:id="@+id/medicineBallThrowSitupsText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Medicine Ball Throw Situps"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/medicineBallThrowSitupsLayout"/>
+
+            <!--Sets/Reps for medicine ball throw situps-->
+            <TextView
+                android:id="@+id/medicineBallThrowSitupsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="x20"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Medicine ball throw situps video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/medicineBallThrowSitupsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/medicineBallThrowSitupsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End medicine ball throw situps layout-->
+
+        <!--Pushup to box jump layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pushupToBoxJumpLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/medicineBallThrowSitupsLayout">
+
+            <!--Title for jump and reach-->
+            <TextView
+                android:id="@+id/pushupToBoxJumpText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Push-up To Box Jump"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pushupToBoxJumpLayout"/>
+
+            <!--Sets/Reps for pushup to box jump-->
+            <TextView
+                android:id="@+id/pushupToBoxJumpInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="x10"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Pushup to box jump video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pushupToBoxJumpPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/pushupToBoxJumpText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End pushup to box jump layout-->
+
+        <!--Incline weighted situp layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inclineWeightedSitupsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/pushupToBoxJumpLayout">
+
+            <!--Title for incline weighted situp-->
+            <TextView
+                android:id="@+id/inclineWeightedSitupsText"
+                android:layout_width="380dp"
+                android:layout_height="64dp"
+                android:background="@drawable/exercise_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Inclined Weighted Situps"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/inclineWeightedSitupsLayout"/>
+
+            <!--Sets/Reps for incline weighted situp-->
+            <TextView
+                android:id="@+id/inclineWeightedSitupsInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6sp"
+                android:layout_marginBottom="12sp"
+                android:text="x15"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <!--Incline weighted situp video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/inclineWeightedSitupsPlayVideo"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/example"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/inclineWeightedSitupsText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--End incline weighted situp layout-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
