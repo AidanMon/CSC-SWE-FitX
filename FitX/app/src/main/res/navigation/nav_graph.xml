@@ -15,8 +15,30 @@
             android:id="@+id/action_LoginScreen_to_HomePage"
             app:destination="@id/HomePage"/>
         <action
-            android:id="@+id/action_loginScreen_to_CreateAccount"
-            app:destination="@id/CreateAccountView" />
+            android:id="@+id/action_LoginScreen_to_CreateAccount"
+            app:destination="@id/CreateAccountView"/>
+        <action
+            android:id="@+id/action_loginScreen_to_BaseballWorkouts"
+            app:destination="@id/BaseballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_BasketballWorkouts"
+            app:destination="@id/BasketballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_SoccerWorkouts"
+            app:destination="@id/SoccerWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_TennisWorkouts"
+            app:destination="@id/TennisWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_VolleyballWorkouts"
+            app:destination="@id/VolleyballWorkouts" />
+
+        <action
+            android:id="@+id/action_loginScreen_to_SwimmingWorkouts"
+            app:destination="@id/SwimmingWorkouts" />
 
     </fragment>
 
@@ -37,5 +59,108 @@
         android:label="Create Account"
         tools:layout="@layout/create_account">
 
+    </fragment>
+
+    <!--Football workout selector fragment-->
+    <fragment
+        android:id="@+id/FootballWorkouts"
+        android:name="com.example.fitx.view.sports.FootballWorkouts"
+        android:label="@string/football_workouts_label"
+        tools:layout="@layout/football_workouts_frag">
+        <!--To football upper body workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballUpperBody"
+            app:destination="@+id/FootballUpperBody"/>
+        <!--To football lower body workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballLowerBody"
+            app:destination="@+id/FootballLowerBody"/>
+        <!--To football speed and agility workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballSaA"
+            app:destination="@+id/FootballSaA"/>
+        <!--To football explosive strength workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballExplosiveStrength"
+            app:destination="@+id/FootballExplosiveStrength"/>
+    </fragment>
+
+    <!--Football pages-->
+    <!--Football upper body workout-->
+    <fragment
+        android:id="@+id/FootballUpperBody"
+        android:name="com.example.fitx.view.sports.FootballUpperBody"
+        android:label="@string/football_upper_body"
+        tools:layout="@layout/football_upper_body_frag">
+    </fragment>
+    <!--Football lower body workout-->
+    <fragment
+        android:id="@+id/FootballLowerBody"
+        android:name="com.example.fitx.view.sports.FootballLowerBody"
+        android:label="@string/football_lower_body"
+        tools:layout="@layout/football_lower_body_frag">
+    </fragment>
+    <!--Football speed and agility workout-->
+    <fragment
+        android:id="@+id/FootballSaA"
+        android:name="com.example.fitx.view.sports.FootballSaA"
+        android:label="@string/football_speed_and_agility"
+        tools:layout="@layout/football_speed_and_agility_frag">
+    </fragment>
+    <!--Football explosive strength workout-->
+    <fragment
+        android:id="@+id/FootballExplosiveStrength"
+        android:name="com.example.fitx.view.sports.FootballExplosiveStrength"
+        android:label="@string/football_full_body_explosive_strength"
+        tools:layout="@layout/football_explosive_strength_frag">
+    </fragment>
+    <!--End football pages-->
+
+    <!--Baseball workout-->
+    <fragment
+        android:id="@+id/BaseballWorkouts"
+        android:name="com.example.fitx.view.sports.BaseballWorkouts"
+        android:label="@string/baseball_workouts_label"
+        tools:layout="@layout/baseball_workouts_frag">
+    </fragment>
+
+    <!--Basketball workout-->
+    <fragment
+        android:id="@+id/BasketballWorkouts"
+        android:name="com.example.fitx.view.sports.BasketballWorkouts"
+        android:label="@string/basketball_workouts_label"
+        tools:layout="@layout/basketball_workouts_frag">
+    </fragment>
+
+    <!--Soccer workout-->
+    <fragment
+        android:id="@+id/SoccerWorkouts"
+        android:name="com.example.fitx.view.sports.SoccerWorkouts"
+        android:label="@string/soccer_workouts_label"
+        tools:layout="@layout/soccer_workouts_frag">
+    </fragment>
+
+    <!--Swimming workout-->
+    <fragment
+        android:id="@+id/SwimmingWorkouts"
+        android:name="com.example.fitx.view.sports.SwimmingWorkouts"
+        android:label="@string/swimming_workouts_label"
+        tools:layout="@layout/swimming_workouts_frag">
+    </fragment>
+
+    <!--Tennis workout-->
+    <fragment
+        android:id="@+id/TennisWorkouts"
+        android:name="com.example.fitx.view.sports.TennisWorkouts"
+        android:label="@string/tennis_workouts_label"
+        tools:layout="@layout/tennis_workouts_frag">
+    </fragment>
+
+    <!--Volleyball workout-->
+    <fragment
+        android:id="@+id/VolleyballWorkouts"
+        android:name="com.example.fitx.view.sports.VolleyballWorkouts"
+        android:label="@string/volleyball_workouts_label"
+        tools:layout="@layout/volleyball_workouts_frag">
     </fragment>
 </navigation>

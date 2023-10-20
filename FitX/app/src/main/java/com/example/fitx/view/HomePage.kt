@@ -27,11 +27,11 @@ class HomePage: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        userRepository.getCurrentUserFullName(){ fullname ->
-            run {
-                binding.loginMessageTextView.text = "Welcome " + fullname + " to FitX You are logged in!"
-            }
-        }
+        // userRepository.getCurrentUserFullName(){ fullname ->
+           // run {
+                //binding.loginMessageTextView.text = "Welcome " + fullname + " to FitX You are logged in!"
+            //}
+       // }
         _binding = HomePageBinding.inflate(inflater, container, false)
         return binding.root
 

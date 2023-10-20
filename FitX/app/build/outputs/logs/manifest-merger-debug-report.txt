@@ -4,6 +4,7 @@ ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xm
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-28:12
+MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.databinding:databinding-adapters:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\43b5bb0036ed6b6c96d1335beeb5c4f2\transformed\databinding-adapters-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\46be43769c1b5ca187ab57be99ef0d1e\transformed\databinding-ktx-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\ced869a1be2a4bdc70bd7bb9c8384bb5\transformed\databinding-runtime-8.1.2\AndroidManifest.xml:2:1-7:12
@@ -222,6 +223,8 @@ uses-sdk
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
+MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:5:5-44
+MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\43b5bb0036ed6b6c96d1335beeb5c4f2\transformed\databinding-adapters-8.1.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\43b5bb0036ed6b6c96d1335beeb5c4f2\transformed\databinding-adapters-8.1.2\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-ktx:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\46be43769c1b5ca187ab57be99ef0d1e\transformed\databinding-ktx-8.1.2\AndroidManifest.xml:5:5-44
@@ -418,6 +421,48 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\zen
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
+MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:26:5-79
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:7:5-79
+MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\zenze\.gradle\caches\transforms-3\d4c463e086cf21df82dcedaa99eb5086\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\zenze\.gradle\caches\transforms-3\d4c463e086cf21df82dcedaa99eb5086\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:22-76
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:9:9-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\792b77f56c806bfb8dc88e55c5981357\transformed\firebase-analytics-ktx-21.3.0\AndroidManifest.xml:8:9-14:19
@@ -468,44 +513,6 @@ ADDED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\zenze\.grad
 		ADDED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\zenze\.gradle\caches\transforms-3\57bc89d6f18c2d7a3f9f6745e74bef48\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\zenze\.gradle\caches\transforms-3\57bc89d6f18c2d7a3f9f6745e74bef48\transformed\firebase-common-ktx-20.3.3\AndroidManifest.xml:15:17-113
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:26:5-79
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:7:5-79
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:24:5-79
-MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\zenze\.gradle\caches\transforms-3\d4c463e086cf21df82dcedaa99eb5086\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
-MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\zenze\.gradle\caches\transforms-3\d4c463e086cf21df82dcedaa99eb5086\transformed\grpc-android-1.52.1\AndroidManifest.xml:9:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:10:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:22-64
 meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
 ADDED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:17:13-19:85
 	android:value

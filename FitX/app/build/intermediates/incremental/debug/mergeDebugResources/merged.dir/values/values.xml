@@ -2063,7 +2063,6 @@
     <string description="Title of the side sheet&apos;s accessibility pane that is spoken by TalkBack when the side sheet appears on screen. [CHAR_LIMIT=NONE]" name="side_sheet_accessibility_pane_title">Side Sheet</string>
     <string name="side_sheet_behavior" translatable="false">com.google.android.material.sidesheet.SideSheetBehavior</string>
     <string name="soccer_workouts_label">Soccer Exercises</string>
-    <string name="sport_workouts_label">Sport Specific Workouts</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>

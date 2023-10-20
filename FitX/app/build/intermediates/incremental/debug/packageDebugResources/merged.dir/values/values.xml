@@ -81,7 +81,6 @@
     <string name="project_id" translatable="false">fitx-group9</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="soccer_workouts_label">Soccer Exercises</string>
-    <string name="sport_workouts_label">Sport Specific Workouts</string>
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>
     <string name="volleyball_workouts_label">Volleyball Exercises</string>

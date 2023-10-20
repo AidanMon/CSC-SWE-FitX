@@ -74,7 +74,17 @@ class LoginScreenView : Fragment() {
            else{
                userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
                    if(isSuccessful){
-                       findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
+                       userRepository.getCurrentUser { user ->
+                           when(user.sportId.toInt()){
+                               0 -> findNavController().navigate(R.id.action_loginScreen_to_BasketballWorkouts)
+                               1 -> findNavController().navigate(R.id.action_loginScreen_to_BaseballWorkouts)
+                               2 -> findNavController().navigate(R.id.action_loginScreen_to_SwimmingWorkouts)
+                               3 -> findNavController().navigate(R.id.action_loginScreen_to_SoccerWorkouts)
+                               4 -> findNavController().navigate(R.id.action_loginScreen_to_FootballWorkouts)
+                               5 -> findNavController().navigate(R.id.action_loginScreen_to_VolleyballWorkouts)
+                               6 -> findNavController().navigate(R.id.action_loginScreen_to_TennisWorkouts)
+                           }
+                       }
                    }
                    else{
                        Toast.makeText(requireActivity(), "Authentication Failed Try again", Toast.LENGTH_LONG).show()
@@ -87,7 +97,7 @@ class LoginScreenView : Fragment() {
          * Registration button lister to navigate to the Create Account View
          */
         binding.createAccountTextView.setOnClickListener {
-            findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)
+            findNavController().navigate(R.id.action_LoginScreen_to_CreateAccount)
         }
     }
 
