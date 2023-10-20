@@ -2807,15 +2807,8 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable exercise_border
-drawable fitx_baseball_image
-drawable fitx_basketball_image
-drawable fitx_football_image
 drawable fitx_login_text
 drawable fitx_logo
-drawable fitx_soccer_image
-drawable fitx_swimming_image
-drawable fitx_tennis_image
-drawable fitx_volleyball_image
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -3053,10 +3046,8 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseballHeader
-id baseballImage
 id baseline
 id basketballHeader
-id basketballImage
 id beginOnFirstDraw
 id beginning
 id benchPressInfo
@@ -3217,7 +3208,6 @@ id flutterKicksLayout
 id flutterKicksPlayVideo
 id flutterKicksText
 id footballHeader
-id footballImage
 id footballLowerBodyHeader
 id footballUpperBodyHeader
 id footballWorkoutsDescription
@@ -3534,13 +3524,11 @@ id snatchesLayout
 id snatchesPlayVideo
 id snatchesText
 id soccerHeader
-id soccerImage
 id south
 id spacer
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
-id sportWorkoutsHeader
 id sportlist
 id spread
 id spread_inside
@@ -3590,7 +3578,6 @@ id suicidesPlayVideo
 id suicidesText
 id supportScrollUp
 id swimmingHeader
-id swimmingImage
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3606,7 +3593,6 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id tennisHeader
-id tennisImage
 id text
 id text2
 id textEnd
@@ -3631,18 +3617,11 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toBaseballWorkouts
-id toBasketballWorkouts
 id toFootballFullBodyExplosiveStrength
 id toFootballLowerBody
 id toFootballSpeedAndAgility
 id toFootballUpperBody
-id toFootballWorkouts
-id toSoccerWorkouts
 id toSports
-id toSwimmingWorkouts
-id toTennisWorkouts
-id toVolleyballWorkouts
 id toggle
 id toolbar
 id top
@@ -3689,7 +3668,6 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id volleyballHeader
-id volleyballImage
 id west
 id wide
 id withText
@@ -3901,7 +3879,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout soccer_workouts_frag
-layout sport_workouts_frag
 layout support_simple_spinner_dropdown_item
 layout swimming_workouts_frag
 layout tennis_workouts_frag
@@ -4097,6 +4074,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string my_sport_string
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next

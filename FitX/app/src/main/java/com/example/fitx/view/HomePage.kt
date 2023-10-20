@@ -40,12 +40,6 @@ class HomePage: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.logoutButton.setOnClickListener {
-            userRepository.SignOut()
-            Toast.makeText(requireActivity(), "Logged Out", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_HomePage_to_LoginScreen)
-        }
-
         //Button to go from home to sport workouts page
         binding.toSports.setOnClickListener {
             findNavController().navigate((R.id.action_HomePage_to_SportsWorkouts))

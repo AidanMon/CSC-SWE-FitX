@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_football_speed_and_agility_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/football_speed_and_agility_frag.xml"
+    },
+    {
         "merged": "com.example.fitx.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "com.example.fitx.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
     },
@@ -24,6 +28,18 @@
         "source": "com.example.fitx.app-main-59:/layout/login_screen.xml"
     },
     {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_football_lower_body_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/football_lower_body_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_fragment_second.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.fitx.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
         "merged": "com.example.fitx.app-merged_res-57:/xml_backup_rules.xml.flat",
         "source": "com.example.fitx.app-main-59:/xml/backup_rules.xml"
     },
@@ -32,12 +48,20 @@
         "source": "com.example.fitx.app-main-59:/drawable/rounded_button.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_workout_border.xml.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/workout_border.xml"
+        "merged": "com.example.fitx.app-merged_res-57:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.fitx.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_volleyball_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_volleyball_image.png"
+        "merged": "com.example.fitx.app-merged_res-57:/layout_create_account.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/create_account.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.fitx.app-main-59:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/drawable_workout_border.xml.flat",
+        "source": "com.example.fitx.app-main-59:/drawable/workout_border.xml"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -56,90 +80,6 @@
         "source": "com.example.fitx.app-main-59:/navigation/nav_graph.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/menu_menu_main.xml.flat",
-        "source": "com.example.fitx.app-main-59:/menu/menu_main.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_basketball_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/basketball_workouts_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_volleyball_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/volleyball_workouts_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.fitx.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_football_explosive_strength_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/football_explosive_strength_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_baseball_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/baseball_workouts_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_soccer_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_soccer_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_content_main.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/content_main.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_football_speed_and_agility_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/football_speed_and_agility_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_baseball_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_baseball_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_tennis_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_tennis_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_swimming_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_swimming_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_football_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_football_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_football_lower_body_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/football_lower_body_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_fragment_second.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/fragment_second.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.fitx.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.fitx.app-pngs-52:/drawable-anydpi-v24/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_create_account.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/create_account.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.fitx.app-main-59:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_sport_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/sport_workouts_frag.xml"
-    },
-    {
         "merged": "com.example.fitx.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "com.example.fitx.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
@@ -148,20 +88,24 @@
         "source": "com.example.fitx.app-main-59:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_tennis_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/tennis_workouts_frag.xml"
+        "merged": "com.example.fitx.app-merged_res-57:/menu_menu_main.xml.flat",
+        "source": "com.example.fitx.app-main-59:/menu/menu_main.xml"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "com.example.fitx.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_login_text.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_login_text.png"
+        "merged": "com.example.fitx.app-merged_res-57:/layout_tennis_workouts_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/tennis_workouts_frag.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_basketball_image.png.flat",
-        "source": "com.example.fitx.app-main-59:/drawable/fitx_basketball_image.png"
+        "merged": "com.example.fitx.app-merged_res-57:/layout_basketball_workouts_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/basketball_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/drawable_fitx_login_text.png.flat",
+        "source": "com.example.fitx.app-main-59:/drawable/fitx_login_text.png"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -176,12 +120,28 @@
         "source": "com.example.fitx.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_soccer_workouts_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/soccer_workouts_frag.xml"
+        "merged": "com.example.fitx.app-merged_res-57:/layout_volleyball_workouts_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/volleyball_workouts_frag.xml"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/layout_activity_main.xml.flat",
         "source": "com.example.fitx.app-main-59:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_soccer_workouts_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/soccer_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.fitx.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_football_explosive_strength_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/football_explosive_strength_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.fitx.app-main-59:/drawable/ic_launcher_background.xml"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/layout_fragment_first.xml.flat",
@@ -190,6 +150,14 @@
     {
         "merged": "com.example.fitx.app-merged_res-57:/drawable_exercise_border.xml.flat",
         "source": "com.example.fitx.app-main-59:/drawable/exercise_border.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_baseball_workouts_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/baseball_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_content_main.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/content_main.xml"
     },
     {
         "merged": "com.example.fitx.app-merged_res-57:/layout_home_page.xml.flat",
