@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-54:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\e5ca7dde7ca803ca0eca7c36c0238954\\transformed\\browser-1.4.0\\res\\values-en-rCA\\values-en-rCA.xml",

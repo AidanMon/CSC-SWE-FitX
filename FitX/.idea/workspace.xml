@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -224,6 +226,16 @@
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="FitX.app.main" />
+=======
+  <component name="RunManager">
+    <configuration name="CSC-SWE-FitX.FitX.app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="CSC-SWE-FitX.FitX.app.main" />
+>>>>>>> Stashed changes
+=======
+  <component name="RunManager">
+    <configuration name="CSC-SWE-FitX.FitX.app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="CSC-SWE-FitX.FitX.app.main" />
+>>>>>>> Stashed changes
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -289,6 +301,8 @@
       </method>
     </configuration>
   </component>
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -300,4 +314,8 @@
     </task>
     <servers />
   </component>
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 </project>

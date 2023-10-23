@@ -14,7 +14,7 @@ class UserRepository {
     /**
     Gets the users full name from the firebase users collection
      */
-    fun getCurrentUserFullName(callback: (String) -> Unit) {
+    fun getCurrentUser(callback: (User) -> Unit) {
         auth = FirebaseAuth.getInstance()
         val user = auth.currentUser
         firestore = FirebaseFirestore.getInstance()
@@ -23,20 +23,15 @@ class UserRepository {
                 .addOnSuccessListener { documentSnapShot ->
                     if (documentSnapShot.exists()) {
                         val userData = documentSnapShot.data
-                        val curLastName =  userData?.get("Last Name").toString()
-                        val curFirstName = userData?.get("First Name").toString()
-                        callback(curFirstName + "" + curLastName)
-/*
-                        User(
+                        callback(User(
                             firstName = userData?.get("First Name").toString(),
                             lastName = userData?.get("Last Name").toString(),
                             age = userData?.get("Age") as Number,
                             weight = userData?.get("Weight") as Number,
-                            experienceLevel = userData?.get("ExpLevel") as ExperienceLevel,
-                            sport = userData?.get("Sport ID"))
+                            "",
+                            experienceLevel = userData?.get("ExpLevel").toString(),
+                            sportId = userData?.get("Sport ID") as Number)
                         )
-
- */
                     }
                 }
         }

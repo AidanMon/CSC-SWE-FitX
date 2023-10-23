@@ -1,16 +1,11 @@
 package com.example.fitx.view
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.DataBindingUtil.setContentView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -18,10 +13,6 @@ import com.example.fitx.R
 import com.example.fitx.databinding.LoginScreenBinding
 import com.example.fitx.repository.UserRepository
 import com.example.fitx.view_model.LoginScreenViewModel
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseAuthException
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 
 /**
  * Login Screen View holds all the text change and button click events to move to other views for send
@@ -74,6 +65,7 @@ class LoginScreenView : Fragment() {
            else{
                userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
                    if(isSuccessful){
+                       //Changed
                        findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
                    }
                    else{
@@ -87,7 +79,7 @@ class LoginScreenView : Fragment() {
          * Registration button lister to navigate to the Create Account View
          */
         binding.createAccountTextView.setOnClickListener {
-            findNavController().navigate(R.id.action_loginScreen_to_CreateAccount)
+            findNavController().navigate(R.id.action_LoginScreen_to_CreateAccount)
         }
     }
 

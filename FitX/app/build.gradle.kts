@@ -64,6 +64,7 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics-ktx")
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation(files("libs/core-12.1.0.aar"))
 /*
     val lifecycle_version = "2.6.2"
     val arch_version = "2.2.0"

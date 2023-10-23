@@ -76,6 +76,7 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="my_sport_string">My Sport</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">fitx-group9</string>
@@ -88,7 +89,7 @@
     <style name="Base.Theme.FitX" parent="Theme.Material3.DayNight.NoActionBar">
         
         
-        <item name="android:textColor">@color/red</item>
+        <item name="android:textColor">@color/black</item>
     </style>
     <style name="Theme.FitX" parent="Base.Theme.FitX"/>
     <style name="yourStyleForSpinnerItem">

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-54:/values-sv/values-sv.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\e5ab374c7b4e601bd22e3a51ea3fd51e\\transformed\\play-services-base-18.0.1\\res\\values-sv\\values.xml",

@@ -9,6 +9,8 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import com.example.fitx.databinding.ActivityMainBinding
 import com.example.fitx.repository.UserRepository
 
@@ -47,10 +49,17 @@ class MainActivity : AppCompatActivity() {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            R.id.action_settings -> true
-            else -> super.onOptionsItemSelected(item)
+        val id = item.itemId
+        if(id == R.id.action_settings){
+            userRepository.SignOut()
+            Toast.makeText(this, "Logged Out", Toast.LENGTH_SHORT).show()
+            findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_HomePage_to_LoginScreen)
         }
+        return super.onOptionsItemSelected(item)
+        //return when (item.itemId) {
+            //R.id.action_settings -> true
+            //else -> super.onOptionsItemSelected(item)
+            //}
     }
 
     override fun onSupportNavigateUp(): Boolean {

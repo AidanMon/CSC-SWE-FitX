@@ -16,11 +16,11 @@ data class User(
 
     var weight: Number,
 
-    var email:String,
+    var email: String,
 
-    var experienceLevel: ExperienceLevel,
+    var experienceLevel: String,
 
-    var sport: SportName
+    var sportId: Number
 ){
 
 
