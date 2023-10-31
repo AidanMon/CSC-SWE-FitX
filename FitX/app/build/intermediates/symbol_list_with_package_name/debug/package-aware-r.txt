@@ -2915,6 +2915,7 @@ id FootballLowerBody
 id FootballSaA
 id FootballUpperBody
 id FootballWorkouts
+id HealthyTips
 id HomePage
 id LoginScreen
 id META
@@ -2975,6 +2976,7 @@ id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
 id action_HomePage_to_FootballWorkouts
+id action_HomePage_to_HealthyTips
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -3292,7 +3294,6 @@ id listMode
 id list_item
 id locale
 id loginMessageTextView
-id logoutButton
 id ltr
 id lungesInfo
 id lungesLayout
@@ -3614,6 +3615,9 @@ id textview_first
 id textview_second
 id theVideoPlayer
 id time
+id tipDesc
+id tipName
+id tipsListView
 id title
 id titleDividerNoCustom
 id title_template
@@ -3816,7 +3820,9 @@ layout football_upper_body_frag
 layout football_workouts_frag
 layout fragment_first
 layout fragment_second
+layout healthy_tips
 layout home_page
+layout list_item_tip
 layout login_screen
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3975,6 +3981,8 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string healthy_tips_label
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

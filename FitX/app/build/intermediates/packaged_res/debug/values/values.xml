@@ -40,6 +40,8 @@
     <string name="google_app_id" translatable="false">1:933672858220:android:30c25f773bd12d54cc1e49</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPnVsUMMz9_XVbeytgB0zELGxlBkXE1Ow</string>
     <string name="google_storage_bucket" translatable="false">fitx-group9.appspot.com</string>
+    <string name="healthy_tips_label">Healthy Tips</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

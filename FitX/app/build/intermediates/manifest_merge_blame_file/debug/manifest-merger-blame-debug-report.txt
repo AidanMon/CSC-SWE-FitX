@@ -36,47 +36,47 @@
 21-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 22
 23    <application
-23-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-26:19
+23-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-26:19
 24        android:allowBackup="true"
-24-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:6:9-35
+24-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:6:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 26        android:dataExtractionRules="@xml/data_extraction_rules"
-26-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:9-65
+26-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:9-65
 27        android:debuggable="true"
 28        android:extractNativeLibs="true"
 29        android:fullBackupContent="@xml/backup_rules"
-29-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-54
+29-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-54
 30        android:icon="@mipmap/ic_launcher"
-30-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-43
+30-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-43
 31        android:label="@string/app_name"
-31-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-41
+31-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-41
 32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-54
+32-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-54
 33        android:supportsRtl="true"
-33-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-35
+33-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-35
 34        android:testOnly="true"
 35        android:theme="@style/Theme.FitX" >
-35-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-42
+35-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-42
 36        <activity
-36-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-25:20
+36-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-25:20
 37            android:name="com.example.fitx.MainActivity"
-37-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:16:13-41
+37-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:16:13-41
 38            android:exported="true"
-38-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:13-36
+38-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:13-36
 39            android:label="@string/app_name"
-39-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-45
+39-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-45
 40            android:theme="@style/Theme.FitX" >
-40-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-46
+40-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-46
 41            <intent-filter>
-41-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-24:29
+41-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-24:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:17-69
-42-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:25-66
+42-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:17-69
+42-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-77
-44-->C:\Users\zenze\repo\Project-fitx\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:27-74
+44-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-77
+44-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:27-74
 45            </intent-filter>
 46        </activity>
 47
