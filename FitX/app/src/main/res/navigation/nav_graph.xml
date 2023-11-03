@@ -74,10 +74,22 @@
         <action
             android:id="@+id/action_HomePage_to_VolleyballWorkouts"
             app:destination="@id/VolleyballWorkouts" />
-
         <action
             android:id="@+id/action_HomePage_to_SwimmingWorkouts"
             app:destination="@id/SwimmingWorkouts" />
+        <!--All Exercises Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_AllExercises"
+            app:destination="@id/AllExercises" />
+
+    </fragment>
+
+    <!--All Exercises Fragment-->
+    <fragment
+        android:id="@+id/AllExercises"
+        android:name="com.example.fitx.view.sports.AllExercises"
+        android:label="@string/all_exercises_label"
+        tools:layout="@layout/all_exercises_frag">
     </fragment>
 
     <!--Added-->

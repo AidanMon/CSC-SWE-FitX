@@ -2807,8 +2807,15 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable exercise_border
+drawable fitx_baseball_image
+drawable fitx_basketball_image
+drawable fitx_football_image
 drawable fitx_login_text
 drawable fitx_logo
+drawable fitx_soccer_image
+drawable fitx_swimming_image
+drawable fitx_tennis_image
+drawable fitx_volleyball_image
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_arrow_back_black_24
@@ -2902,6 +2909,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable workout_border
 id ALT
+id AllExercises
 id BOTTOM_END
 id BOTTOM_START
 id BaseballWorkouts
@@ -2972,6 +2980,7 @@ id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
 id action_FootballWorkouts_to_FootballUpperBody
+id action_HomePage_to_AllExercises
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
 id action_HomePage_to_FootballWorkouts
@@ -3026,6 +3035,7 @@ id agilityLadderText
 id alertTitle
 id aligned
 id all
+id allExercisesHeader
 id allStates
 id alternatingDumbbellCurlsInfo
 id alternatingDumbbellCurlsLayout
@@ -3046,8 +3056,10 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id baseballHeader
+id baseballImage
 id baseline
 id basketballHeader
+id basketballImage
 id beginOnFirstDraw
 id beginning
 id benchPressInfo
@@ -3208,6 +3220,7 @@ id flutterKicksLayout
 id flutterKicksPlayVideo
 id flutterKicksText
 id footballHeader
+id footballImage
 id footballLowerBodyHeader
 id footballUpperBodyHeader
 id footballWorkoutsDescription
@@ -3291,8 +3304,6 @@ id linear
 id listMode
 id list_item
 id locale
-id loginMessageTextView
-id logoutButton
 id ltr
 id lungesInfo
 id lungesLayout
@@ -3405,6 +3416,7 @@ id overshoot
 id packed
 id parallax
 id parent
+id parentLayout
 id parentPanel
 id parentRelative
 id parent_matrix
@@ -3524,11 +3536,13 @@ id snatchesLayout
 id snatchesPlayVideo
 id snatchesText
 id soccerHeader
+id soccerImage
 id south
 id spacer
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
+id sportWorkoutsHeader
 id sportlist
 id spread
 id spread_inside
@@ -3578,6 +3592,7 @@ id suicidesPlayVideo
 id suicidesText
 id supportScrollUp
 id swimmingHeader
+id swimmingImage
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3593,6 +3608,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
 id tennisHeader
+id tennisImage
 id text
 id text2
 id textEnd
@@ -3617,11 +3633,18 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toBaseballWorkouts
+id toBasketballWorkouts
 id toFootballFullBodyExplosiveStrength
 id toFootballLowerBody
 id toFootballSpeedAndAgility
 id toFootballUpperBody
+id toFootballWorkouts
+id toSoccerWorkouts
 id toSports
+id toSwimmingWorkouts
+id toTennisWorkouts
+id toVolleyballWorkouts
 id toggle
 id toolbar
 id top
@@ -3668,6 +3691,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id volleyballHeader
+id volleyballImage
 id west
 id wide
 id withText
@@ -3787,6 +3811,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout all_exercises_frag
 layout baseball_workouts_frag
 layout basketball_workouts_frag
 layout browser_actions_context_menu_page
@@ -3879,6 +3904,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout soccer_workouts_frag
+layout sport_workouts_frag
 layout support_simple_spinner_dropdown_item
 layout swimming_workouts_frag
 layout tennis_workouts_frag
@@ -3918,6 +3944,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_logout
+string all_exercises_header
+string all_exercises_label
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3970,11 +3998,13 @@ string football_speed_and_agility
 string football_upper_body
 string football_workouts_description
 string football_workouts_label
+string full_screen_notice
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

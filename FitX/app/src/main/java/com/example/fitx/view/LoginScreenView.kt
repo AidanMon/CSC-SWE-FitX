@@ -65,7 +65,6 @@ class LoginScreenView : Fragment() {
            else{
                userRepository.Signin(binding.userName.text.toString(),binding.userPassword.text.toString()){isSuccessful ->
                    if(isSuccessful){
-                       //Changed
                        findNavController().navigate(R.id.action_LoginScreen_to_HomePage)
                    }
                    else{
