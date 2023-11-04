@@ -1,4 +1,4 @@
-package com.example.fitx.view.sports
+package com.example.fitx.view.home_page_links
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -44,6 +44,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="CreateAWorkout">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-297" />
+                            <option name="y" value="-1232" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_CreateAWorkout_to_CurrentCreatedWorkout">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="CreateAccountView">
                     <value>
                       <LayoutPositions>
@@ -51,6 +72,18 @@
                           <Point>
                             <option name="x" value="500" />
                             <option name="y" value="12" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="CurrentCreatedWorkout">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-38" />
+                            <option name="y" value="-1233" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -162,6 +195,11 @@
                               </value>
                             </entry>
                             <entry key="action_HomePage_to_BasketballWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_HomePage_to_CreateAWorkout">
                               <value>
                                 <LayoutPositions />
                               </value>

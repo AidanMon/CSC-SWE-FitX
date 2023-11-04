@@ -42,6 +42,7 @@
 
     </fragment>
 
+    <!-- Homepage Fragment-->
     <fragment
         android:id="@+id/HomePage"
         android:name="com.example.fitx.view.HomePage"
@@ -55,7 +56,7 @@
             android:id="@+id/action_HomePage_to_SportsWorkouts"
             app:destination="@id/SportWorkouts"/>
 
-        <!--Added all these actions-->
+        <!--Homepage to specific sports-->
         <action
             android:id="@+id/action_HomePage_to_BaseballWorkouts"
             app:destination="@id/BaseballWorkouts" />
@@ -77,26 +78,52 @@
         <action
             android:id="@+id/action_HomePage_to_SwimmingWorkouts"
             app:destination="@id/SwimmingWorkouts" />
+
         <!--All Exercises Navigation-->
         <action
             android:id="@+id/action_HomePage_to_AllExercises"
             app:destination="@id/AllExercises" />
+        <!--Create a workout Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_CreateAWorkout"
+            app:destination="@id/CreateAWorkout" />
 
     </fragment>
 
     <!--All Exercises Fragment-->
     <fragment
         android:id="@+id/AllExercises"
-        android:name="com.example.fitx.view.sports.AllExercises"
+        android:name="com.example.fitx.view.home_page_links.AllExercises"
         android:label="@string/all_exercises_label"
         tools:layout="@layout/all_exercises_frag">
+    </fragment>
+
+    <!--Create a workout Fragment-->
+    <fragment
+        android:id="@+id/CreateAWorkout"
+        android:name="com.example.fitx.view.home_page_links.CreateAWorkout"
+        android:label="@string/create_a_workout_label"
+        tools:layout="@layout/create_a_workout_frag">
+
+        <!--To current created workout Navigation-->
+        <action
+            android:id="@+id/action_CreateAWorkout_to_CurrentCreatedWorkout"
+            app:destination="@id/CurrentCreatedWorkout" />
+    </fragment>
+
+    <!--Current created workout Fragment-->
+    <fragment
+        android:id="@+id/CurrentCreatedWorkout"
+        android:name="com.example.fitx.view.created_workouts.CurrentCreatedWorkout"
+        android:label="@string/current_created_workout_label"
+        tools:layout="@layout/current_created_workout_frag">
     </fragment>
 
     <!--Added-->
     <!--Sport selector Fragment-->
     <fragment
         android:id="@+id/SportWorkouts"
-        android:name="com.example.fitx.view.sports.SportWorkouts"
+        android:name="com.example.fitx.view.home_page_links.SportWorkouts"
         android:label="@string/sport_workouts_label"
         tools:layout="@layout/sport_workouts_frag">
         <!--To football workouts-->

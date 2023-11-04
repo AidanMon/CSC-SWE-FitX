@@ -3,9 +3,11 @@ local
 array experienceItems
 array sportItems
 color black
+color purple
 color red
 color white
 dimen fab_margin
+drawable add_to_button
 drawable exercise_border
 drawable fitx_baseball_image
 drawable fitx_basketball_image
@@ -19,12 +21,17 @@ drawable fitx_volleyball_image
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable rounded_button
+drawable show_workout_button
+drawable triple_border_bottom_gone
+drawable triple_border_top_gone
 drawable workout_border
 id AllExercises
 id BaseballWorkouts
 id BasketballWorkouts
 id Button_login
+id CreateAWorkout
 id CreateAccountView
+id CurrentCreatedWorkout
 id FootballExplosiveStrength
 id FootballLowerBody
 id FootballSaA
@@ -37,6 +44,7 @@ id SportWorkouts
 id SwimmingWorkouts
 id TennisWorkouts
 id VolleyballWorkouts
+id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -44,6 +52,7 @@ id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_AllExercises
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
+id action_HomePage_to_CreateAWorkout
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
@@ -91,6 +100,7 @@ id boxJumpsText
 id burpeesLayout
 id burpeesPlayVideo
 id burpeesText
+id buttonLayout
 id button_first
 id button_second
 id cableChestPressLayout
@@ -104,7 +114,10 @@ id calfRaisesInfo
 id calfRaisesLayout
 id calfRaisesPlayVideo
 id calfRaisesText
+id createAWorkoutButton
+id createAWorkoutHeader
 id createAccountTextView
+id currentWorkoutHeader
 id deadliftConventionalPlayVideo
 id deadliftInfo
 id deadliftLayout
@@ -166,6 +179,9 @@ id lateralLungesText
 id lateralShufflesLayout
 id lateralShufflesPlayVideo
 id lateralShufflesText
+id legsLayout
+id legsShowAll
+id legsText
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo
@@ -186,6 +202,7 @@ id nav_host_fragment_content_main
 id overHeadPressLayout
 id overHeadPressPlayVideo
 id overHeadPressText
+id paddingBelow
 id parentLayout
 id planksLayout
 id planksPlayVideo
@@ -211,6 +228,7 @@ id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo
 id shoulderPressText
+id showCreatedWorkout
 id shrugsInfo
 id shrugsLayout
 id shrugsPlayVideo
@@ -304,7 +322,9 @@ layout all_exercises_frag
 layout baseball_workouts_frag
 layout basketball_workouts_frag
 layout content_main
+layout create_a_workout_frag
 layout create_account
+layout current_created_workout_frag
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -329,6 +349,9 @@ string all_exercises_label
 string app_name
 string baseball_workouts_label
 string basketball_workouts_label
+string create_a_workout_label
+string current_created_workout_header
+string current_created_workout_label
 string description
 string example
 string firebase_database_url

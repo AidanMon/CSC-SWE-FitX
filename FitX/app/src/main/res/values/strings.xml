@@ -9,17 +9,20 @@
     <string name="full_screen_notice">**May have to \npress a few times</string>
     <string name="all_exercises_header">All Exercises</string>
     <string name="all_exercises_label">List Of Exercises</string>
+    <string name="create_a_workout_label">Create A Workout</string>
+    <string name="current_created_workout_label">Current Workout</string>
+    <string name="current_created_workout_header">Current Workout</string>
 
     <string-array name="sportItems">
         <item>Baseball</item>
         <item>Football</item>
-        <item>Soccor</item>
+        <item>Soccer</item>
         <item>Tennis</item>
         <item>Basketball</item>
     </string-array>
     <string-array name="experienceItems">
         <item>Beginner</item>
-        <item>Intermidate</item>
+        <item>Intermediate</item>
         <item>Expert</item>
     </string-array>
 

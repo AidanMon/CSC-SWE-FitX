@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.fitx.R
 import com.example.fitx.databinding.HomePageBinding
 import com.example.fitx.model.Exercise
-import com.example.fitx.repository.AllExerciseList
+import com.example.fitx.repository.AllExerciseLists
 import com.example.fitx.repository.ExerciseRepository
 import com.example.fitx.repository.UserRepository
 
@@ -43,7 +43,7 @@ class HomePage: Fragment() {
                 // Handle the list of exercises
                 allExercises = mutableListOf()          //Setting the list to empty so it doesn't cause issues by adding multiple copies of every exercise
                 allExercises = exerciseList
-                AllExerciseList.exerciseList = allExercises
+                AllExerciseLists.exerciseList = allExercises
 
             }
 
@@ -71,6 +71,10 @@ class HomePage: Fragment() {
 
         binding.AllExercises.setOnClickListener {
             findNavController().navigate((R.id.action_HomePage_to_AllExercises))
+        }
+
+        binding.createAWorkoutButton.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_CreateAWorkout))
         }
 
         //Button for user sport

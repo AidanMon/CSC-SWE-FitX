@@ -1,7 +1,8 @@
-#Fri Nov 03 15:49:27 EDT 2023
+#Sat Nov 04 19:26:00 EDT 2023
 base.0=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.11=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 base.2=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
 base.3=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
 base.4=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
@@ -13,6 +14,7 @@ base.9=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes3.dex
+path.11=4/classes.dex
 path.2=10/classes.dex
 path.3=11/classes.dex
 path.4=13/classes.dex
@@ -24,6 +26,7 @@ path.9=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.10=classes11.dex
+renamed.11=classes12.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex

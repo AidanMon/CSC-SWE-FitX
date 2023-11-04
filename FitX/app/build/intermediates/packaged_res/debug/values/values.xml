@@ -2,17 +2,18 @@
 <resources>
     <string-array name="experienceItems">
         <item>Beginner</item>
-        <item>Intermidate</item>
+        <item>Intermediate</item>
         <item>Expert</item>
     </string-array>
     <string-array name="sportItems">
         <item>Baseball</item>
         <item>Football</item>
-        <item>Soccor</item>
+        <item>Soccer</item>
         <item>Tennis</item>
         <item>Basketball</item>
     </string-array>
     <color name="black">#FF000000</color>
+    <color name="purple">#8C07DD</color>
     <color name="red">#ff0000</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
@@ -22,6 +23,9 @@
     <string name="app_name">FitX</string>
     <string name="baseball_workouts_label">Baseball Exercises</string>
     <string name="basketball_workouts_label">Basketball Exercises</string>
+    <string name="create_a_workout_label">Create A Workout</string>
+    <string name="current_created_workout_header">Current Workout</string>
+    <string name="current_created_workout_label">Current Workout</string>
     <string name="description">Description</string>
     <string name="example">Example</string>
     <string name="firebase_database_url" translatable="false">https://fitx-group9-default-rtdb.firebaseio.com</string>

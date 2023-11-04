@@ -23,15 +23,20 @@ public final class HomePageBinding implements ViewBinding {
   public final AppCompatButton AllExercises;
 
   @NonNull
+  public final AppCompatButton createAWorkoutButton;
+
+  @NonNull
   public final AppCompatButton toSports;
 
   @NonNull
   public final AppCompatButton userSport;
 
   private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton AllExercises,
-      @NonNull AppCompatButton toSports, @NonNull AppCompatButton userSport) {
+      @NonNull AppCompatButton createAWorkoutButton, @NonNull AppCompatButton toSports,
+      @NonNull AppCompatButton userSport) {
     this.rootView = rootView;
     this.AllExercises = AllExercises;
+    this.createAWorkoutButton = createAWorkoutButton;
     this.toSports = toSports;
     this.userSport = userSport;
   }
@@ -69,6 +74,12 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.createAWorkoutButton;
+      AppCompatButton createAWorkoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (createAWorkoutButton == null) {
+        break missingId;
+      }
+
       id = R.id.toSports;
       AppCompatButton toSports = ViewBindings.findChildViewById(rootView, id);
       if (toSports == null) {
@@ -81,7 +92,8 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomePageBinding((LinearLayout) rootView, AllExercises, toSports, userSport);
+      return new HomePageBinding((LinearLayout) rootView, AllExercises, createAWorkoutButton,
+          toSports, userSport);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
