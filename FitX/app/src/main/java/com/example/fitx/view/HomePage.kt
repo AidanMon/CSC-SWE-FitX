@@ -45,6 +45,10 @@ class HomePage: Fragment() {
             findNavController().navigate((R.id.action_HomePage_to_SportsWorkouts))
         }
 
+        binding.HealthyTips.setOnClickListener{
+            findNavController().navigate(R.id.action_HomePage_to_HealthyTips)
+        }
+
         //Button for user sport
         binding.userSport.setOnClickListener {
             //Code to find user sport and go to that page

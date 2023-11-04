@@ -78,6 +78,16 @@
         <action
             android:id="@+id/action_HomePage_to_SwimmingWorkouts"
             app:destination="@id/SwimmingWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_HealthyTips"
+            app:destination="@id/HealthyTips"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/HealthyTips"
+        android:name="com.example.fitx.view.HealthyTips"
+        android:label="@string/healthy_tips_label"
+        tools:layout="@layout/healthy_tips">
     </fragment>
 
     <!--Added-->

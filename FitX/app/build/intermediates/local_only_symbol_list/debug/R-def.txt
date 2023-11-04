@@ -22,6 +22,7 @@ id FootballLowerBody
 id FootballSaA
 id FootballUpperBody
 id FootballWorkouts
+id HealthyTips
 id HomePage
 id LoginScreen
 id SoccerWorkouts
@@ -36,6 +37,7 @@ id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
 id action_HomePage_to_FootballWorkouts
+id action_HomePage_to_HealthyTips
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -154,7 +156,6 @@ id lateralShufflesLayout
 id lateralShufflesPlayVideo
 id lateralShufflesText
 id loginMessageTextView
-id logoutButton
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo
@@ -250,6 +251,9 @@ id tennisHeader
 id textview_first
 id textview_second
 id theVideoPlayer
+id tipDesc
+id tipName
+id tipsListView
 id toFootballFullBodyExplosiveStrength
 id toFootballLowerBody
 id toFootballSpeedAndAgility
@@ -287,7 +291,9 @@ layout football_upper_body_frag
 layout football_workouts_frag
 layout fragment_first
 layout fragment_second
+layout healthy_tips
 layout home_page
+layout list_item_tip
 layout login_screen
 layout soccer_workouts_frag
 layout swimming_workouts_frag
@@ -316,6 +322,8 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string healthy_tips_label
+string hello_blank_fragment
 string lorem_ipsum
 string my_sport_string
 string next

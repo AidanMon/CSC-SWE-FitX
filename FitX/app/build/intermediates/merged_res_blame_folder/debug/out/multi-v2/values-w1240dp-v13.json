@@ -4,7 +4,7 @@
             "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zenze\\repo\\Project-fitx\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",
