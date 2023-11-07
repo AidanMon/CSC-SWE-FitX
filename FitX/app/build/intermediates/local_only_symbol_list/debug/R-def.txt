@@ -154,7 +154,6 @@ id lateralShufflesLayout
 id lateralShufflesPlayVideo
 id lateralShufflesText
 id loginMessageTextView
-id logoutButton
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo

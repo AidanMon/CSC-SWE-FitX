@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-56:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zenze\\.gradle\\caches\\transforms-3\\86790846f4c78b3b6a078d36765c2a9f\\transformed\\material-1.8.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",

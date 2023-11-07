@@ -12,7 +12,9 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.fitx.databinding.ActivityMainBinding
+import com.example.fitx.repository.MessageService
 import com.example.fitx.repository.UserRepository
+import com.google.firebase.FirebaseApp
 
 class MainActivity : AppCompatActivity() {
     private var userRepository = UserRepository()
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        FirebaseApp.initializeApp(this)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

@@ -10,6 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.fitx.R
 import com.example.fitx.databinding.HomePageBinding
 import com.example.fitx.repository.UserRepository
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
 
 /**
  * Home Page holds all the data that is going to displayed to the user to interact with

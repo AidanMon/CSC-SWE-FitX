@@ -1885,6 +1885,7 @@
     <string name="fallback_menu_item_copy_link">Copy link</string>
     <string name="fallback_menu_item_open_in_browser">Open in browser</string>
     <string name="fallback_menu_item_share_link">Share link</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="firebase_database_url" translatable="false">https://fitx-group9-default-rtdb.firebaseio.com</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="football_full_body_explosive_strength">Explosive Strength Football</string>
