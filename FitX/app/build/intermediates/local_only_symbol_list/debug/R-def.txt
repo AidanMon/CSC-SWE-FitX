@@ -85,6 +85,12 @@ id alternatingDumbbellCurlsInfo
 id alternatingDumbbellCurlsLayout
 id alternatingDumbbellCurlsPlayVideo
 id alternatingDumbbellCurlsText
+id armsLayout
+id armsShowAll
+id armsText
+id backLayout
+id backShowAll
+id backText
 id baseballHeader
 id baseballImage
 id basketballHeader
@@ -114,6 +120,12 @@ id calfRaisesInfo
 id calfRaisesLayout
 id calfRaisesPlayVideo
 id calfRaisesText
+id chestLayout
+id chestShowAll
+id chestText
+id coreLayout
+id coreShowAll
+id coreText
 id createAWorkoutButton
 id createAWorkoutHeader
 id createAccountTextView
@@ -224,6 +236,7 @@ id pushupToBoxJumpText
 id rowsLayout
 id rowsPlayVideo
 id rowsText
+id saveCreatedWorkout
 id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo

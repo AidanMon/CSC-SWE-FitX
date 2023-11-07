@@ -3057,12 +3057,18 @@ id animateToStart
 id antiClockwise
 id anticipate
 id arc
+id armsLayout
+id armsShowAll
+id armsText
 id asConfigured
 id async
 id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id backLayout
+id backShowAll
+id backText
 id barrier
 id baseballHeader
 id baseballImage
@@ -3123,6 +3129,9 @@ id chain2
 id chains
 id checkbox
 id checked
+id chestLayout
+id chestShowAll
+id chestText
 id chronometer
 id circle_center
 id clear_text
@@ -3140,6 +3149,9 @@ id contentPanel
 id contiguous
 id continuousVelocity
 id coordinator
+id coreLayout
+id coreShowAll
+id coreText
 id cos
 id counterclockwise
 id cradle
@@ -3479,6 +3491,7 @@ id rowsLayout
 id rowsPlayVideo
 id rowsText
 id rtl
+id saveCreatedWorkout
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth

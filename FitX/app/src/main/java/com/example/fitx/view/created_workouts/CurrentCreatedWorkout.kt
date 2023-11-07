@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import com.example.fitx.R
@@ -38,6 +39,9 @@ class CurrentCreatedWorkout : Fragment() {
     private var textViewList = mutableListOf<TextView>()
     private var buttonList = mutableListOf<Button>()
     private var removeButtonList = mutableListOf<Button>()
+
+    //Save button
+    private var saveButtonList = mutableListOf<AppCompatButton>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -112,6 +116,27 @@ class CurrentCreatedWorkout : Fragment() {
             removeButtonList.add(addButton)
         }
 
+        val saveButton = rootView.findViewById<AppCompatButton>(R.id.saveCreatedWorkout)
+        saveButtonList.add(saveButton)
+        val emptyTextView = TextView(requireContext())
+        //If there are no exercises inform the user and TODO(Ensure you cannot save the workout)
+        if(AllExerciseLists.currentCreateWorkout.size == 0){
+            parentLayout.addView(emptyTextView)
+            emptyTextView.id = View.generateViewId()
+            emptyTextView.text = "To begin, add some exercises"// Change the text
+            emptyTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 128f)
+            emptyTextView.setPadding(11,21,0,0)
+            emptyTextView.textAlignment = View.TEXT_ALIGNMENT_CENTER
+            emptyTextView.height = 350
+            emptyTextView.width = textWidthValue.toInt()
+            emptyTextView.setTextColor(Color.BLACK)
+            textViewList.add(emptyTextView)
+        }
+        else{
+            //Show save button if there are exercises
+            saveButton.visibility = View.VISIBLE
+        }
+
         //Creating our bottom padding object
         val paddingBelow = TextView(requireContext())
         parentLayout.addView(paddingBelow)
@@ -136,6 +161,11 @@ class CurrentCreatedWorkout : Fragment() {
             //Constraint for add exercise Button
             constraintSet.connect(removeButtonList[0].id, ConstraintSet.TOP, textViewList[0].id, ConstraintSet.TOP, 21)
             constraintSet.connect(removeButtonList[0].id, ConstraintSet.RIGHT, textViewList[0].id, ConstraintSet.RIGHT, 250)
+        }
+        //If there are no exercises set constraints
+        else{
+            constraintSet.connect(emptyTextView.id, ConstraintSet.TOP, R.id.enterFullScreenButton, ConstraintSet.BOTTOM, 21)
+            constraintSet.connect(emptyTextView.id, ConstraintSet.LEFT, R.id.parentLayout,ConstraintSet.LEFT)
         }
 
         //Constraints for the remainder of the exercises
@@ -244,6 +274,9 @@ class CurrentCreatedWorkout : Fragment() {
                 removeButtonList[i].visibility = View.GONE
                 textViewList[i].visibility = View.GONE
                 buttonList[i].visibility = View.GONE
+                if(AllExerciseLists.currentCreateWorkout.size == 0){
+                    saveButtonList[0].visibility = View.GONE
+                }
             }
         }
 

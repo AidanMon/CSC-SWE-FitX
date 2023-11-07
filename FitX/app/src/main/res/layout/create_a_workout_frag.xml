@@ -102,7 +102,182 @@
                 app:layout_constraintTop_toBottomOf="@id/legsText"
                 android:background="@drawable/triple_border_top_gone"
                 android:visibility="gone">
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <!--Title for Chest-->
+            <TextView
+                android:id="@+id/chestText"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/workout_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Chest"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@id/legsLayout"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"/>
+
+            <!--Chest exercises show all button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/chestShowAll"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/add_to_button"
+                android:text="Show all"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/chestText"
+                app:layout_constraintTop_toTopOf="@id/chestText" />
+
+            <!--Chest layout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chestLayout"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chestText"
+                android:background="@drawable/triple_border_top_gone"
+                android:visibility="gone">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Title for Back-->
+            <TextView
+                android:id="@+id/backText"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/workout_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Back"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@id/chestLayout"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"/>
+
+            <!--Back exercises show all button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/backShowAll"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/add_to_button"
+                android:text="Show all"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/backText"
+                app:layout_constraintTop_toTopOf="@id/backText" />
+
+            <!--Back layout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/backLayout"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/backText"
+                android:background="@drawable/triple_border_top_gone"
+                android:visibility="gone">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Title for Arms-->
+            <TextView
+                android:id="@+id/armsText"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/workout_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Arms"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@id/backLayout"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"/>
+
+            <!--Arms exercises show all button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/armsShowAll"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/add_to_button"
+                android:text="Show all"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/armsText"
+                app:layout_constraintTop_toTopOf="@id/armsText" />
+
+            <!--Arms layout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/armsLayout"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/armsText"
+                android:background="@drawable/triple_border_top_gone"
+                android:visibility="gone">
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--Title for Core-->
+            <TextView
+                android:id="@+id/coreText"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/workout_border"
+                android:paddingTop="8sp"
+                android:paddingLeft="4sp"
+                android:text="Core"
+                android:textAlignment="viewStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintTop_toBottomOf="@id/armsLayout"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"/>
+
+            <!--Core exercises show all button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/coreShowAll"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/add_to_button"
+                android:text="Show all"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/coreText"
+                app:layout_constraintTop_toTopOf="@id/coreText" />
+
+            <!--Core layout-->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/coreLayout"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-4dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coreText"
+                android:background="@drawable/triple_border_top_gone"
+                android:visibility="gone">
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <!--Move to bottom of the last layout added-->
@@ -112,7 +287,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="624dp"
                 app:layout_constraintLeft_toLeftOf="@id/parentLayout"
-                app:layout_constraintTop_toBottomOf="@id/legsLayout" />
+                app:layout_constraintTop_toBottomOf="@id/coreLayout" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -156,7 +331,7 @@
         android:layout_gravity="top"
         >
 
-        <!--Leg exercises show all button-->
+        <!--Show current workout button-->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/showCreatedWorkout"
             android:layout_width="80dp"

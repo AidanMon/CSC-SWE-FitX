@@ -27,15 +27,6 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 
 class CreateAWorkout : Fragment() {
 
-    //Function to truncate Exercise names that are too long
-    fun setStringMaxLength(input: String, maxLength: Int): String {
-        return if (input.length <= maxLength) {
-            input
-        } else {
-            input.substring(0, maxLength) + "."
-        }
-    }
-
     //Variables for the youtube player
     private lateinit var youTubePlayerView: YouTubePlayerView
     private var youTubePlayer: YouTubePlayer? = null
@@ -64,7 +55,160 @@ class CreateAWorkout : Fragment() {
     private var coreButtonList = mutableListOf<Button>()
 
     //List for user made workout
-    private var legsAddToWorkoutList = mutableListOf<Button>()
+    private var legAddToWorkoutList = mutableListOf<Button>()
+    private var chestAddToWorkoutList = mutableListOf<Button>()
+    private var backAddToWorkoutList = mutableListOf<Button>()
+    private var armAddToWorkoutList = mutableListOf<Button>()
+    private var coreAddToWorkoutList = mutableListOf<Button>()
+
+    //Function to truncate Exercise names that are too long
+    private fun setStringMaxLength(input: String, maxLength: Int): String {
+        return if (input.length <= maxLength) {
+            input
+        } else {
+            input.substring(0, maxLength) + "."
+        }
+    }
+
+    val dpTextHeightValue = 64
+    val textHeightValue = TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, dpTextHeightValue.toFloat(), Resources.getSystem().displayMetrics
+    )
+    val dpTextWidthValue = 380
+    val textWidthValue = TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, dpTextWidthValue.toFloat(), Resources.getSystem().displayMetrics
+    )
+    //Button
+    val dpButtonHeightValue = 40
+    val buttonHeightValue = TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, dpButtonHeightValue.toFloat(), Resources.getSystem().displayMetrics
+    )
+    val dpButtonWidthValue = 80
+    val buttonWidthValue = TypedValue.applyDimension(
+        TypedValue.COMPLEX_UNIT_DIP, dpButtonWidthValue.toFloat(), Resources.getSystem().displayMetrics
+    )
+
+    //Function to create our views for each muscle group
+    private fun createAllViews(exerciseList: MutableList<Exercise>, constraintLayout: ConstraintLayout, textViewList: MutableList<TextView>,
+                               buttonList: MutableList<Button>, addToWorkoutList: MutableList<Button>){
+        //Creating the TextViews and all Buttons for the leg exercises
+        for(exercise in exerciseList){
+            //Creating out TextViews
+            val newTextView = TextView(requireContext())
+            constraintLayout.addView(newTextView)
+            newTextView.id = View.generateViewId()
+            newTextView.text = setStringMaxLength(exercise.exerciseName,16)// Change the text
+            newTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 64f)
+            newTextView.setPadding(11,21,0,0)
+            newTextView.height = textHeightValue.toInt()
+            newTextView.width = textWidthValue.toInt()
+            newTextView.setTextColor(Color.BLACK)
+            //newTextView.textAlignment = TextView.TEXT_ALIGNMENT_VIEW_START
+            newTextView.setBackgroundResource(R.drawable.exercise_border)
+            textViewList.add(newTextView)
+
+            //Creating our buttons
+            val newButton = Button(requireContext())
+            constraintLayout.addView(newButton)
+            //newButton.tag = (element.exerciseName + "Video")            //Just the tag
+            newButton.id = View.generateViewId()
+            newButton.text = "Example"                                  // Change the text
+            newButton.setTextSize(TypedValue.COMPLEX_UNIT_PX, 37f)  //Text size
+            newButton.gravity = Gravity.CENTER                          //Text centered
+            newButton.height = buttonHeightValue.toInt()                //Text height
+            newButton.width = buttonWidthValue.toInt()                  //Text width
+            newButton.setTextColor(Color.WHITE)                         //Text color
+            newButton.setBackgroundResource(R.drawable.rounded_button)
+            buttonList.add(newButton)
+
+            //Creating our add buttons
+            val addButton = Button(requireContext())
+            constraintLayout.addView(addButton)
+            //newButton.tag = (element.exerciseName + "Video")            //Just the tag
+            addButton.id = View.generateViewId()
+            addButton.text = "Add Exercise"                                  // Change the text
+            addButton.setTextSize(TypedValue.COMPLEX_UNIT_PX, 37f)  //Text size
+            addButton.setPadding(0,0,0,5)                        //Text centered
+            addButton.height = buttonHeightValue.toInt()                //Text height
+            addButton.width = buttonWidthValue.toInt()                  //Text width
+            addButton.setTextColor(Color.WHITE)                         //Text color
+            addButton.setBackgroundResource(R.drawable.rounded_button)
+            addToWorkoutList.add(addButton)
+        }
+    }
+
+    //Function set the constraints of our added items
+    private fun setConstraint(constraintLayout: ConstraintLayout, layoutID: Int, textViewList: MutableList<TextView>,
+                              buttonList: MutableList<Button>, addToWorkoutList: MutableList<Button>){
+        //Beginning of setting constraints
+        val constraintSet = ConstraintSet()
+        constraintSet.clone(constraintLayout)
+
+        //Constraint for first TextView
+        constraintSet.connect(textViewList[0].id, ConstraintSet.TOP, layoutID, ConstraintSet.TOP, 21)
+        constraintSet.connect(textViewList[0].id, ConstraintSet.LEFT, layoutID,ConstraintSet.LEFT)
+
+        //Constraint for first Button
+        constraintSet.connect(buttonList[0].id, ConstraintSet.TOP, textViewList[0].id, ConstraintSet.TOP, 21)
+        constraintSet.connect(buttonList[0].id, ConstraintSet.RIGHT, textViewList[0].id, ConstraintSet.RIGHT, 6)
+
+        //Constraint for add exercise Button
+        constraintSet.connect(addToWorkoutList[0].id, ConstraintSet.TOP, textViewList[0].id, ConstraintSet.TOP, 21)
+        constraintSet.connect(addToWorkoutList[0].id, ConstraintSet.RIGHT, textViewList[0].id, ConstraintSet.RIGHT, 250)
+
+        //Constraints for the remainder of the exercises
+        for(i in 1 until textViewList.size){
+            //TextView constraints
+            constraintSet.connect(textViewList[i].id, ConstraintSet.TOP, textViewList[i-1].id, ConstraintSet.BOTTOM, 21)
+            constraintSet.connect(textViewList[i].id, ConstraintSet.LEFT, layoutID,ConstraintSet.LEFT)
+
+            //Button constraints
+            constraintSet.connect(buttonList[i].id, ConstraintSet.TOP, textViewList[i].id, ConstraintSet.TOP, 21)
+            constraintSet.connect(buttonList[i].id, ConstraintSet.RIGHT, textViewList[i].id, ConstraintSet.RIGHT, 6)
+
+            //Constraint for add exercise Button
+            constraintSet.connect(addToWorkoutList[i].id, ConstraintSet.TOP, textViewList[i].id, ConstraintSet.TOP, 21)
+            constraintSet.connect(addToWorkoutList[i].id, ConstraintSet.RIGHT, textViewList[i].id, ConstraintSet.RIGHT, 250)
+        }
+
+        constraintSet.applyTo(constraintLayout)
+
+
+    }
+
+    //Function to add all of the button listeners
+    private fun addButtonListeners(view: View, exerciseList: MutableList<Exercise>, buttonList: MutableList<Button>,
+                                   addToWorkoutList: MutableList<Button>, showAll: Int, layoutID: Int,
+                                   textViewID: Int){
+        //Adding the button listeners for the exercise videos
+        for (i in 0 until exerciseList.size){
+            buttonList[i].setOnClickListener {
+                changeVideo(exerciseList[i].videoID, youTubePlayerView)
+            }
+        }
+
+        //Adding show all buttons
+        val button = view.findViewById<AppCompatButton>(showAll)
+        val myConstraintLayout = view.findViewById<ConstraintLayout>(layoutID)
+        val textView = view.findViewById<TextView>(textViewID)
+
+        button.setOnClickListener {
+            if (myConstraintLayout.visibility == View.GONE) {
+                myConstraintLayout.visibility = View.VISIBLE
+                textView.setBackgroundResource(R.drawable.triple_border_bottom_gone)
+            } else {
+                myConstraintLayout.visibility = View.GONE
+                textView.setBackgroundResource(R.drawable.workout_border)
+            }
+        }
+
+        //Button listeners for the add to buttons
+        for (i in 0 until addToWorkoutList.size){
+            addToWorkoutList[i].setOnClickListener {
+                AllExerciseLists.currentCreateWorkout.add(exerciseList[i])
+            }
+        }
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -76,42 +220,30 @@ class CreateAWorkout : Fragment() {
         val rootView = inflater.inflate(R.layout.create_a_workout_frag, container, false)
         val parentLayout = rootView.findViewById<ConstraintLayout>(R.id.parentLayout)
 
-        legExercises = mutableListOf<Exercise>()
-        legTextViewList = mutableListOf<TextView>()
-        legButtonList = mutableListOf<Button>()
-        chestExercises = mutableListOf<Exercise>()
-        chestTextViewList = mutableListOf<TextView>()
-        chestButtonList = mutableListOf<Button>()
-        backExercises = mutableListOf<Exercise>()
-        backTextViewList = mutableListOf<TextView>()
-        backButtonList = mutableListOf<Button>()
-        armExercises = mutableListOf<Exercise>()
-        armTextViewList = mutableListOf<TextView>()
-        armButtonList = mutableListOf<Button>()
-        coreExercises = mutableListOf<Exercise>()
-        coreTextViewList = mutableListOf<TextView>()
-        coreButtonList = mutableListOf<Button>()
-        legsAddToWorkoutList = mutableListOf<Button>()
+        //Zeroing out all the lists so we don't get copies
+        legExercises = mutableListOf()
+        legTextViewList = mutableListOf()
+        legButtonList = mutableListOf()
+        legAddToWorkoutList = mutableListOf()
+        chestExercises = mutableListOf()
+        chestTextViewList = mutableListOf()
+        chestButtonList = mutableListOf()
+        chestAddToWorkoutList = mutableListOf()
+        backExercises = mutableListOf()
+        backTextViewList = mutableListOf()
+        backButtonList = mutableListOf()
+        backAddToWorkoutList = mutableListOf()
+        armExercises = mutableListOf()
+        armTextViewList = mutableListOf()
+        armButtonList = mutableListOf()
+        armAddToWorkoutList = mutableListOf()
+        coreExercises = mutableListOf()
+        coreTextViewList = mutableListOf()
+        coreButtonList = mutableListOf()
+        coreAddToWorkoutList = mutableListOf()
 
         //Calculating our height and width for our different items
         //TextView
-        var dpValue = 64
-        val textHeightValue = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), Resources.getSystem().displayMetrics
-        )
-        dpValue = 380
-        val textWidthValue = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), Resources.getSystem().displayMetrics
-        )
-        //Button
-        dpValue = 40
-        val buttonHeightValue = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), Resources.getSystem().displayMetrics
-        )
-        dpValue = 80
-        val buttonWidthValue = TypedValue.applyDimension(
-            TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), Resources.getSystem().displayMetrics
-        )
 
         for(list in AllExerciseLists.exerciseList){
             val muscleGroups = list.muscleGroup.split("/")      //Finding all muscle groups for an exercise
@@ -127,86 +259,30 @@ class CreateAWorkout : Fragment() {
             }
         }
 
+        //Leg Views added
         val legConstraintLayout = rootView.findViewById<ConstraintLayout>(R.id.legsLayout)
+        createAllViews(legExercises, legConstraintLayout, legTextViewList, legButtonList, legAddToWorkoutList)
+        setConstraint(legConstraintLayout, R.id.legsLayout, legTextViewList, legButtonList, legAddToWorkoutList)
 
-        //Creating the TextViews and all Buttons for the exercises
-        for(exercise in legExercises){
-            //Creating out TextViews
-            val newTextView = TextView(requireContext())
-            legConstraintLayout.addView(newTextView)
-            newTextView.id = View.generateViewId()
-            newTextView.text = setStringMaxLength(exercise.exerciseName,16)// Change the text
-            newTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, 64f)
-            newTextView.setPadding(11,21,0,0)
-            newTextView.height = textHeightValue.toInt()
-            newTextView.width = textWidthValue.toInt()
-            newTextView.setTextColor(Color.BLACK)
-            //newTextView.textAlignment = TextView.TEXT_ALIGNMENT_VIEW_START
-            newTextView.setBackgroundResource(R.drawable.exercise_border)
-            legTextViewList.add(newTextView)
+        //Chest Views added
+        val chestConstraintLayout = rootView.findViewById<ConstraintLayout>(R.id.chestLayout)
+        createAllViews(chestExercises, chestConstraintLayout, chestTextViewList, chestButtonList, chestAddToWorkoutList)
+        setConstraint(chestConstraintLayout, R.id.chestLayout, chestTextViewList, chestButtonList, chestAddToWorkoutList)
 
-            //Creating our buttons
-            val newButton = Button(requireContext())
-            legConstraintLayout.addView(newButton)
-            //newButton.tag = (element.exerciseName + "Video")            //Just the tag
-            newButton.id = View.generateViewId()
-            newButton.text = "Example"                                  // Change the text
-            newButton.setTextSize(TypedValue.COMPLEX_UNIT_PX, 37f)  //Text size
-            newButton.gravity = Gravity.CENTER                          //Text centered
-            newButton.height = buttonHeightValue.toInt()                //Text height
-            newButton.width = buttonWidthValue.toInt()                  //Text width
-            newButton.setTextColor(Color.WHITE)                         //Text color
-            newButton.setBackgroundResource(R.drawable.rounded_button)
-            legButtonList.add(newButton)
+        //Back Views added
+        val backConstraintLayout = rootView.findViewById<ConstraintLayout>(R.id.backLayout)
+        createAllViews(backExercises, backConstraintLayout, backTextViewList, backButtonList, backAddToWorkoutList)
+        setConstraint(backConstraintLayout, R.id.backLayout, backTextViewList, backButtonList, backAddToWorkoutList)
 
-            //Creating our add buttons
-            val addButton = Button(requireContext())
-            legConstraintLayout.addView(addButton)
-            //newButton.tag = (element.exerciseName + "Video")            //Just the tag
-            addButton.id = View.generateViewId()
-            addButton.text = "Add Exercise"                                  // Change the text
-            addButton.setTextSize(TypedValue.COMPLEX_UNIT_PX, 37f)  //Text size
-            addButton.setPadding(0,0,0,5)                        //Text centered
-            addButton.height = buttonHeightValue.toInt()                //Text height
-            addButton.width = buttonWidthValue.toInt()                  //Text width
-            addButton.setTextColor(Color.WHITE)                         //Text color
-            addButton.setBackgroundResource(R.drawable.rounded_button)
-            legsAddToWorkoutList.add(addButton)
-        }
+        //Arm Views added
+        val armConstraintLayout = rootView.findViewById<ConstraintLayout>(R.id.armsLayout)
+        createAllViews(armExercises, armConstraintLayout, armTextViewList, armButtonList, armAddToWorkoutList)
+        setConstraint(armConstraintLayout, R.id.armsLayout, armTextViewList, armButtonList, armAddToWorkoutList)
 
-        //Beginning of setting constraints
-        val constraintSet = ConstraintSet()
-        constraintSet.clone(legConstraintLayout)
-
-        //Constraint for first TextView
-        constraintSet.connect(legTextViewList[0].id, ConstraintSet.TOP, R.id.legsLayout, ConstraintSet.TOP, 21)
-        constraintSet.connect(legTextViewList[0].id, ConstraintSet.LEFT, R.id.legsLayout,ConstraintSet.LEFT)
-
-        //Constraint for first Button
-        constraintSet.connect(legButtonList[0].id, ConstraintSet.TOP, legTextViewList[0].id, ConstraintSet.TOP, 21)
-        constraintSet.connect(legButtonList[0].id, ConstraintSet.RIGHT, legTextViewList[0].id, ConstraintSet.RIGHT, 6)
-
-        //Constraint for add exercise Button
-        constraintSet.connect(legsAddToWorkoutList[0].id, ConstraintSet.TOP, legTextViewList[0].id, ConstraintSet.TOP, 21)
-        constraintSet.connect(legsAddToWorkoutList[0].id, ConstraintSet.RIGHT, legTextViewList[0].id, ConstraintSet.RIGHT, 250)
-
-        //Constraints for the remainder of the exercises
-        for(i in 1 until legTextViewList.size){
-            //TextView constraints
-            constraintSet.connect(legTextViewList[i].id, ConstraintSet.TOP, legTextViewList[i-1].id, ConstraintSet.BOTTOM, 21)
-            constraintSet.connect(legTextViewList[i].id, ConstraintSet.LEFT, R.id.legsLayout,ConstraintSet.LEFT)
-
-            //Button constraints
-            constraintSet.connect(legButtonList[i].id, ConstraintSet.TOP, legTextViewList[i].id, ConstraintSet.TOP, 21)
-            constraintSet.connect(legButtonList[i].id, ConstraintSet.RIGHT, legTextViewList[i].id, ConstraintSet.RIGHT, 6)
-
-            //Constraint for add exercise Button
-            constraintSet.connect(legsAddToWorkoutList[i].id, ConstraintSet.TOP, legTextViewList[i].id, ConstraintSet.TOP, 21)
-            constraintSet.connect(legsAddToWorkoutList[i].id, ConstraintSet.RIGHT, legTextViewList[i].id, ConstraintSet.RIGHT, 250)
-        }
-
-
-        constraintSet.applyTo(legConstraintLayout)
+        //Core Views added
+        val coreConstraintLayout = rootView.findViewById<ConstraintLayout>(R.id.coreLayout)
+        createAllViews(coreExercises, coreConstraintLayout, coreTextViewList, coreButtonList, coreAddToWorkoutList)
+        setConstraint(coreConstraintLayout, R.id.coreLayout, coreTextViewList, coreButtonList, coreAddToWorkoutList)
 
         // Return the rootView of the fragment
         return rootView
@@ -266,42 +342,17 @@ class CreateAWorkout : Fragment() {
             }
         })
 
-        //Adding the button listeners for the exercise videos
-        for (i in 0 until legExercises.size){
-            legButtonList[i].setOnClickListener {
-                changeVideo(legExercises[i].videoID, youTubePlayerView)
-            }
-        }
-
-        //Adding show all buttons
-        val legsButton = view.findViewById<AppCompatButton>(R.id.legsShowAll)
-        val myConstraintLayout = view.findViewById<ConstraintLayout>(R.id.legsLayout)
-        val legsText = view.findViewById<TextView>(R.id.legsText)
-
-        legsButton.setOnClickListener {
-            if (myConstraintLayout.visibility == View.GONE) {
-                myConstraintLayout.visibility = View.VISIBLE
-                legsText.setBackgroundResource(R.drawable.triple_border_bottom_gone)
-            } else {
-                myConstraintLayout.visibility = View.GONE
-                legsText.setBackgroundResource(R.drawable.workout_border)
-            }
-        }
-
-        //Button listeners for the add to buttons
-        for (i in 0 until legsAddToWorkoutList.size){
-            legsAddToWorkoutList[i].setOnClickListener {
-                AllExerciseLists.currentCreateWorkout.add(legExercises[i])
-            }
-        }
+        addButtonListeners(view, legExercises, legButtonList, legAddToWorkoutList, R.id.legsShowAll, R.id.legsLayout, R.id.legsText)
+        addButtonListeners(view, chestExercises, chestButtonList, chestAddToWorkoutList, R.id.chestShowAll, R.id.chestLayout, R.id.chestText)
+        addButtonListeners(view, backExercises, backButtonList, backAddToWorkoutList, R.id.backShowAll, R.id.backLayout, R.id.backText)
+        addButtonListeners(view, armExercises, armButtonList, armAddToWorkoutList, R.id.armsShowAll, R.id.armsLayout, R.id.armsText)
+        addButtonListeners(view, coreExercises, coreButtonList, coreAddToWorkoutList, R.id.coreShowAll, R.id.coreLayout, R.id.coreText)
 
         //Show created workout button
         val toCurrentCreatedWorkoutButton = view.findViewById<AppCompatButton>(R.id.showCreatedWorkout)
         toCurrentCreatedWorkoutButton.setOnClickListener {
             findNavController().navigate(R.id.action_CreateAWorkout_to_CurrentCreatedWorkout)
         }
-
-
     }
 
     override fun onDestroyView() {

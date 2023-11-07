@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_current_created_workout_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/current_created_workout_frag.xml"
-    },
-    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_exercise_border.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\exercise_border.xml"
     },
@@ -60,6 +56,10 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\sport_workouts_frag.xml"
     },
     {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_create_a_workout_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/create_a_workout_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_soccer_workouts_frag.xml.flat",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\soccer_workouts_frag.xml"
-    },
-    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_football_lower_body_frag.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_lower_body_frag.xml"
+    },
+    {
+        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_soccer_workouts_frag.xml.flat",
+        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\soccer_workouts_frag.xml"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_fitx_volleyball_image.png.flat",
@@ -132,16 +132,16 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_all_exercises_frag.xml.flat",
+        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\all_exercises_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\mipmap-hdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_all_exercises_frag.xml.flat",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\all_exercises_frag.xml"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_login_screen.xml.flat",
@@ -206,10 +206,6 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_testing_frag.xml.flat",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\testing_frag.xml"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_swimming_workouts_frag.xml.flat",
