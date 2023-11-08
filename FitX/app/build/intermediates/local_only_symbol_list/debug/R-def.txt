@@ -6,6 +6,7 @@ color black
 color red
 color white
 dimen fab_margin
+drawable edittext_border
 drawable exercise_border
 drawable fitx_login_text
 drawable fitx_logo
@@ -17,6 +18,7 @@ id BaseballWorkouts
 id BasketballWorkouts
 id Button_login
 id CreateAccountView
+id FeedbackView
 id FootballExplosiveStrength
 id FootballLowerBody
 id FootballSaA
@@ -30,12 +32,14 @@ id SportWorkouts
 id SwimmingWorkouts
 id TennisWorkouts
 id VolleyballWorkouts
+id action_Feedback_to_HomePage
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
 id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
+id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
 id action_HomePage_to_LoginScreen
@@ -53,6 +57,7 @@ id action_SportWorkouts_to_SoccerWorkouts
 id action_SportWorkouts_to_SwimmingWorkouts
 id action_SportWorkouts_to_TennisWorkouts
 id action_SportWorkouts_to_VolleyballWorkouts
+id action_feedback
 id action_loginScreen_to_BaseballWorkouts
 id action_loginScreen_to_BasketballWorkouts
 id action_loginScreen_to_FootballWorkouts
@@ -68,6 +73,7 @@ id alternatingDumbbellCurlsInfo
 id alternatingDumbbellCurlsLayout
 id alternatingDumbbellCurlsPlayVideo
 id alternatingDumbbellCurlsText
+id anyTextView
 id baseballHeader
 id basketballHeader
 id benchPressInfo
@@ -113,8 +119,11 @@ id dumbbellFlyText
 id dumbbellRowsLayout
 id dumbbellRowsPlayVideo
 id dumbbellRowsText
+id emailEditText
+id emailTextView
 id enterFullScreenButton
 id experiencelevellist
+id feedbackTextView
 id flutterKicksLayout
 id flutterKicksPlayVideo
 id flutterKicksText
@@ -168,9 +177,14 @@ id medicineBallThrowSitupsInfo
 id medicineBallThrowSitupsLayout
 id medicineBallThrowSitupsPlayVideo
 id medicineBallThrowSitupsText
+id messageEditText
+id messageFrame
+id messageTextView
 id militaryPressLayout
 id militaryPressPlayVideo
 id militaryPressText
+id nameEditText
+id nameTextView
 id nav_graph
 id nav_host_fragment_content_main
 id overHeadPressLayout
@@ -196,6 +210,7 @@ id pushupToBoxJumpText
 id rowsLayout
 id rowsPlayVideo
 id rowsText
+id sendButton
 id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo
@@ -284,6 +299,7 @@ layout baseball_workouts_frag
 layout basketball_workouts_frag
 layout content_main
 layout create_account
+layout feed_back
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag

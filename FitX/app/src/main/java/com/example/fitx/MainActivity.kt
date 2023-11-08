@@ -31,12 +31,6 @@ class MainActivity : AppCompatActivity() {
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
-        /*binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
-         */
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -54,12 +48,10 @@ class MainActivity : AppCompatActivity() {
             userRepository.SignOut()
             Toast.makeText(this, "Logged Out", Toast.LENGTH_SHORT).show()
             findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_HomePage_to_LoginScreen)
+        }else{
+            findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_HomePage_to_FeedBack)
         }
         return super.onOptionsItemSelected(item)
-        //return when (item.itemId) {
-            //R.id.action_settings -> true
-            //else -> super.onOptionsItemSelected(item)
-            //}
     }
 
     override fun onSupportNavigateUp(): Boolean {
