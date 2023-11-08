@@ -1,7 +1,6 @@
 package com.example.fitx
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -10,11 +9,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.core.app.NavUtils
-import androidx.navigation.fragment.findNavController
 import com.example.fitx.databinding.ActivityMainBinding
 import com.example.fitx.repository.UserRepository
-import com.example.fitx.view.CreateAccountView
 
 class MainActivity : AppCompatActivity() {
     private var userRepository = UserRepository()
@@ -58,7 +54,6 @@ class MainActivity : AppCompatActivity() {
             }
             else -> return super.onOptionsItemSelected(item)
         }
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
