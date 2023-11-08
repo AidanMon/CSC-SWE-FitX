@@ -3043,7 +3043,6 @@ int id animateToEnd 0x7f09008a
 int id animateToStart 0x7f09008b
 int id antiClockwise 0x7f09008c
 int id anticipate 0x7f09008d
-int id anyTextView 0x7f09008e
 int id arc 0x7f09008f
 int id asConfigured 0x7f090090
 int id async 0x7f090091

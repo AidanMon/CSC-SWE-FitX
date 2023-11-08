@@ -51,6 +51,9 @@ public final class UserRepository {
     kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> callback) {
     }
     
+    /**
+     * When the user provides feedback on the application. It will save the response in the database.
+     */
     public final void retrieveFeedback(@org.jetbrains.annotations.NotNull
     java.lang.String message) {
     }

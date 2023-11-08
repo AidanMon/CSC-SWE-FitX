@@ -73,7 +73,6 @@ id alternatingDumbbellCurlsInfo
 id alternatingDumbbellCurlsLayout
 id alternatingDumbbellCurlsPlayVideo
 id alternatingDumbbellCurlsText
-id anyTextView
 id baseballHeader
 id basketballHeader
 id benchPressInfo

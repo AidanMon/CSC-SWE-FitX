@@ -44,6 +44,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="FeedbackView">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_Feedback_to_HomePage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="FootballExplosiveStrength">
                     <value>
                       <LayoutPositions>
@@ -157,6 +178,11 @@
                               </value>
                             </entry>
                             <entry key="action_HomePage_to_BasketballWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_HomePage_to_FeedBack">
                               <value>
                                 <LayoutPositions />
                               </value>
