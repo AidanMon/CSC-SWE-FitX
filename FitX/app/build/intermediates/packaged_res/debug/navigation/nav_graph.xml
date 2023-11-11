@@ -78,7 +78,6 @@
         <action
             android:id="@+id/action_HomePage_to_SwimmingWorkouts"
             app:destination="@id/SwimmingWorkouts" />
-<<<<<<< HEAD
 
         <!--All Exercises Navigation-->
         <action
@@ -178,7 +177,6 @@
         android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
         android:label="@string/input_user_workout_data_label"
         tools:layout="@layout/input_user_workout_data_frag">
-=======
         <action
             android:id="@+id/action_HomePage_to_HealthyTips"
             app:destination="@id/HealthyTips"/>
@@ -193,7 +191,6 @@
         android:name="com.example.fitx.view.HealthyTips"
         android:label="@string/healthy_tips_label"
         tools:layout="@layout/healthy_tips">
->>>>>>> origin/develop
     </fragment>
 
     <!--Added-->
