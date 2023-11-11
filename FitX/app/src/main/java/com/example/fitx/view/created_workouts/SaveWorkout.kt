@@ -48,7 +48,7 @@ class SaveWorkout : Fragment() {
 
             //Creating a new collection with inputted name
             val userCollections = userDocumentReference.collection(workoutName.text.toString())
-            if(workoutName.text.toString() == "Scheduled Workouts" || workoutName.text.toString() == "Input Data"){
+            if(workoutName.text.toString() == "Scheduled Workouts" || workoutName.text.toString() == "Input Data" || workoutName.text.toString() == "Feedback"){
                 //Invalid workout name
                 val textName = workoutName.text.toString()
                 Toast.makeText(requireActivity(), "Error, you cannot have a workout names $textName", Toast.LENGTH_LONG).show()

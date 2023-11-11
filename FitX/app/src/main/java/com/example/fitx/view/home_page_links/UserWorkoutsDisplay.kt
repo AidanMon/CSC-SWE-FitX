@@ -144,12 +144,18 @@ class UserWorkoutsDisplay : Fragment() {
         val rootView = inflater.inflate(R.layout.user_workouts_display_frag, container, false)
         val parentLayout = rootView.findViewById<ConstraintLayout>(R.id.parentLayout)
 
-        for(workout in AllExerciseLists.userMadeWorkouts){
-            workoutNameList.add(workout.first)
-        }
+        if(AllExerciseLists.userMadeWorkouts.size != 0){
+            for(workout in AllExerciseLists.userMadeWorkouts){
+                workoutNameList.add(workout.first)
+            }
 
-        createAllViews(workoutNameList,parentLayout,textViewList,buttonList)
-        setConstraint(parentLayout, R.id.parentLayout, textViewList,buttonList)
+            createAllViews(workoutNameList,parentLayout,textViewList,buttonList)
+            setConstraint(parentLayout, R.id.parentLayout, textViewList,buttonList)
+        }
+        else{
+            val emptyNotice = rootView.findViewById<TextView>(R.id.noUserWorkoutsNotice)
+            emptyNotice.visibility = View.VISIBLE
+        }
 
         // Return the rootView of the fragment
         return rootView

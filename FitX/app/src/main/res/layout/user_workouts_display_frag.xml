@@ -20,7 +20,7 @@
             android:id="@+id/parentLayout"
             android:layout_width="match_parent"
             android:paddingLeft="16dp"
-            android:layout_height="500dp">
+            android:layout_height="wrap_content">
 
             <!--Header-->
             <TextView
@@ -37,6 +37,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0" />
+
+            <!--No user workouts notice-->
+            <TextView
+                android:id="@+id/noUserWorkoutsNotice"
+                android:layout_width="380sp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="32dp"
+                android:text="You have not made any workouts yet. Head over to create a workout to being planning! "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userWorkoutsDisplayHeader" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

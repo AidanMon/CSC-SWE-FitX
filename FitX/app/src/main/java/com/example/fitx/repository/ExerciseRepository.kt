@@ -72,6 +72,7 @@ class ExerciseRepository {
                             val collectionNames = documentSnapshot.getString("Collections").toString().replace(", ", ",").split(",").toMutableList()
                             collectionNames.remove("Scheduled Workouts")
                             collectionNames.remove("Input Data")
+                            collectionNames.remove("Feedback")
                             for (collectionName in collectionNames) {
                                 val collectionReference = db.collection("users").document(currentUser.uid).collection(collectionName)
 

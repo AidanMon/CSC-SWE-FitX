@@ -3444,6 +3444,7 @@ id neverCompleteToEnd
 id neverCompleteToStart
 id noScroll
 id noState
+id noUserWorkoutsNotice
 id none
 id normal
 id north
@@ -3906,6 +3907,7 @@ layout football_workouts_frag
 layout fragment_first
 layout fragment_second
 layout home_page
+layout input_user_workout_data_frag
 layout login_screen
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

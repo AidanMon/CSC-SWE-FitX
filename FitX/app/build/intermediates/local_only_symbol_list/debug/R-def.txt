@@ -231,6 +231,7 @@ id militaryPressText
 id nav_graph
 id nav_host_fragment_content_main
 id nestedScrollView
+id noUserWorkoutsNotice
 id overHeadPressLayout
 id overHeadPressPlayVideo
 id overHeadPressText
@@ -377,6 +378,7 @@ layout football_workouts_frag
 layout fragment_first
 layout fragment_second
 layout home_page
+layout input_user_workout_data_frag
 layout login_screen
 layout save_workout_frag
 layout soccer_workouts_frag
