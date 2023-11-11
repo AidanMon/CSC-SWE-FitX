@@ -73,32 +73,38 @@ class ExerciseRepository {
                             collectionNames.remove("Scheduled Workouts")
                             collectionNames.remove("Input Data")
                             collectionNames.remove("Feedback")
-                            for (collectionName in collectionNames) {
-                                val collectionReference = db.collection("users").document(currentUser.uid).collection(collectionName)
+                            if(collectionNames[0] == ""){
+                                val error = mutableListOf<Pair<String, MutableList<Exercise>>>()
+                                callback.onError(error)
+                            }
+                            else{
+                                for (collectionName in collectionNames) {
+                                    val collectionReference = db.collection("users").document(currentUser.uid).collection(collectionName)
 
-                                collectionReference.get()
-                                    .addOnSuccessListener { querySnapshot ->
-                                        val exercises = mutableListOf<Exercise>()
+                                    collectionReference.get()
+                                        .addOnSuccessListener { querySnapshot ->
+                                            val exercises = mutableListOf<Exercise>()
 
-                                        for (document in querySnapshot.documents) {
-                                            val exercise = document.toObject(Exercise::class.java)
-                                            if (exercise != null) {
-                                                exercises.add(exercise)
+                                            for (document in querySnapshot.documents) {
+                                                val exercise = document.toObject(Exercise::class.java)
+                                                if (exercise != null) {
+                                                    exercises.add(exercise)
+                                                }
                                             }
-                                        }
 
-                                        val exerciseTuple: Pair<String, MutableList<Exercise>> = Pair(collectionName, exercises)
-                                        userWorkoutList.add(exerciseTuple)
+                                            val exerciseTuple: Pair<String, MutableList<Exercise>> = Pair(collectionName, exercises)
+                                            userWorkoutList.add(exerciseTuple)
 
-                                        if (userWorkoutList.size == collectionNames.size) {
-                                            // If all collections have been processed, invoke the callback
-                                            callback.onWorkoutsReceived(userWorkoutList)
+                                            if (userWorkoutList.size == collectionNames.size) {
+                                                // If all collections have been processed, invoke the callback
+                                                callback.onWorkoutsReceived(userWorkoutList)
+                                            }
+                                        }   //Fail to get collection for some reason
+                                        .addOnFailureListener {
+                                            val error = mutableListOf<Pair<String, MutableList<Exercise>>>()
+                                            callback.onError(error)
                                         }
-                                    }   //Fail to get collection for some reason
-                                    .addOnFailureListener {
-                                        val error = mutableListOf<Pair<String, MutableList<Exercise>>>()
-                                        callback.onError(error)
-                                    }
+                                }
                             }
 
                         } else {

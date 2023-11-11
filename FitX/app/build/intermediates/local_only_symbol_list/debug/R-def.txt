@@ -192,6 +192,8 @@ id inclineWeightedSitupsInfo
 id inclineWeightedSitupsLayout
 id inclineWeightedSitupsPlayVideo
 id inclineWeightedSitupsText
+id inputUserWorkoutDataButton
+id inputUserWorkoutDataHeader
 id jumpAndReachInfo
 id jumpAndReachLayout
 id jumpAndReachPlayVideo

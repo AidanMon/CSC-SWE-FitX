@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_input_user_workout_data_frag.xml.flat",
+        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\input_user_workout_data_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_exercise_border.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\exercise_border.xml"
     },
@@ -50,10 +54,6 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_user_workouts_display_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/user_workouts_display_frag.xml"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_sport_workouts_frag.xml.flat",
@@ -164,10 +164,6 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_input_user_workout_data_frag.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/input_user_workout_data_frag.xml"
-    },
-    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_triple_border_bottom_gone.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\triple_border_bottom_gone.xml"
     },
@@ -246,5 +242,9 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_fitx_swimming_image.png.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\fitx_swimming_image.png"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_home_page.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/home_page.xml"
     }
 ]
