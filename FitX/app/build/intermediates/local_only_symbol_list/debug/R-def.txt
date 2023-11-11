@@ -7,11 +7,8 @@ color purple
 color red
 color white
 dimen fab_margin
-<<<<<<< HEAD
 drawable add_to_button
-=======
 drawable edittext_border
->>>>>>> origin/develop
 drawable exercise_border
 drawable fitx_baseball_image
 drawable fitx_basketball_image
@@ -36,12 +33,9 @@ id BasketballWorkouts
 id Button_login
 id CreateAWorkout
 id CreateAccountView
-<<<<<<< HEAD
 id CurrentCreatedWorkout
 id DisplaySelectedUserWorkouts
-=======
 id FeedbackView
->>>>>>> origin/develop
 id FootballExplosiveStrength
 id FootballLowerBody
 id FootballSaA
@@ -58,13 +52,10 @@ id SwimmingWorkouts
 id TennisWorkouts
 id UserWorkoutsDisplay
 id VolleyballWorkouts
-<<<<<<< HEAD
 id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_CurrentCreatedWorkout_to_SaveWorkout
 id action_DisplaySelectedUserWorkout_to_HomePage
-=======
 id action_Feedback_to_HomePage
->>>>>>> origin/develop
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -72,15 +63,11 @@ id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_AllExercises
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
-<<<<<<< HEAD
 id action_HomePage_to_CreateAWorkout
-id action_HomePage_to_FootballWorkouts
-id action_HomePage_to_InputUserWorkoutData
-=======
 id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
->>>>>>> origin/develop
+id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -98,11 +85,8 @@ id action_SportWorkouts_to_SoccerWorkouts
 id action_SportWorkouts_to_SwimmingWorkouts
 id action_SportWorkouts_to_TennisWorkouts
 id action_SportWorkouts_to_VolleyballWorkouts
-<<<<<<< HEAD
 id action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts
-=======
 id action_feedback
->>>>>>> origin/develop
 id action_loginScreen_to_BaseballWorkouts
 id action_loginScreen_to_BasketballWorkouts
 id action_loginScreen_to_FootballWorkouts
@@ -220,9 +204,6 @@ id inclineWeightedSitupsInfo
 id inclineWeightedSitupsLayout
 id inclineWeightedSitupsPlayVideo
 id inclineWeightedSitupsText
-id inputSelectedWorkoutDataHeader
-id inputUserWorkoutDataButton
-id inputUserWorkoutDataHeader
 id jumpAndReachInfo
 id jumpAndReachLayout
 id jumpAndReachPlayVideo
@@ -239,15 +220,11 @@ id lateralLungesText
 id lateralShufflesLayout
 id lateralShufflesPlayVideo
 id lateralShufflesText
-<<<<<<< HEAD
 id legsLayout
 id legsShowAll
 id legsText
 id listOfExercises
 id listOfExercisesHeader
-=======
-id loginMessageTextView
->>>>>>> origin/develop
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo
@@ -298,17 +275,13 @@ id pushupToBoxJumpText
 id rowsLayout
 id rowsPlayVideo
 id rowsText
-<<<<<<< HEAD
 id saveCreatedWorkout
 id saveWorkoutButton
-id saveWorkoutDataButton
 id saveWorkoutHeader
 id scheduleHeader
 id scheduleWorkoutButton
-id setScheduleButton
-=======
 id sendButton
->>>>>>> origin/develop
+id setScheduleButton
 id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo
@@ -369,15 +342,12 @@ id tennisImage
 id textview_first
 id textview_second
 id theVideoPlayer
-<<<<<<< HEAD
 id timePicker
-id toBaseballWorkouts
-id toBasketballWorkouts
-=======
 id tipDesc
 id tipName
 id tipsListView
->>>>>>> origin/develop
+id toBaseballWorkouts
+id toBasketballWorkouts
 id toFootballFullBodyExplosiveStrength
 id toFootballLowerBody
 id toFootballSpeedAndAgility
@@ -419,12 +389,9 @@ layout basketball_workouts_frag
 layout content_main
 layout create_a_workout_frag
 layout create_account
-<<<<<<< HEAD
 layout current_created_workout_frag
 layout display_selected_user_workout_frag
-=======
 layout feed_back
->>>>>>> origin/develop
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -434,12 +401,7 @@ layout fragment_first
 layout fragment_second
 layout healthy_tips
 layout home_page
-<<<<<<< HEAD
-layout input_selected_workout_data_frag
-layout input_user_workout_data_frag
-=======
 layout list_item_tip
->>>>>>> origin/develop
 layout login_screen
 layout save_workout_frag
 layout soccer_workouts_frag
@@ -478,13 +440,9 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-<<<<<<< HEAD
-string hello_blank_fragment
-string input_user_workout_data_label
-=======
 string healthy_tips_label
 string hello_blank_fragment
->>>>>>> origin/develop
+string input_user_workout_data_label
 string lorem_ipsum
 string my_sport_string
 string next

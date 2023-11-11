@@ -2991,13 +2991,10 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
-<<<<<<< HEAD
 id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_CurrentCreatedWorkout_to_SaveWorkout
 id action_DisplaySelectedUserWorkout_to_HomePage
-=======
 id action_Feedback_to_HomePage
->>>>>>> origin/develop
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -3005,15 +3002,11 @@ id action_FootballWorkouts_to_FootballUpperBody
 id action_HomePage_to_AllExercises
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
-<<<<<<< HEAD
 id action_HomePage_to_CreateAWorkout
-id action_HomePage_to_FootballWorkouts
-id action_HomePage_to_InputUserWorkoutData
-=======
 id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
->>>>>>> origin/develop
+id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -3331,9 +3324,6 @@ id inclineWeightedSitupsText
 id included
 id indeterminate
 id info
-id inputSelectedWorkoutDataHeader
-id inputUserWorkoutDataButton
-id inputUserWorkoutDataHeader
 id invisible
 id inward
 id italic
@@ -3373,10 +3363,6 @@ id listOfExercises
 id listOfExercisesHeader
 id list_item
 id locale
-<<<<<<< HEAD
-=======
-id loginMessageTextView
->>>>>>> origin/develop
 id ltr
 id lungesInfo
 id lungesLayout
@@ -3546,7 +3532,6 @@ id rowsText
 id rtl
 id saveCreatedWorkout
 id saveWorkoutButton
-id saveWorkoutDataButton
 id saveWorkoutHeader
 id save_non_transition_alpha
 id save_overlay_view
@@ -3587,11 +3572,8 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
-<<<<<<< HEAD
-id setScheduleButton
-=======
 id sendButton
->>>>>>> origin/develop
+id setScheduleButton
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3724,13 +3706,10 @@ id textview_first
 id textview_second
 id theVideoPlayer
 id time
-<<<<<<< HEAD
 id timePicker
-=======
 id tipDesc
 id tipName
 id tipsListView
->>>>>>> origin/develop
 id title
 id titleDividerNoCustom
 id title_template
@@ -3940,11 +3919,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-<<<<<<< HEAD
 layout display_selected_user_workout_frag
-=======
 layout feed_back
->>>>>>> origin/develop
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -3954,12 +3930,7 @@ layout fragment_first
 layout fragment_second
 layout healthy_tips
 layout home_page
-<<<<<<< HEAD
-layout input_selected_workout_data_frag
-layout input_user_workout_data_frag
-=======
 layout list_item_tip
->>>>>>> origin/develop
 layout login_screen
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4128,10 +4099,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
-<<<<<<< HEAD
-=======
 string healthy_tips_label
->>>>>>> origin/develop
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
