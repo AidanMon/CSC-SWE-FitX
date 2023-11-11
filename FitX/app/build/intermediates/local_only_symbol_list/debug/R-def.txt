@@ -50,6 +50,7 @@ id UserWorkoutsDisplay
 id VolleyballWorkouts
 id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_CurrentCreatedWorkout_to_SaveWorkout
+id action_DisplaySelectedUserWorkout_to_HomePage
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -128,9 +129,11 @@ id calfRaisesInfo
 id calfRaisesLayout
 id calfRaisesPlayVideo
 id calfRaisesText
+id cancelDeleteButton
 id chestLayout
 id chestShowAll
 id chestText
+id confirmDeleteButton
 id coreLayout
 id coreShowAll
 id coreText
@@ -148,6 +151,9 @@ id deadliftText
 id deadliftsLayout
 id deadliftsPlayVideo
 id deadliftsText
+id deleteLayout
+id deleteLayoutNotice
+id deleteWorkoutButton
 id displaySelectedUserWorkoutHeader
 id dumbbellBenchPressLayout
 id dumbbellBenchPressPlayVideo
@@ -229,6 +235,7 @@ id overHeadPressLayout
 id overHeadPressPlayVideo
 id overHeadPressText
 id paddingBelow
+id paddingDateAndTime
 id parentLayout
 id planksLayout
 id planksPlayVideo
@@ -254,6 +261,8 @@ id saveCreatedWorkout
 id saveWorkoutButton
 id saveWorkoutHeader
 id scheduleHeader
+id scheduleWorkoutButton
+id setScheduleButton
 id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo

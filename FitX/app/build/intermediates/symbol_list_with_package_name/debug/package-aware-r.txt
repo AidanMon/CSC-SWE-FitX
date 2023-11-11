@@ -2989,6 +2989,7 @@ id actionDownUp
 id actionUp
 id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_CurrentCreatedWorkout_to_SaveWorkout
+id action_DisplaySelectedUserWorkout_to_HomePage
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -3125,6 +3126,7 @@ id calfRaisesLayout
 id calfRaisesPlayVideo
 id calfRaisesText
 id callMeasure
+id cancelDeleteButton
 id cancel_button
 id carryVelocity
 id center
@@ -3149,6 +3151,7 @@ id clockwise
 id closest
 id collapseActionView
 id compress
+id confirmDeleteButton
 id confirm_button
 id constraint
 id container
@@ -3188,6 +3191,9 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteLayout
+id deleteLayoutNotice
+id deleteWorkoutButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3457,6 +3463,7 @@ id overHeadPressText
 id overshoot
 id packed
 id paddingBelow
+id paddingDateAndTime
 id parallax
 id parent
 id parentLayout
@@ -3513,6 +3520,7 @@ id save_overlay_view
 id sawtooth
 id scale
 id scheduleHeader
+id scheduleWorkoutButton
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3546,6 +3554,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id setScheduleButton
 id sharedValueSet
 id sharedValueUnset
 id shortcut

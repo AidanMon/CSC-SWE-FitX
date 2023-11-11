@@ -22,10 +22,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
 import com.google.firebase.Timestamp
-import com.google.firebase.firestore.DocumentSnapshot
-
 import java.util.Calendar
-import java.util.Collections
 
 
 class SaveWorkout : Fragment() {
@@ -51,66 +48,71 @@ class SaveWorkout : Fragment() {
 
             //Creating a new collection with inputted name
             val userCollections = userDocumentReference.collection(workoutName.text.toString())
+            if(workoutName.text.toString() == "Scheduled Workouts" || workoutName.text.toString() == "Input Data"){
+                //Invalid workout name
+                val textName = workoutName.text.toString()
+                Toast.makeText(requireActivity(), "Error, you cannot have a workout names $textName", Toast.LENGTH_LONG).show()
+            }
+            else{
+                //Checking if the user workout already exists
+                userDocumentReference.collection(workoutName.text.toString())
+                    .limit(1) // Limit the query to only retrieve one document
+                    .get()
+                    .addOnSuccessListener { querySnapshot ->
+                        if (querySnapshot.isEmpty) {
+                            //Collection does not exist or is empty
+                            //Adding the exercises to the user workout
+                            for(exercise in AllExerciseLists.currentCreateWorkout){
+                                val exerciseName = exercise.exerciseName.replace(" ", "")   //Formatting the exercise name to name the document
+                                // Add the data to the collection
+                                userCollections.document(exerciseName)
+                                    .set(exercise, SetOptions.merge())
+                                    .addOnSuccessListener {
+                                        // Data added successfully
+                                        Toast.makeText(requireActivity(), "Success", Toast.LENGTH_LONG).show()
+                                    }
+                                    .addOnFailureListener {
+                                        // Handle failures
+                                        Toast.makeText(requireActivity(), "Error, please try again", Toast.LENGTH_LONG).show()
+                                    }
+                            }
 
-            //Checking if the user workout already exists
-            userDocumentReference.collection(workoutName.text.toString())
-                .limit(1) // Limit the query to only retrieve one document
-                .get()
-                .addOnSuccessListener { querySnapshot ->
-                    if (querySnapshot.isEmpty) {
-                        //Collection does not exist or is empty
-                        //Adding the exercises to the user workout
-                        for(exercise in AllExerciseLists.currentCreateWorkout){
-                            val exerciseName = exercise.exerciseName.replace(" ", "")   //Formatting the exercise name to name the document
-                            // Add the data to the collection
-                            userCollections.document(exerciseName)
-                                .set(exercise, SetOptions.merge())
-                                .addOnSuccessListener {
-                                    // Data added successfully
-                                    Toast.makeText(requireActivity(), "Success", Toast.LENGTH_LONG).show()
-                                }
-                                .addOnFailureListener {
-                                    // Handle failures
-                                    Toast.makeText(requireActivity(), "Error, please try again", Toast.LENGTH_LONG).show()
-                                }
-                        }
+                            //Empty current workout list and return to home
+                            AllExerciseLists.currentCreateWorkout = mutableListOf()
+                            findNavController().navigate(R.id.action_SaveWorkout_to_HomePage)
 
-                        //Empty current workout list and return to home
-                        AllExerciseLists.currentCreateWorkout = mutableListOf()
-                        findNavController().navigate(R.id.action_SaveWorkout_to_HomePage)
-
-                    } else {
-                        //Workout with same name already exists
-                        val textName = workoutName.text.toString()
-                        Toast.makeText(requireActivity(), "Error, you already have a workout named $textName", Toast.LENGTH_LONG).show()
-                    }
-                }
-                .addOnFailureListener {
-                    // Handle failures
-                    Toast.makeText(requireActivity(), "Error, please try again", Toast.LENGTH_LONG).show()
-                }
-
-            //Adding the new collection to our collection list
-            userDocumentReference.get()
-                .addOnSuccessListener { documentSnapshot ->
-                    if(documentSnapshot.exists()){
-                        if (documentSnapshot.contains("Collections")) {
-                            // The field exists in the document
-                            val currentValue = documentSnapshot.getString("Collections")
-                            val newValue = currentValue + ", " + workoutName.text.toString()
-                            val newCollections = hashMapOf<String, Any>(
-                                "Collections" to newValue
-                            )
-                            userDocumentReference.update(newCollections)
                         } else {
-                            // The field does not exist in the document
-                            val updateData = hashMapOf<String, Any>(
-                                "Collections" to workoutName.text.toString()
-                            )
-                            userDocumentReference.set(updateData, SetOptions.merge())
+                            //Workout with same name already exists
+                            val textName = workoutName.text.toString()
+                            Toast.makeText(requireActivity(), "Error, you already have a workout named $textName", Toast.LENGTH_LONG).show()
                         }
                     }
-                }
+                    .addOnFailureListener {
+                        // Handle failures
+                        Toast.makeText(requireActivity(), "Error, please try again", Toast.LENGTH_LONG).show()
+                    }
+                //Adding the new collection to our collection list
+                userDocumentReference.get()
+                    .addOnSuccessListener { documentSnapshot ->
+                        if(documentSnapshot.exists()){
+                            if (documentSnapshot.contains("Collections")) {
+                                // The field exists in the document
+                                val currentValue = documentSnapshot.getString("Collections")
+                                val newValue = currentValue + ", " + workoutName.text.toString()
+                                val newCollections = hashMapOf<String, Any>(
+                                    "Collections" to newValue
+                                )
+                                userDocumentReference.update(newCollections)
+                            } else {
+                                // The field does not exist in the document
+                                val updateData = hashMapOf<String, Any>(
+                                    "Collections" to workoutName.text.toString()
+                                )
+                                userDocumentReference.set(updateData, SetOptions.merge())
+                            }
+                        }
+                    }
+            }
         } else {
             // Handle the case where the user is not authenticated
             Toast.makeText(requireActivity(), "Error, User could not be authenticated", Toast.LENGTH_LONG).show()

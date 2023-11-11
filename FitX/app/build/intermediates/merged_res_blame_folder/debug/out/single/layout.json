@@ -1,110 +1,102 @@
 [
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\swimming_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\swimming_workouts_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/login_screen.xml",
+        "source": "com.example.fitx.app-main-59:/layout/login_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\tennis_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\tennis_workouts_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/sport_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/sport_workouts_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_explosive_strength_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_explosive_strength_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/fragment_second.xml",
+        "source": "com.example.fitx.app-main-59:/layout/fragment_second.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/swimming_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/swimming_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/tennis_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/tennis_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/home_page.xml",
+        "source": "com.example.fitx.app-main-59:/layout/home_page.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/soccer_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/soccer_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/fragment_first.xml",
+        "source": "com.example.fitx.app-main-59:/layout/fragment_first.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/display_selected_user_workout_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/display_selected_user_workout_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/baseball_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/baseball_workouts_frag.xml"
+    },
+    {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/football_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/football_workouts_frag.xml"
     },
     {
         "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/user_workouts_display_frag.xml",
         "source": "com.example.fitx.app-main-59:/layout/user_workouts_display_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\create_a_workout_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\create_a_workout_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/content_main.xml",
+        "source": "com.example.fitx.app-main-59:/layout/content_main.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\fragment_second.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\fragment_second.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/football_speed_and_agility_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/football_speed_and_agility_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\sport_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\sport_workouts_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/volleyball_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/volleyball_workouts_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\current_created_workout_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\current_created_workout_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/football_upper_body_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/football_upper_body_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\fragment_first.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\fragment_first.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/create_a_workout_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/create_a_workout_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_speed_and_agility_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_speed_and_agility_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/create_account.xml",
+        "source": "com.example.fitx.app-main-59:/layout/create_account.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\activity_main.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/all_exercises_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/all_exercises_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_upper_body_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_upper_body_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/save_workout_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/save_workout_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\volleyball_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\volleyball_workouts_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/football_lower_body_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/football_lower_body_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\save_workout_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\save_workout_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/activity_main.xml",
+        "source": "com.example.fitx.app-main-59:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\home_page.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\home_page.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/football_explosive_strength_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/football_explosive_strength_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_workouts_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/basketball_workouts_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/basketball_workouts_frag.xml"
     },
     {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\baseball_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\baseball_workouts_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\display_selected_user_workout_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\display_selected_user_workout_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\user_workouts_display_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\user_workouts_display_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\basketball_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\basketball_workouts_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\user_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\user_workouts_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\create_account.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\create_account.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\content_main.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\content_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\all_exercises_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\all_exercises_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\login_screen.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\login_screen.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\soccer_workouts_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\soccer_workouts_frag.xml"
-    },
-    {
-        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_lower_body_frag.xml",
-        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_lower_body_frag.xml"
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/current_created_workout_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/current_created_workout_frag.xml"
     }
 ]
