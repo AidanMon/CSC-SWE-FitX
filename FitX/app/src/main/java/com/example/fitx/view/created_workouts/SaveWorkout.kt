@@ -98,8 +98,7 @@ class SaveWorkout : Fragment() {
                             if (documentSnapshot.contains("Collections")) {
                                 // The field exists in the document
                                 val currentValue = documentSnapshot.getString("Collections")
-                                var newValue: String
-                                newValue = if(currentValue == ""){
+                                var newValue: String = if(currentValue == ""){
                                     workoutName.text.toString()
                                 } else{
                                     currentValue + ", " + workoutName.text.toString()
