@@ -71,6 +71,7 @@ class ExerciseRepository {
                             //The field exists in the document
                             val collectionNames = documentSnapshot.getString("Collections").toString().replace(", ", ",").split(",").toMutableList()
                             collectionNames.remove("Scheduled Workouts")
+                            collectionNames.remove("Input Data")
                             for (collectionName in collectionNames) {
                                 val collectionReference = db.collection("users").document(currentUser.uid).collection(collectionName)
 
