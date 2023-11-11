@@ -43,7 +43,6 @@ id FootballUpperBody
 id FootballWorkouts
 id HealthyTips
 id HomePage
-id InputUserWorkoutData
 id LoginScreen
 id SaveWorkout
 id SoccerWorkouts
@@ -67,7 +66,6 @@ id action_HomePage_to_CreateAWorkout
 id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
-id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts

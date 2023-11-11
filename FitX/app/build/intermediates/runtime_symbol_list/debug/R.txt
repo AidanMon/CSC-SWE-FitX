@@ -2935,7 +2935,6 @@ int id FootballUpperBody 0x7f090011
 int id FootballWorkouts 0x7f090012
 int id HealthyTips 0x7f090013
 int id HomePage 0x7f090014
-int id InputUserWorkoutData 0x7f090015
 int id LoginScreen 0x7f090016
 int id META 0x7f090017
 int id NO_DEBUG 0x7f090018
@@ -3005,7 +3004,6 @@ int id action_HomePage_to_CreateAWorkout 0x7f090057
 int id action_HomePage_to_FeedBack 0x7f090058
 int id action_HomePage_to_FootballWorkouts 0x7f090059
 int id action_HomePage_to_HealthyTips 0x7f09005a
-int id action_HomePage_to_InputUserWorkoutData 0x7f09005b
 int id action_HomePage_to_LoginScreen 0x7f09005c
 int id action_HomePage_to_SoccerWorkouts 0x7f09005d
 int id action_HomePage_to_SportsWorkouts 0x7f09005e

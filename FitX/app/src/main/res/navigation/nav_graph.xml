@@ -91,10 +91,14 @@
         <action
             android:id="@+id/action_HomePage_to_CreateAWorkout"
             app:destination="@id/CreateAWorkout" />
-        <!--Input user workout Navigation-->
+
         <action
-            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
-            app:destination="@id/InputUserWorkoutData" />
+            android:id="@+id/action_HomePage_to_HealthyTips"
+            app:destination="@id/HealthyTips"/>
+        <action
+            android:id="@+id/action_HomePage_to_FeedBack"
+            app:destination="@id/FeedbackView"
+            />
 
     </fragment>
 
@@ -172,19 +176,7 @@
     </fragment>
 
     <!--Input user workout data Fragment-->
-    <fragment
-        android:id="@+id/InputUserWorkoutData"
-        android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
-        android:label="@string/input_user_workout_data_label"
-        tools:layout="@layout/input_user_workout_data_frag">
-        <action
-            android:id="@+id/action_HomePage_to_HealthyTips"
-            app:destination="@id/HealthyTips"/>
-        <action
-            android:id="@+id/action_HomePage_to_FeedBack"
-            app:destination="@id/FeedbackView"
-            />
-    </fragment>
+
 
     <fragment
         android:id="@+id/HealthyTips"
