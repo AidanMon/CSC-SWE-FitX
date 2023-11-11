@@ -23,6 +23,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\Amona\\.gradle\\caches\\transforms-3\\86790846f4c78b3b6a078d36765c2a9f\\transformed\\material-1.8.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
@@ -43,6 +44,9 @@
                 },
                 {
                     "source": "C:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-v23\\themes.xml",
+=======
+                    "source": "C:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-v23\\themes.xml",
+>>>>>>> origin/develop
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -40,6 +40,7 @@
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>
     <string name="volleyball_workouts_label">Volleyball Exercises</string>
+    <string name="healthy_tips_label">Healthy Tips</string>
 
     <!-- Sub Football strings -->
     <string name="football_workouts_description">
@@ -52,7 +53,6 @@
     <string name="football_upper_body">Upper Body Football</string>
     <string name="football_speed_and_agility">Speed and Agility Football</string>
     <string name="football_full_body_explosive_strength">Explosive Strength Football</string>
-
 
     <string name="description">Description</string>
     <string name="example">Example</string>

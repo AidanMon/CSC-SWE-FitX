@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Sat Nov 11 17:31:10 EST 2023
 base.0=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
@@ -12,6 +13,20 @@ base.6=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\
 base.7=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 base.8=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 base.9=C\:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+=======
+#Tue Nov 07 21:58:03 EST 2023
+base.0=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
+base.3=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.4=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.5=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.6=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.7=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.8=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.9=C\:\\Users\\zenze\\repo\\CSC-SWE-FitX\\FitX\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> origin/develop
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes2.dex

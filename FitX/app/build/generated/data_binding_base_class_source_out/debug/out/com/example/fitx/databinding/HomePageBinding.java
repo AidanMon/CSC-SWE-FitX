@@ -20,6 +20,7 @@ public final class HomePageBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+<<<<<<< HEAD
   public final AppCompatButton AllExercises;
 
   @NonNull
@@ -27,6 +28,12 @@ public final class HomePageBinding implements ViewBinding {
 
   @NonNull
   public final AppCompatButton inputUserWorkoutDataButton;
+=======
+  public final AppCompatButton HealthyTips;
+
+  @NonNull
+  public final TextView loginMessageTextView;
+>>>>>>> origin/develop
 
   @NonNull
   public final AppCompatButton toSports;
@@ -34,6 +41,7 @@ public final class HomePageBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton userSport;
 
+<<<<<<< HEAD
   @NonNull
   public final AppCompatButton userWorkoutsButton;
 
@@ -45,6 +53,14 @@ public final class HomePageBinding implements ViewBinding {
     this.AllExercises = AllExercises;
     this.createAWorkoutButton = createAWorkoutButton;
     this.inputUserWorkoutDataButton = inputUserWorkoutDataButton;
+=======
+  private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton HealthyTips,
+      @NonNull TextView loginMessageTextView, @NonNull AppCompatButton toSports,
+      @NonNull AppCompatButton userSport) {
+    this.rootView = rootView;
+    this.HealthyTips = HealthyTips;
+    this.loginMessageTextView = loginMessageTextView;
+>>>>>>> origin/develop
     this.toSports = toSports;
     this.userSport = userSport;
     this.userWorkoutsButton = userWorkoutsButton;
@@ -77,6 +93,7 @@ public final class HomePageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+<<<<<<< HEAD
       id = R.id.AllExercises;
       AppCompatButton AllExercises = ViewBindings.findChildViewById(rootView, id);
       if (AllExercises == null) {
@@ -92,6 +109,17 @@ public final class HomePageBinding implements ViewBinding {
       id = R.id.inputUserWorkoutDataButton;
       AppCompatButton inputUserWorkoutDataButton = ViewBindings.findChildViewById(rootView, id);
       if (inputUserWorkoutDataButton == null) {
+=======
+      id = R.id.HealthyTips;
+      AppCompatButton HealthyTips = ViewBindings.findChildViewById(rootView, id);
+      if (HealthyTips == null) {
+        break missingId;
+      }
+
+      id = R.id.loginMessageTextView;
+      TextView loginMessageTextView = ViewBindings.findChildViewById(rootView, id);
+      if (loginMessageTextView == null) {
+>>>>>>> origin/develop
         break missingId;
       }
 
@@ -107,6 +135,7 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
+<<<<<<< HEAD
       id = R.id.userWorkoutsButton;
       AppCompatButton userWorkoutsButton = ViewBindings.findChildViewById(rootView, id);
       if (userWorkoutsButton == null) {
@@ -115,6 +144,10 @@ public final class HomePageBinding implements ViewBinding {
 
       return new HomePageBinding((LinearLayout) rootView, AllExercises, createAWorkoutButton,
           inputUserWorkoutDataButton, toSports, userSport, userWorkoutsButton);
+=======
+      return new HomePageBinding((LinearLayout) rootView, HealthyTips, loginMessageTextView,
+          toSports, userSport);
+>>>>>>> origin/develop
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
