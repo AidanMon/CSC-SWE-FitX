@@ -31,14 +31,18 @@ public final class HomePageBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton userSport;
 
+  @NonNull
+  public final AppCompatButton userWorkoutsButton;
+
   private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton AllExercises,
       @NonNull AppCompatButton createAWorkoutButton, @NonNull AppCompatButton toSports,
-      @NonNull AppCompatButton userSport) {
+      @NonNull AppCompatButton userSport, @NonNull AppCompatButton userWorkoutsButton) {
     this.rootView = rootView;
     this.AllExercises = AllExercises;
     this.createAWorkoutButton = createAWorkoutButton;
     this.toSports = toSports;
     this.userSport = userSport;
+    this.userWorkoutsButton = userWorkoutsButton;
   }
 
   @Override
@@ -92,8 +96,14 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.userWorkoutsButton;
+      AppCompatButton userWorkoutsButton = ViewBindings.findChildViewById(rootView, id);
+      if (userWorkoutsButton == null) {
+        break missingId;
+      }
+
       return new HomePageBinding((LinearLayout) rootView, AllExercises, createAWorkoutButton,
-          toSports, userSport);
+          toSports, userSport, userWorkoutsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

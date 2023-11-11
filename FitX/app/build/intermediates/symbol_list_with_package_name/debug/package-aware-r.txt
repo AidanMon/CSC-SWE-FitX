@@ -2912,6 +2912,7 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable triple_border_bottom_gone
 drawable triple_border_top_gone
+drawable user_workout_border
 drawable workout_border
 id ALT
 id AllExercises
@@ -2924,6 +2925,7 @@ id CTRL
 id CreateAWorkout
 id CreateAccountView
 id CurrentCreatedWorkout
+id DisplaySelectedUserWorkouts
 id FUNCTION
 id FootballExplosiveStrength
 id FootballLowerBody
@@ -2939,12 +2941,14 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id SaveWorkout
 id SoccerWorkouts
 id SportWorkouts
 id SwimmingWorkouts
 id TOP_END
 id TOP_START
 id TennisWorkouts
+id UserWorkoutsDisplay
 id VolleyballWorkouts
 id accelerate
 id accessibility_action_clickable_span
@@ -2984,6 +2988,7 @@ id actionDown
 id actionDownUp
 id actionUp
 id action_CreateAWorkout_to_CurrentCreatedWorkout
+id action_CurrentCreatedWorkout_to_SaveWorkout
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -2998,9 +3003,11 @@ id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
 id action_HomePage_to_SwimmingWorkouts
 id action_HomePage_to_TennisWorkouts
+id action_HomePage_to_UserWorkouts
 id action_HomePage_to_VolleyballWorkouts
 id action_LoginScreen_to_CreateAccount
 id action_LoginScreen_to_HomePage
+id action_SaveWorkout_to_HomePage
 id action_SportWorkouts_to_BaseballWorkouts
 id action_SportWorkouts_to_BasketballWorkouts
 id action_SportWorkouts_to_FootballWorkouts
@@ -3008,6 +3015,7 @@ id action_SportWorkouts_to_SoccerWorkouts
 id action_SportWorkouts_to_SwimmingWorkouts
 id action_SportWorkouts_to_TennisWorkouts
 id action_SportWorkouts_to_VolleyballWorkouts
+id action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3165,6 +3173,8 @@ id customPanel
 id cut
 id dark
 id dataBinding
+id dateAndTimeLayout
+id datePicker
 id date_picker_actions
 id deadliftConventionalPlayVideo
 id deadliftInfo
@@ -3193,6 +3203,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id displaySelectedUserWorkoutHeader
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3330,6 +3341,8 @@ id line1
 id line3
 id linear
 id listMode
+id listOfExercises
+id listOfExercisesHeader
 id list_item
 id locale
 id ltr
@@ -3419,6 +3432,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id nestedScrollView
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3492,10 +3506,13 @@ id rowsPlayVideo
 id rowsText
 id rtl
 id saveCreatedWorkout
+id saveWorkoutButton
+id saveWorkoutHeader
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id scheduleHeader
 id screen
 id scroll
 id scrollIndicatorDown
@@ -3661,6 +3678,7 @@ id textview_first
 id textview_second
 id theVideoPlayer
 id time
+id timePicker
 id title
 id titleDividerNoCustom
 id title_template
@@ -3712,6 +3730,8 @@ id userName
 id userPassword
 id userSport
 id userWeight
+id userWorkoutsButton
+id userWorkoutsDisplayHeader
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3728,6 +3748,7 @@ id wide
 id withText
 id with_icon
 id withinBounds
+id workoutName
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -3867,6 +3888,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout display_selected_user_workout_frag
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -3933,6 +3955,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout save_workout_frag
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3941,6 +3964,7 @@ layout sport_workouts_frag
 layout support_simple_spinner_dropdown_item
 layout swimming_workouts_frag
 layout tennis_workouts_frag
+layout user_workouts_display_frag
 layout volleyball_workouts_frag
 menu menu_main
 mipmap ic_launcher
@@ -4017,6 +4041,7 @@ string create_a_workout_label
 string current_created_workout_header
 string current_created_workout_label
 string description
+string display_selected_user_workout_label
 string error_a11y_label
 string error_icon_content_description
 string example
@@ -4151,6 +4176,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
 string project_id
+string save_workout_label
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4163,6 +4189,7 @@ string sport_workouts_label
 string status_bar_notification_info_overflow
 string swimming_workouts_label
 string tennis_workouts_label
+string user_workouts_label
 string volleyball_workouts_label
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

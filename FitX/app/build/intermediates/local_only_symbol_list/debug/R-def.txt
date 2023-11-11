@@ -24,6 +24,7 @@ drawable rounded_button
 drawable show_workout_button
 drawable triple_border_bottom_gone
 drawable triple_border_top_gone
+drawable user_workout_border
 drawable workout_border
 id AllExercises
 id BaseballWorkouts
@@ -32,6 +33,7 @@ id Button_login
 id CreateAWorkout
 id CreateAccountView
 id CurrentCreatedWorkout
+id DisplaySelectedUserWorkouts
 id FootballExplosiveStrength
 id FootballLowerBody
 id FootballSaA
@@ -39,12 +41,15 @@ id FootballUpperBody
 id FootballWorkouts
 id HomePage
 id LoginScreen
+id SaveWorkout
 id SoccerWorkouts
 id SportWorkouts
 id SwimmingWorkouts
 id TennisWorkouts
+id UserWorkoutsDisplay
 id VolleyballWorkouts
 id action_CreateAWorkout_to_CurrentCreatedWorkout
+id action_CurrentCreatedWorkout_to_SaveWorkout
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -59,9 +64,11 @@ id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
 id action_HomePage_to_SwimmingWorkouts
 id action_HomePage_to_TennisWorkouts
+id action_HomePage_to_UserWorkouts
 id action_HomePage_to_VolleyballWorkouts
 id action_LoginScreen_to_CreateAccount
 id action_LoginScreen_to_HomePage
+id action_SaveWorkout_to_HomePage
 id action_SportWorkouts_to_BaseballWorkouts
 id action_SportWorkouts_to_BasketballWorkouts
 id action_SportWorkouts_to_FootballWorkouts
@@ -69,6 +76,7 @@ id action_SportWorkouts_to_SoccerWorkouts
 id action_SportWorkouts_to_SwimmingWorkouts
 id action_SportWorkouts_to_TennisWorkouts
 id action_SportWorkouts_to_VolleyballWorkouts
+id action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts
 id action_loginScreen_to_BaseballWorkouts
 id action_loginScreen_to_BasketballWorkouts
 id action_loginScreen_to_FootballWorkouts
@@ -130,6 +138,8 @@ id createAWorkoutButton
 id createAWorkoutHeader
 id createAccountTextView
 id currentWorkoutHeader
+id dateAndTimeLayout
+id datePicker
 id deadliftConventionalPlayVideo
 id deadliftInfo
 id deadliftLayout
@@ -138,6 +148,7 @@ id deadliftText
 id deadliftsLayout
 id deadliftsPlayVideo
 id deadliftsText
+id displaySelectedUserWorkoutHeader
 id dumbbellBenchPressLayout
 id dumbbellBenchPressPlayVideo
 id dumbbellBenchPressText
@@ -194,6 +205,8 @@ id lateralShufflesText
 id legsLayout
 id legsShowAll
 id legsText
+id listOfExercises
+id listOfExercisesHeader
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo
@@ -211,6 +224,7 @@ id militaryPressPlayVideo
 id militaryPressText
 id nav_graph
 id nav_host_fragment_content_main
+id nestedScrollView
 id overHeadPressLayout
 id overHeadPressPlayVideo
 id overHeadPressText
@@ -237,6 +251,9 @@ id rowsLayout
 id rowsPlayVideo
 id rowsText
 id saveCreatedWorkout
+id saveWorkoutButton
+id saveWorkoutHeader
+id scheduleHeader
 id shoulderPressInfo
 id shoulderPressLayout
 id shoulderPressPlayVideo
@@ -297,6 +314,7 @@ id tennisImage
 id textview_first
 id textview_second
 id theVideoPlayer
+id timePicker
 id toBaseballWorkouts
 id toBasketballWorkouts
 id toFootballFullBodyExplosiveStrength
@@ -328,8 +346,11 @@ id userName
 id userPassword
 id userSport
 id userWeight
+id userWorkoutsButton
+id userWorkoutsDisplayHeader
 id volleyballHeader
 id volleyballImage
+id workoutName
 layout activity_main
 layout all_exercises_frag
 layout baseball_workouts_frag
@@ -338,6 +359,7 @@ layout content_main
 layout create_a_workout_frag
 layout create_account
 layout current_created_workout_frag
+layout display_selected_user_workout_frag
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -347,10 +369,12 @@ layout fragment_first
 layout fragment_second
 layout home_page
 layout login_screen
+layout save_workout_frag
 layout soccer_workouts_frag
 layout sport_workouts_frag
 layout swimming_workouts_frag
 layout tennis_workouts_frag
+layout user_workouts_display_frag
 layout volleyball_workouts_frag
 menu menu_main
 mipmap ic_launcher
@@ -366,6 +390,7 @@ string create_a_workout_label
 string current_created_workout_header
 string current_created_workout_label
 string description
+string display_selected_user_workout_label
 string example
 string firebase_database_url
 string first_fragment_label
@@ -387,11 +412,13 @@ string my_sport_string
 string next
 string previous
 string project_id
+string save_workout_label
 string second_fragment_label
 string soccer_workouts_label
 string sport_workouts_label
 string swimming_workouts_label
 string tennis_workouts_label
+string user_workouts_label
 string volleyball_workouts_label
 style Base.Theme.FitX
 style Theme.FitX

@@ -83,6 +83,10 @@
         <action
             android:id="@+id/action_HomePage_to_AllExercises"
             app:destination="@id/AllExercises" />
+        <!--User Workouts Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_UserWorkouts"
+            app:destination="@id/UserWorkoutsDisplay" />
         <!--Create a workout Navigation-->
         <action
             android:id="@+id/action_HomePage_to_CreateAWorkout"
@@ -96,6 +100,27 @@
         android:name="com.example.fitx.view.home_page_links.AllExercises"
         android:label="@string/all_exercises_label"
         tools:layout="@layout/all_exercises_frag">
+    </fragment>
+
+    <!--User Workouts Fragment-->
+    <fragment
+        android:id="@+id/UserWorkoutsDisplay"
+        android:name="com.example.fitx.view.home_page_links.UserWorkoutsDisplay"
+        android:label="@string/user_workouts_label"
+        tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To user selected workout Navigation-->
+        <action
+            android:id="@+id/action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts"
+            app:destination="@id/DisplaySelectedUserWorkouts" />
+    </fragment>
+
+    <!--User Workout Display Fragment-->
+    <fragment
+        android:id="@+id/DisplaySelectedUserWorkouts"
+        android:name="com.example.fitx.view.created_workouts.DisplaySelectedUserWorkout"
+        android:label="@string/display_selected_user_workout_label"
+        tools:layout="@layout/user_workouts_display_frag">
     </fragment>
 
     <!--Create a workout Fragment-->
@@ -117,6 +142,24 @@
         android:name="com.example.fitx.view.created_workouts.CurrentCreatedWorkout"
         android:label="@string/current_created_workout_label"
         tools:layout="@layout/current_created_workout_frag">
+
+        <!--To save workout Navigation-->
+        <action
+            android:id="@+id/action_CurrentCreatedWorkout_to_SaveWorkout"
+            app:destination="@id/SaveWorkout" />
+    </fragment>
+
+    <!--Save workout Fragment-->
+    <fragment
+        android:id="@+id/SaveWorkout"
+        android:name="com.example.fitx.view.created_workouts.SaveWorkout"
+        android:label="@string/save_workout_label"
+        tools:layout="@layout/save_workout_frag">
+
+        <!--Back to Home Navigation-->
+        <action
+            android:id="@+id/action_SaveWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
     </fragment>
 
     <!--Added-->

@@ -27,6 +27,7 @@
     <string name="current_created_workout_header">Current Workout</string>
     <string name="current_created_workout_label">Current Workout</string>
     <string name="description">Description</string>
+    <string name="display_selected_user_workout_label">My Workout</string>
     <string name="example">Example</string>
     <string name="firebase_database_url" translatable="false">https://fitx-group9-default-rtdb.firebaseio.com</string>
     <string name="first_fragment_label">First Fragment</string>
@@ -88,11 +89,13 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">fitx-group9</string>
+    <string name="save_workout_label">Save Your Workout</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="soccer_workouts_label">Soccer Exercises</string>
     <string name="sport_workouts_label">Sport Specific Workouts</string>
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>
+    <string name="user_workouts_label">My Workouts</string>
     <string name="volleyball_workouts_label">Volleyball Exercises</string>
     <style name="Base.Theme.FitX" parent="Theme.Material3.DayNight.NoActionBar">
         
