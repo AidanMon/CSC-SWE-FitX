@@ -133,6 +133,12 @@ class CreateAWorkout : Fragment() {
             addButton.width = buttonWidthValue.toInt()                  //Text width
             addButton.setTextColor(Color.WHITE)                         //Text color
             addButton.setBackgroundResource(R.drawable.rounded_button)
+
+            //Changing visibility of button is the exercise is already added
+            if(exercise in AllExerciseLists.currentCreateWorkout){
+                addButton.visibility = View.GONE
+            }
+
             addToWorkoutList.add(addButton)
         }
     }
@@ -206,6 +212,7 @@ class CreateAWorkout : Fragment() {
         for (i in 0 until addToWorkoutList.size){
             addToWorkoutList[i].setOnClickListener {
                 AllExerciseLists.currentCreateWorkout.add(exerciseList[i])
+                addToWorkoutList[i].visibility = View.GONE
             }
         }
     }

@@ -35,7 +35,7 @@ class HomePage: Fragment() {
             //}
        // }
 
-        //Testing implementation of universal list
+        //Universal exercise list
         val exerciseRepo = ExerciseRepository()
         var allExercises = mutableListOf<Exercise>()
         exerciseRepo.getAllExercises(object : ExerciseRepository.ExerciseCallback {
@@ -51,6 +51,24 @@ class HomePage: Fragment() {
                 // Handle errors
                 allExercises = exception
 
+            }
+        })
+
+        // User workout lists
+        var allUserWorkouts = mutableListOf<Pair<String, MutableList<Exercise>>>()
+        exerciseRepo.getUserWorkouts(object : ExerciseRepository.UserWorkoutsCallback {
+            override fun onWorkoutsReceived(workoutTuples: MutableList<Pair<String, MutableList<Exercise>>>) {
+                // Clear the existing list and add the new data
+                allUserWorkouts.clear()
+                allUserWorkouts.addAll(workoutTuples)
+                AllExerciseLists.userMadeWorkouts = allUserWorkouts
+            }
+
+            override fun onError(exception: MutableList<Pair<String, MutableList<Exercise>>>) {
+                // Handle errors
+                allUserWorkouts.clear()
+                allUserWorkouts.addAll(exception)
+                AllExerciseLists.userMadeWorkouts = allUserWorkouts
             }
         })
 
@@ -75,6 +93,10 @@ class HomePage: Fragment() {
 
         binding.createAWorkoutButton.setOnClickListener {
             findNavController().navigate((R.id.action_HomePage_to_CreateAWorkout))
+        }
+
+        binding.userWorkoutsButton.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_UserWorkouts))
         }
 
         //Button for user sport

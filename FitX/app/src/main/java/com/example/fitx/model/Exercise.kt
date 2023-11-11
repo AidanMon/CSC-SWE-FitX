@@ -12,8 +12,7 @@ data class Exercise(
 
     var videoID: String,
 
-
 ){
-    constructor() : this("Fucker", 5,"","")
+    constructor() : this("", 0,"","")
 
 }

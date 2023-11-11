@@ -82,8 +82,29 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-38" />
-                            <option name="y" value="-1233" />
+                            <option name="x" value="-688" />
+                            <option name="y" value="-1238" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_CurrentCreatedWorkout_to_SaveWorkout">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="DisplaySelectedUserWorkouts">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1563" />
+                            <option name="y" value="-361" />
                           </Point>
                         </option>
                       </LayoutPositions>
@@ -178,8 +199,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-530" />
-                            <option name="y" value="-307" />
+                            <option name="x" value="-567" />
+                            <option name="y" value="-285" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -230,6 +251,11 @@
                               </value>
                             </entry>
                             <entry key="action_HomePage_to_TennisWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                            <entry key="action_HomePage_to_UserWorkouts">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -296,6 +322,27 @@
                               </value>
                             </entry>
                             <entry key="action_loginScreen_to_VolleyballWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="SaveWorkout">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1293" />
+                            <option name="y" value="-1230" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_SaveWorkout_to_HomePage">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -388,6 +435,27 @@
                             <option name="x" value="-372" />
                             <option name="y" value="609" />
                           </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="UserWorkoutsDisplay">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1193" />
+                            <option name="y" value="-283" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>

@@ -19,7 +19,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/parentLayout"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="match_parent"
             android:padding="16dp">
 
             <!--Header-->
@@ -30,6 +30,7 @@
                 android:text="@string/current_created_workout_header"
                 android:textAlignment="center"
                 android:textColor="@color/black"
+                android:translationZ="10000dp"
                 android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +50,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/currentWorkoutHeader"
-                app:layout_constraintVertical_bias="0" />
+                app:layout_constraintTop_toBottomOf="@+id/currentWorkoutHeader" />
 
             <!--Notice for fullscreen button-->
             <TextView
@@ -62,7 +62,6 @@
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
                 app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
-
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
@@ -81,7 +80,7 @@
             android:elevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:visibility="gone"></FrameLayout>
+            tools:visibility="gone" />
 
         <!--Main youtube player-->
         <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
@@ -104,7 +103,7 @@
         android:layout_gravity="top"
         >
 
-        <!--Save button-->
+        <!--Save workout button-->
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/saveCreatedWorkout"
             android:layout_width="80dp"

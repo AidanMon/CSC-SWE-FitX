@@ -15,6 +15,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import androidx.navigation.fragment.findNavController
 import com.example.fitx.R
 import com.example.fitx.databinding.CurrentCreatedWorkoutFragBinding
 import com.example.fitx.repository.AllExerciseLists
@@ -24,6 +25,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.Ful
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 class CurrentCreatedWorkout : Fragment() {
+    //TODO(Fix error that removes constraints when coming from the save workout fragment)
 
     //Variables for the youtube player
     private lateinit var youTubePlayerView: YouTubePlayerView
@@ -119,6 +121,7 @@ class CurrentCreatedWorkout : Fragment() {
         val saveButton = rootView.findViewById<AppCompatButton>(R.id.saveCreatedWorkout)
         saveButtonList.add(saveButton)
         val emptyTextView = TextView(requireContext())
+
         //If there are no exercises inform the user and TODO(Ensure you cannot save the workout)
         if(AllExerciseLists.currentCreateWorkout.size == 0){
             parentLayout.addView(emptyTextView)
@@ -278,6 +281,12 @@ class CurrentCreatedWorkout : Fragment() {
                     saveButtonList[0].visibility = View.GONE
                 }
             }
+        }
+
+        //Navigation to save the workout
+        val toSaveWorkoutButton = view.findViewById<AppCompatButton>(R.id.saveCreatedWorkout)
+        toSaveWorkoutButton.setOnClickListener {
+            findNavController().navigate(R.id.action_CurrentCreatedWorkout_to_SaveWorkout)
         }
 
     }

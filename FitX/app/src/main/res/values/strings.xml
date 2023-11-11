@@ -12,6 +12,9 @@
     <string name="create_a_workout_label">Create A Workout</string>
     <string name="current_created_workout_label">Current Workout</string>
     <string name="current_created_workout_header">Current Workout</string>
+    <string name="save_workout_label">Save Your Workout</string>
+    <string name="user_workouts_label">My Workouts</string>
+    <string name="display_selected_user_workout_label">My Workout</string>
 
     <string-array name="sportItems">
         <item>Baseball</item>
