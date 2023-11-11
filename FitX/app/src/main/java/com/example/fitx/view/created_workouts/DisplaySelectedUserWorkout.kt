@@ -2,6 +2,7 @@ package com.example.fitx.view.created_workouts
 
 import android.content.res.Resources
 import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.util.TypedValue
 import android.view.Gravity
@@ -10,8 +11,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.DatePicker
+import android.widget.EditText
 import android.widget.FrameLayout
+import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.TimePicker
+import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.AppCompatButton
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
@@ -20,10 +27,15 @@ import com.example.fitx.R
 import com.example.fitx.databinding.DisplaySelectedUserWorkoutFragBinding
 import com.example.fitx.model.Exercise
 import com.example.fitx.repository.AllExerciseLists
+import com.google.firebase.Timestamp
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.SetOptions
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.FullscreenListener
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+import java.util.Calendar
 
 class DisplaySelectedUserWorkout : Fragment() {
 
@@ -169,6 +181,7 @@ class DisplaySelectedUserWorkout : Fragment() {
         youTubePlayer?.loadVideo(videoId, 0F)
     }
 
+    @RequiresApi(Build.VERSION_CODES.M) //TODO(Change min API?)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -217,7 +230,148 @@ class DisplaySelectedUserWorkout : Fragment() {
             }
         })
 
+        //Adding button listeners
         addButtonListeners(AllExerciseLists.currentSelectedWorkout.second, buttonList)
+
+        val datePicker = view.findViewById<DatePicker>(R.id.datePicker)
+        val timePicker = view.findViewById<TimePicker>(R.id.timePicker)
+        val scheduleWorkoutButton = view.findViewById<AppCompatButton>(R.id.scheduleWorkoutButton)
+        val setScheduleButton = view.findViewById<AppCompatButton>(R.id.setScheduleButton)
+        val dateAndTimeLayout = view.findViewById<LinearLayout>(R.id.dateAndTimeLayout)
+
+        //Button to show date and time pickers
+        scheduleWorkoutButton.setOnClickListener {
+            if(dateAndTimeLayout.visibility == View.GONE){
+                dateAndTimeLayout.visibility = View.VISIBLE
+            }
+            else{
+                dateAndTimeLayout.visibility = View.GONE
+            }
+        }
+
+        setScheduleButton.setOnClickListener {
+            val currentUser = FirebaseAuth.getInstance().currentUser
+
+            // Get the selected date from the DatePicker
+            val selectedYear = datePicker.year
+            val selectedMonth = datePicker.month
+            val selectedDayOfMonth = datePicker.dayOfMonth
+            val selectedHour = timePicker.hour
+            val selectedMinute = timePicker.minute
+
+            //Code to save the Workout
+            if (currentUser != null) {
+                //Get a reference to the Firestore database
+                val db = FirebaseFirestore.getInstance()
+                //Get a reference to the user's document
+                val userDocumentReference = db.collection("users").document(currentUser.uid)
+
+                // Create a Calendar instance and set the selected date and time
+                val calendar = Calendar.getInstance()
+                calendar.set(
+                    selectedYear,
+                    selectedMonth,
+                    selectedDayOfMonth,
+                    selectedHour,
+                    selectedMinute
+                )
+                val selectedDate = calendar.time    // Convert the Calendar instance to a Date
+                val timestamp = Timestamp(selectedDate) // Convert the Date to a Timestamp
+
+                //Saving the schedule
+                userDocumentReference.collection("Scheduled Workouts")
+                    .document(AllExerciseLists.currentSelectedWorkout.first)
+                    .set(mapOf("timestampField" to timestamp))
+                Toast.makeText(requireActivity(), "Success", Toast.LENGTH_LONG).show()
+            }
+            else{
+                Toast.makeText(requireActivity(), "Error, User could not be authenticated", Toast.LENGTH_LONG).show()
+            }
+            dateAndTimeLayout.visibility = View.GONE
+        }
+
+        //Delete workout button
+        val deleteWorkoutButton = view.findViewById<AppCompatButton>(R.id.deleteWorkoutButton)
+        val confirmDeleteButton = view.findViewById<AppCompatButton>(R.id.confirmDeleteButton)
+        val cancelDeleteButton = view.findViewById<AppCompatButton>(R.id.cancelDeleteButton)
+        val deleteLayout = view.findViewById<LinearLayout>(R.id.deleteLayout)
+
+        //Show delete layout
+        deleteWorkoutButton.setOnClickListener {
+            if(deleteLayout.visibility == View.GONE){
+                deleteLayout.visibility = View.VISIBLE
+            }
+            else{
+                deleteLayout.visibility = View.GONE
+            }
+        }
+        //Cancel the deletion
+        cancelDeleteButton.setOnClickListener {
+            deleteLayout.visibility = View.GONE
+        }
+        //Confirm the deletion
+        confirmDeleteButton.setOnClickListener {
+            val currentUser = FirebaseAuth.getInstance().currentUser
+
+            //Code to save the Workout
+            if (currentUser != null) {
+                //Get a reference to the Firestore database
+                val db = FirebaseFirestore.getInstance()
+                //Getting all our references that we need to access
+                val userDocumentReference = db.collection("users").document(currentUser.uid)
+                val workoutCollectionReference = userDocumentReference.collection(AllExerciseLists.currentSelectedWorkout.first)
+                val workoutScheduleReference = userDocumentReference.collection("Scheduled Workouts").document(AllExerciseLists.currentSelectedWorkout.first)
+
+                //Removing the the workout from our collections list
+                userDocumentReference.get()
+                    .addOnSuccessListener { documentSnapshot ->
+                        if(documentSnapshot.exists()){
+                            if (documentSnapshot.contains("Collections")) {
+                                // The field exists in the document
+                                val collectionText = documentSnapshot.getString("Collections").toString()
+                                var collectionList = collectionText.split(", ").toMutableList()
+                                collectionList.remove(AllExerciseLists.currentSelectedWorkout.first)
+                                val myString = collectionList.joinToString(", ")
+                                val newCollections = hashMapOf<String, Any>(
+                                    "Collections" to myString
+                                )
+                                userDocumentReference.update(newCollections)
+                            } else {
+                                Toast.makeText(requireActivity(), "Error, Could not find workout in collection list", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    }
+
+                //Deleting any scheduled workouts
+                workoutScheduleReference
+                    .delete()
+
+
+                //Deleting the user workout
+                workoutCollectionReference
+                    .get()
+                    .addOnSuccessListener { querySnapshot ->
+                        for (document in querySnapshot) {
+                            document.reference.delete()
+                        }
+
+                        // Now, delete the collection
+                        workoutCollectionReference
+                            .document()
+                            .delete()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(requireActivity(), "Error, Could not find workout collection", Toast.LENGTH_LONG).show()
+                    }
+
+                Toast.makeText(requireActivity(), "Success, Your workout has been deleted", Toast.LENGTH_LONG).show()
+                findNavController().navigate(R.id.action_DisplaySelectedUserWorkout_to_HomePage)
+            }
+            else{
+                Toast.makeText(requireActivity(), "Error, User could not be authenticated", Toast.LENGTH_LONG).show()
+            }
+        }
+
     }
 
     override fun onDestroyView() {

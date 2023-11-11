@@ -122,7 +122,7 @@ class CurrentCreatedWorkout : Fragment() {
         saveButtonList.add(saveButton)
         val emptyTextView = TextView(requireContext())
 
-        //If there are no exercises inform the user and TODO(Ensure you cannot save the workout)
+        //If there are no exercises inform the user
         if(AllExerciseLists.currentCreateWorkout.size == 0){
             parentLayout.addView(emptyTextView)
             emptyTextView.id = View.generateViewId()

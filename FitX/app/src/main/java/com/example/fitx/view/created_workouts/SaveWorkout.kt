@@ -37,7 +37,6 @@ class SaveWorkout : Fragment() {
     private val binding get() = _binding!!
 
     private fun saveWorkout(view: View){
-        //TODO(Save and navigate with no date)
         val currentUser = FirebaseAuth.getInstance().currentUser
 
         //Code to save the Workout
@@ -170,7 +169,7 @@ class SaveWorkout : Fragment() {
                 Toast.makeText(requireActivity(), "Enter a workout name", Toast.LENGTH_LONG).show()
             }//Checks if the workout has been scheduled
             else if (selectedYear == currentYear && selectedMonth == currentMonth && selectedDayOfMonth == currentDayOfMonth) {
-                saveWorkout(view)   //Function to save the workout to the user
+                saveWorkout(view)   //Function to save the workout to the user without a schedule
             }
             else{//If it has been scheduled, save that info
                 saveWorkout(view)   //Function to save the workout to the user

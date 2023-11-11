@@ -121,6 +121,11 @@
         android:name="com.example.fitx.view.created_workouts.DisplaySelectedUserWorkout"
         android:label="@string/display_selected_user_workout_label"
         tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To home Navigation-->
+        <action
+            android:id="@+id/action_DisplaySelectedUserWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
     </fragment>
 
     <!--Create a workout Fragment-->
