@@ -91,6 +91,10 @@
         <action
             android:id="@+id/action_HomePage_to_CreateAWorkout"
             app:destination="@id/CreateAWorkout" />
+        <!--Input user workout Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
 
     </fragment>
 
@@ -165,6 +169,14 @@
         <action
             android:id="@+id/action_SaveWorkout_to_HomePage"
             app:destination="@id/HomePage" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+    <fragment
+        android:id="@+id/InputUserWorkoutData"
+        android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
+        android:label="@string/input_user_workout_data_label"
+        tools:layout="@layout/input_user_workout_data_frag">
     </fragment>
 
     <!--Added-->

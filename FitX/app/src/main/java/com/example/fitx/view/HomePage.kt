@@ -99,8 +99,8 @@ class HomePage: Fragment() {
             findNavController().navigate((R.id.action_HomePage_to_UserWorkouts))
         }
 
-        binding.userWorkoutsButton.setOnClickListener {
-            findNavController().navigate((R.id.action_HomePage_to_UserWorkouts))
+        binding.inputUserWorkoutDataButton.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_InputUserWorkoutData))
         }
 
         //Button for user sport

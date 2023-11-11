@@ -98,7 +98,13 @@ class SaveWorkout : Fragment() {
                             if (documentSnapshot.contains("Collections")) {
                                 // The field exists in the document
                                 val currentValue = documentSnapshot.getString("Collections")
-                                val newValue = currentValue + ", " + workoutName.text.toString()
+                                var newValue: String
+                                newValue = if(currentValue == ""){
+                                    workoutName.text.toString()
+                                } else{
+                                    currentValue + ", " + workoutName.text.toString()
+                                }
+
                                 val newCollections = hashMapOf<String, Any>(
                                     "Collections" to newValue
                                 )

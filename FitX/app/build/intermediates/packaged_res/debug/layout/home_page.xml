@@ -40,6 +40,16 @@
         android:textSize="32sp" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createAWorkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/workout_border"
+        android:text="Create a Workout"
+        android:textColor="@color/red"
+        android:textSize="32sp"
+        android:layout_marginTop="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/userWorkoutsButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,11 +60,11 @@
         android:layout_marginTop="24dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/createAWorkoutButton"
+        android:id="@+id/inputUserWorkoutDataButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/workout_border"
-        android:text="Create a Workout"
+        android:text="Input Workout Data"
         android:textColor="@color/red"
         android:textSize="32sp"
         android:layout_marginTop="24dp"/>

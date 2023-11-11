@@ -107,6 +107,15 @@
                             <option name="y" value="-361" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_DisplaySelectedUserWorkout_to_HomePage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -230,6 +239,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_HomePage_to_InputUserWorkoutData">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_HomePage_to_LoginScreen">
                               <value>
                                 <LayoutPositions />
@@ -266,6 +280,18 @@
                               </value>
                             </entry>
                           </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="InputUserWorkoutData">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1496" />
+                            <option name="y" value="5" />
+                          </Point>
                         </option>
                       </LayoutPositions>
                     </value>

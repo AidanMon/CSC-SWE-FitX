@@ -15,6 +15,7 @@
     <string name="save_workout_label">Save Your Workout</string>
     <string name="user_workouts_label">My Workouts</string>
     <string name="display_selected_user_workout_label">My Workout</string>
+    <string name="input_user_workout_data_label">Select Workout To Input Data</string>
 
     <string-array name="sportItems">
         <item>Baseball</item>

@@ -2933,6 +2933,7 @@ id FootballSaA
 id FootballUpperBody
 id FootballWorkouts
 id HomePage
+id InputUserWorkoutData
 id LoginScreen
 id META
 id NO_DEBUG
@@ -2999,6 +3000,7 @@ id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
 id action_HomePage_to_CreateAWorkout
 id action_HomePage_to_FootballWorkouts
+id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -3312,6 +3314,7 @@ id inclineWeightedSitupsText
 id included
 id indeterminate
 id info
+id inputSelectedWorkoutDataHeader
 id inputUserWorkoutDataButton
 id inputUserWorkoutDataHeader
 id invisible
@@ -3517,6 +3520,7 @@ id rowsText
 id rtl
 id saveCreatedWorkout
 id saveWorkoutButton
+id saveWorkoutDataButton
 id saveWorkoutHeader
 id save_non_transition_alpha
 id save_overlay_view
@@ -3909,6 +3913,7 @@ layout football_workouts_frag
 layout fragment_first
 layout fragment_second
 layout home_page
+layout input_selected_workout_data_frag
 layout input_user_workout_data_frag
 layout login_screen
 layout m3_alert_dialog
@@ -4081,6 +4086,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string input_user_workout_data_label
 string item_view_role_description
 string lorem_ipsum
 string m3_sys_motion_easing_emphasized

@@ -96,6 +96,10 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_input_selected_workout_data_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/input_selected_workout_data_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\layout_football_lower_body_frag.xml.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_lower_body_frag.xml"
     },
@@ -242,9 +246,5 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_fitx_swimming_image.png.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\fitx_swimming_image.png"
-    },
-    {
-        "merged": "com.example.fitx.app-merged_res-57:/layout_home_page.xml.flat",
-        "source": "com.example.fitx.app-main-59:/layout/home_page.xml"
     }
 ]
