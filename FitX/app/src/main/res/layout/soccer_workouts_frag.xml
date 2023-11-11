@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="12sp"
-            android:text="**May have to \npress a few times "
+            android:text="@string/full_screen_notice"
             app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
             app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
 
@@ -95,6 +95,7 @@
                 android:paddingTop="8sp"
                 android:paddingLeft="4sp"
                 android:text="Squats"
+                android:textSize="22dp"
                 android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 app:layout_constraintStart_toStartOf="parent"

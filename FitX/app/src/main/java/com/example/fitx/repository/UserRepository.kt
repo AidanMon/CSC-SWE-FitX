@@ -79,6 +79,21 @@ class UserRepository {
     }
 
     /**
+     * When the user provides feedback on the application. It will save the response in the database.
+     */
+    fun retrieveFeedback(message: String){
+        firestore = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser?.uid
+        if (user != null) {
+            val messageMap = HashMap<String, Any>()
+            messageMap["Message"] = message
+            firestore.collection("users").
+            document(user).collection("FeedBack").
+            document().set(messageMap)
+        }
+    }
+    /**
     When user presses the Logout button it will sign them out of the app
      */
     fun SignOut(){

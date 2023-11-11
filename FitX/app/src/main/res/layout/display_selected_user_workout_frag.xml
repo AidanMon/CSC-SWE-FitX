@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add your app bar content here if needed -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.home_page_links.AllExercises"
+        android:layout_gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!--Everything is in a constraint layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="16dp">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/displaySelectedUserWorkoutHeader"
+                android:layout_width="296dp"
+                android:layout_height="45dp"
+                android:text="Placeholder"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintVertical_bias="0"/>
+
+            <!--Fullscreen video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enterFullScreenButton"
+                android:layout_width="159dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_button"
+                android:text="Fullscreen Video"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/displaySelectedUserWorkoutHeader"
+                app:layout_constraintVertical_bias="0" />
+
+            <!--Notice for fullscreen button-->
+            <TextView
+                android:id="@+id/fullScreenNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="@string/full_screen_notice"
+                app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
+                app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
+
+            <!--Layout for date and time-->
+            <LinearLayout
+                android:id="@+id/dateAndTimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/fullScreenNotice"
+                android:translationZ="1000dp"
+                android:elevation="15dp"
+                android:visibility="gone"
+                android:background="@color/white"
+
+                android:layout_marginTop="16dp">
+
+                <!-- Date Picker -->
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:datePickerMode="calendar" />
+
+                <!-- Time Picker -->
+                <TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:timePickerMode="spinner" />
+
+                <!--Fullscreen video button-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/setScheduleButton"
+                    android:layout_width="159dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/show_workout_button"
+                    android:text="Schedule Workout"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+                <!--Padding below to adjust for youtube video-->
+                <TextView
+                    android:id="@+id/paddingDateAndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="232dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <!--Layout for delete workout-->
+            <LinearLayout
+                android:id="@+id/deleteLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/fullScreenNotice"
+                android:translationZ="10000dp"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:layout_marginTop="24dp">
+
+                <!--Header-->
+                <TextView
+                    android:id="@+id/deleteLayoutNotice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Are You Sure, There is no Going back!"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
+
+                <!--Confirm delete button-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirmDeleteButton"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/add_to_button"
+                    android:text="Confirm"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+
+                <!--Cancel delete button-->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancelDeleteButton"
+                    android:layout_width="80dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/add_to_button"
+                    android:text="Cancel"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Frame layout for youtube player-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <!--Fullscreen layout-->
+        <FrameLayout
+            android:id="@+id/full_screen_view_container"
+            android:layout_width="409dp"
+            android:layout_height="640dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone"></FrameLayout>
+
+        <!--Main youtube player-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/theVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+
+            app:autoPlay="false"
+            app:videoId="0cXAp6WhSj4"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+    </FrameLayout>
+
+    <!-- Frame layout for scheduling and deleting workout buttons-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_gravity="top"
+        >
+
+        <!--Show current workout button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scheduleWorkoutButton"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/show_workout_button"
+            android:text="Schedule Workout"
+            android:translationZ="100dp"
+            android:textColor="@color/black" />
+
+        <!--Show delete layout button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteWorkoutButton"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/add_to_button"
+            android:text="Delete Workout"
+            android:layout_gravity="right"
+            android:translationZ="100dp"
+            android:textColor="@color/black" />
+
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

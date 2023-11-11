@@ -9,11 +9,19 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
+<<<<<<< HEAD
 11-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:34:5-67
 11-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:34:22-64
 12    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 12-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:35:5-82
 12-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:35:22-79
+=======
+11-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:5-79
+12-->[core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:22-76
+>>>>>>> origin/develop
 13    <uses-permission android:name="android.permission.WAKE_LOCK" />
 13-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:36:5-68
 13-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:36:22-65
@@ -37,6 +45,7 @@
 21        android:protectionLevel="signature" />
 21-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 22
+<<<<<<< HEAD
 23    <uses-permission android:name="com.example.fitx.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 23-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
 23-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
@@ -107,6 +116,79 @@
 59-->[com.google.firebase:firebase-common:20.3.3] C:\Users\zenze\.gradle\caches\transforms-3\d815263f6ee89b7e4cb4bb445f57c9c9\transformed\firebase-common-20.3.3\AndroidManifest.xml:34:13-43
 60            android:exported="false" >
 60-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:11:13-37
+=======
+23    <application
+23-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-28:19
+24        android:allowBackup="true"
+24-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+26        android:dataExtractionRules="@xml/data_extraction_rules"
+26-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-65
+27        android:debuggable="true"
+28        android:extractNativeLibs="true"
+29        android:fullBackupContent="@xml/backup_rules"
+29-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-54
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-43
+31        android:label="@string/app_name"
+31-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-54
+33        android:supportsRtl="true"
+33-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-35
+34        android:testOnly="true"
+35        android:theme="@style/Theme.FitX" >
+35-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-42
+36        <activity
+36-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:9-27:20
+37            android:name="com.example.fitx.MainActivity"
+37-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-41
+38            android:exported="true"
+38-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-36
+39            android:label="@string/app_name"
+39-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-45
+40            android:theme="@style/Theme.FitX" >
+40-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:13-46
+41            <intent-filter>
+41-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:22:13-26:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-69
+42-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:17-77
+44-->C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <service
+48-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:9:9-15:19
+49            android:name="com.google.firebase.components.ComponentDiscoveryService"
+49-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:10:13-84
+50            android:directBootAware="true"
+50-->[com.google.firebase:firebase-common:20.3.3] C:\Users\zenze\.gradle\caches\transforms-3\d815263f6ee89b7e4cb4bb445f57c9c9\transformed\firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+51            android:exported="false" >
+51-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:11:13-37
+52            <meta-data
+52-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:12:13-14:85
+53                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+53-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:13:17-126
+54                android:value="com.google.firebase.components.ComponentRegistrar" />
+54-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:14:17-82
+55            <meta-data
+55-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\792b77f56c806bfb8dc88e55c5981357\transformed\firebase-analytics-ktx-21.3.0\AndroidManifest.xml:11:13-13:85
+56                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+56-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\792b77f56c806bfb8dc88e55c5981357\transformed\firebase-analytics-ktx-21.3.0\AndroidManifest.xml:12:17-126
+57                android:value="com.google.firebase.components.ComponentRegistrar" />
+57-->[com.google.firebase:firebase-analytics-ktx:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\792b77f56c806bfb8dc88e55c5981357\transformed\firebase-analytics-ktx-21.3.0\AndroidManifest.xml:13:17-82
+58            <meta-data
+58-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\bcbebe3afc44992babf852efedc0ee82\transformed\firebase-auth-ktx-22.1.2\AndroidManifest.xml:11:13-13:85
+59                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+59-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\bcbebe3afc44992babf852efedc0ee82\transformed\firebase-auth-ktx-22.1.2\AndroidManifest.xml:12:17-116
+60                android:value="com.google.firebase.components.ComponentRegistrar" />
+60-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\bcbebe3afc44992babf852efedc0ee82\transformed\firebase-auth-ktx-22.1.2\AndroidManifest.xml:13:17-82
+>>>>>>> origin/develop
 61            <meta-data
 61-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\ec3e92a735152e694acfb101b98e0943\transformed\firebase-firestore-ktx-24.8.1\AndroidManifest.xml:12:13-14:85
 62                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
