@@ -60,7 +60,6 @@ class UserRepository {
                     callback(num as Number)
             }
         }
-
     }
 
     /**

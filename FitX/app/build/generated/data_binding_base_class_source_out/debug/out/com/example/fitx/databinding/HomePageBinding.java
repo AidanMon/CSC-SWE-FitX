@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -21,10 +20,13 @@ public final class HomePageBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final AppCompatButton AllExercises;
+
+  @NonNull
   public final AppCompatButton HealthyTips;
 
   @NonNull
-  public final TextView loginMessageTextView;
+  public final AppCompatButton createAWorkoutButton;
 
   @NonNull
   public final AppCompatButton toSports;
@@ -32,14 +34,20 @@ public final class HomePageBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton userSport;
 
-  private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton HealthyTips,
-      @NonNull TextView loginMessageTextView, @NonNull AppCompatButton toSports,
-      @NonNull AppCompatButton userSport) {
+  @NonNull
+  public final AppCompatButton userWorkoutsButton;
+
+  private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton AllExercises,
+      @NonNull AppCompatButton HealthyTips, @NonNull AppCompatButton createAWorkoutButton,
+      @NonNull AppCompatButton toSports, @NonNull AppCompatButton userSport,
+      @NonNull AppCompatButton userWorkoutsButton) {
     this.rootView = rootView;
+    this.AllExercises = AllExercises;
     this.HealthyTips = HealthyTips;
-    this.loginMessageTextView = loginMessageTextView;
+    this.createAWorkoutButton = createAWorkoutButton;
     this.toSports = toSports;
     this.userSport = userSport;
+    this.userWorkoutsButton = userWorkoutsButton;
   }
 
   @Override
@@ -69,15 +77,21 @@ public final class HomePageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.AllExercises;
+      AppCompatButton AllExercises = ViewBindings.findChildViewById(rootView, id);
+      if (AllExercises == null) {
+        break missingId;
+      }
+
       id = R.id.HealthyTips;
       AppCompatButton HealthyTips = ViewBindings.findChildViewById(rootView, id);
       if (HealthyTips == null) {
         break missingId;
       }
 
-      id = R.id.loginMessageTextView;
-      TextView loginMessageTextView = ViewBindings.findChildViewById(rootView, id);
-      if (loginMessageTextView == null) {
+      id = R.id.createAWorkoutButton;
+      AppCompatButton createAWorkoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (createAWorkoutButton == null) {
         break missingId;
       }
 
@@ -93,8 +107,14 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomePageBinding((LinearLayout) rootView, HealthyTips, loginMessageTextView,
-          toSports, userSport);
+      id = R.id.userWorkoutsButton;
+      AppCompatButton userWorkoutsButton = ViewBindings.findChildViewById(rootView, id);
+      if (userWorkoutsButton == null) {
+        break missingId;
+      }
+
+      return new HomePageBinding((LinearLayout) rootView, AllExercises, HealthyTips,
+          createAWorkoutButton, toSports, userSport, userWorkoutsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

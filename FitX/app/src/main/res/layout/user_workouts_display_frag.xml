@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add your app bar content here if needed -->
+
+    <!-- Frame layout for youtube player-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".view.home_page_links.AllExercises">
+
+        <!--Everything is in a constraint layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:layout_height="wrap_content">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/userWorkoutsDisplayHeader"
+                android:layout_width="296dp"
+                android:layout_height="45dp"
+                android:text="My Workouts"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <!--No user workouts notice-->
+            <TextView
+                android:id="@+id/noUserWorkoutsNotice"
+                android:layout_width="380sp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="32dp"
+                android:text="You have not made any workouts yet. Head over to create a workout to being planning! "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintLeft_toLeftOf="@id/parentLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/userWorkoutsDisplayHeader" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <!--Fullscreen layout-->
+        <FrameLayout
+            android:id="@+id/full_screen_view_container"
+            android:layout_width="409dp"
+            android:layout_height="640dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone"></FrameLayout>
+
+        <!--Main youtube player-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/theVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+
+            app:autoPlay="false"
+            app:videoId="0cXAp6WhSj4"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
