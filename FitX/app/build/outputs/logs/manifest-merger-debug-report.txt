@@ -1,16 +1,9 @@
 -- Merging decision tree log ---
 manifest
-<<<<<<< HEAD
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-38:12
-=======
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-30:12
->>>>>>> origin/develop
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:1-40:12
 MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.databinding:databinding-adapters:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\43b5bb0036ed6b6c96d1335beeb5c4f2\transformed\databinding-adapters-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\46be43769c1b5ca187ab57be99ef0d1e\transformed\databinding-ktx-8.1.2\AndroidManifest.xml:2:1-7:12
@@ -116,7 +109,6 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\zenze\.
 MERGED from [io.grpc:grpc-android:1.52.1] C:\Users\zenze\.gradle\caches\transforms-3\d4c463e086cf21df82dcedaa99eb5086\transformed\grpc-android-1.52.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\zenze\.gradle\caches\transforms-3\e624ca68e65f92ed9d2131d661d77ff8\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 	package
-<<<<<<< HEAD
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
@@ -126,45 +118,35 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\zen
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:11-69
-application
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-33:19
-INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-33:19
-=======
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-	android:versionName
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-	xmlns:tools
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:3:5-51
-	android:versionCode
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
 MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:5-67
 MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
 MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\zenze\.gradle\caches\transforms-3\7ae0a9448fb9ebab912d6bd8afd944d9\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\zenze\.gradle\caches\transforms-3\7ae0a9448fb9ebab912d6bd8afd944d9\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-28:19
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-28:19
->>>>>>> origin/develop
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-35:19
+INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-35:19
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\zenze\.gradle\caches\transforms-3\86790846f4c78b3b6a078d36765c2a9f\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.8.0] C:\Users\zenze\.gradle\caches\transforms-3\86790846f4c78b3b6a078d36765c2a9f\transformed\material-1.8.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\zenze\.gradle\caches\transforms-3\70361859efa43ba9e3c54eaee70db8b7\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -240,96 +222,69 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\zenze\.gradle\cach
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zenze\.gradle\caches\transforms-3\f8e43f6e46409e3f2fab57cfdc6eb491\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zenze\.gradle\caches\transforms-3\f8e43f6e46409e3f2fab57cfdc6eb491\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:extractNativeLibs
-<<<<<<< HEAD
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-54
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-54
 	android:roundIcon
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-54
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-54
 	tools:targetApi
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-29
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:16:9-29
 	android:icon
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-42
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-42
 	android:dataExtractionRules
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:9-65
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.example.fitx.MainActivity
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-25:20
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:9-27:20
 	android:label
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-45
 	android:exported
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:13-36
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-36
 	android:theme
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-46
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:13-46
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:16:13-41
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:27-74
 service#com.example.fitx.repository.MessageService
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:26:9-32:19
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:28:9-34:19
 	android:exported
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:28:13-37
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:27:13-54
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:29:13-54
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:29:13-31:29
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:31:13-33:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:30:17-78
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:17-78
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:30:25-75
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:34:5-67
-MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:5-67
-MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:7:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-firestore:24.8.1] C:\Users\zenze\.gradle\caches\transforms-3\e9754ce401b5bbb00d366b1e67d1d154\transformed\firebase-firestore-24.8.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-installations:17.1.4] C:\Users\zenze\.gradle\caches\transforms-3\cbc09fc25a214f0ad79d8754abf60af7\transformed\firebase-installations-17.1.4\AndroidManifest.xml:8:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\0f519a027fd2ebe4bac902de87ef82b8\transformed\play-services-measurement-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-impl:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\87d13bcc543ce75e648349db389f5a6f\transformed\play-services-measurement-impl-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] C:\Users\zenze\.gradle\caches\transforms-3\d6fb60f99ef2a224eb018e8c244acad4\transformed\recaptcha-18.1.2\AndroidManifest.xml:7:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\zenze\.gradle\caches\transforms-3\7ae0a9448fb9ebab912d6bd8afd944d9\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\zenze\.gradle\caches\transforms-3\7ae0a9448fb9ebab912d6bd8afd944d9\transformed\transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
-	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:34:22-64
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:25-75
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:35:5-82
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:5-82
 MERGED from [com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:26:5-82
 MERGED from [com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:26:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:11:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\zenze\.gradle\caches\transforms-3\a4af98f33ed31df21303bfb632fe8597\transformed\play-services-cloud-messaging-17.0.1\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:35:22-79
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:36:5-68
+ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\afb8f114f32aa27244be7b246e6e1779\transformed\play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
@@ -343,58 +298,11 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Use
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.3.0] C:\Users\zenze\.gradle\caches\transforms-3\a52d70e796cb2a696a35634c5e5a4a1d\transformed\play-services-measurement-sdk-api-21.3.0\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:36:22-65
+		ADDED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:22-65
 uses-sdk
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-=======
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-	android:appComponentFactory
-		ADDED from [androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-	android:supportsRtl
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-35
-	android:label
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-41
-	android:fullBackupContent
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-54
-	android:roundIcon
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-54
-	tools:targetApi
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:16:9-29
-	android:icon
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-43
-	android:allowBackup
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-35
-	android:theme
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-42
-	android:dataExtractionRules
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-65
-activity#com.example.fitx.MainActivity
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:9-27:20
-	android:label
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-45
-	android:exported
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-36
-	android:theme
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:13-46
-	android:name
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-41
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:22:13-26:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-69
-	android:name
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:27-74
-uses-sdk
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
->>>>>>> origin/develop
 MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:5:5-44
 MERGED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:databinding-adapters:8.1.2] C:\Users\zenze\.gradle\caches\transforms-3\43b5bb0036ed6b6c96d1335beeb5c4f2\transformed\databinding-adapters-8.1.2\AndroidManifest.xml:5:5-44
@@ -606,15 +514,9 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\zen
 	tools:overrideLibrary
 		ADDED from [com.google.firebase:firebase-auth:22.1.2] C:\Users\zenze\.gradle\caches\transforms-3\b8496919beb53b33b02b5ac7d9a4a08c\transformed\firebase-auth-22.1.2\AndroidManifest.xml:23:9-61
 	android:targetSdkVersion
-<<<<<<< HEAD
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-=======
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from C:\Users\zenze\repo\fitX-branches\create-a-workout-implemented\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml
->>>>>>> origin/develop
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:22:5-79

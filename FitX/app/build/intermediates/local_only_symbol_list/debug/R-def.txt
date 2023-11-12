@@ -218,15 +218,11 @@ id lateralLungesText
 id lateralShufflesLayout
 id lateralShufflesPlayVideo
 id lateralShufflesText
-<<<<<<< HEAD
-id loginMessageTextView
-=======
 id legsLayout
 id legsShowAll
 id legsText
 id listOfExercises
 id listOfExercisesHeader
->>>>>>> origin/develop
 id lungesInfo
 id lungesLayout
 id lungesPlayVideo

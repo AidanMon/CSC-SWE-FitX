@@ -3361,10 +3361,6 @@ id listOfExercises
 id listOfExercisesHeader
 id list_item
 id locale
-<<<<<<< HEAD
-id loginMessageTextView
-=======
->>>>>>> origin/develop
 id ltr
 id lungesInfo
 id lungesLayout
