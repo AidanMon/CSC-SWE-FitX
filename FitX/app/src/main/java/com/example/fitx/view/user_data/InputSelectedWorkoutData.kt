@@ -343,7 +343,7 @@ class InputSelectedWorkoutDataFragBinding : Fragment() {
                 repInput.hint = "Enter Rep Count"
                 repInput.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24f)
                 repInput.setPadding(11,11,0,11)
-                repInput.width = 657
+                repInput.width = 646
                 repInput.height = heightValue.toInt()
                 repInput.setTextColor(blackText)
                 repInput.setBackgroundResource(R.color.white)
@@ -369,10 +369,10 @@ class InputSelectedWorkoutDataFragBinding : Fragment() {
                 val weightInput = EditText(requireContext())
                 layout.addView(weightInput)
                 weightInput.id = View.generateViewId()
-                weightInput.hint = "Enter Weight In Pounds"
+                weightInput.hint = "Enter Weight In lbs"
                 weightInput.setTextSize(TypedValue.COMPLEX_UNIT_SP, 24f)
                 weightInput.setPadding(11,11,0,11)
-                weightInput.width = 657
+                weightInput.width = 646
                 weightInput.height = heightValue.toInt()
                 weightInput.setTextColor(blackText)
                 weightInput.setBackgroundResource(R.color.white)

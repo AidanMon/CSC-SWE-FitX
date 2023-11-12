@@ -68,10 +68,6 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.fitx.app-merged_res-57:/navigation_nav_graph.xml.flat",
-        "source": "com.example.fitx.app-main-59:/navigation/nav_graph.xml"
-    },
-    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_fitx_tennis_image.png.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\drawable\\fitx_tennis_image.png"
     },
@@ -170,6 +166,10 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.fitx.app-merged_res-57:/layout_input_user_workout_data_frag.xml.flat",
+        "source": "com.example.fitx.app-main-59:/layout/input_user_workout_data_frag.xml"
     },
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-merged_res-57:\\drawable_triple_border_bottom_gone.xml.flat",

@@ -16,6 +16,10 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_explosive_strength_frag.xml"
     },
     {
+        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/input_user_workout_data_frag.xml",
+        "source": "com.example.fitx.app-main-59:/layout/input_user_workout_data_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\create_a_workout_frag.xml",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\create_a_workout_frag.xml"
     },
@@ -106,9 +110,5 @@
     {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\football_lower_body_frag.xml",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\football_lower_body_frag.xml"
-    },
-    {
-        "merged": "com.example.fitx.app-mergeDebugResources-56:/layout/input_selected_workout_data_frag.xml",
-        "source": "com.example.fitx.app-main-59:/layout/input_selected_workout_data_frag.xml"
     }
 ]
