@@ -211,7 +211,7 @@ class InputSelectedWorkoutDataFragBinding : Fragment() {
         constraintSet.connect(inputButtonList[0].id, ConstraintSet.TOP, textViewList[0].id, ConstraintSet.TOP, 21)
         constraintSet.connect(inputButtonList[0].id, ConstraintSet.RIGHT, textViewList[0].id, ConstraintSet.RIGHT, 6)
 
-        //Constraint for first Layout 
+        //Constraint for first Layout
         constraintSet.connect(layoutList[0].id, ConstraintSet.TOP, textViewList[0].id, ConstraintSet.BOTTOM, -16)
         constraintSet.connect(layoutList[0].id, ConstraintSet.LEFT, textViewList[0].id, ConstraintSet.LEFT)
 
