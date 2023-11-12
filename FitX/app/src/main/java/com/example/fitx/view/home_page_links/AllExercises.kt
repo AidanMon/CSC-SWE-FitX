@@ -128,6 +128,7 @@ class AllExercises : Fragment() {
             constraintSet.connect(buttonList[i].id, ConstraintSet.RIGHT, textViewList[i].id, ConstraintSet.RIGHT, 11)
         }
 
+
         //Bottom padding values and constraint setting
         var paddingValue = 600                  //Excess space to leave room for fullscreen container
         val paddingHeightValue = TypedValue.applyDimension(

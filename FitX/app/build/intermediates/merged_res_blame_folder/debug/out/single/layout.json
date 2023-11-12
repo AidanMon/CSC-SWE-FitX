@@ -68,6 +68,10 @@
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\baseball_workouts_frag.xml"
     },
     {
+        "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\input_selected_workout_data_frag.xml",
+        "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\input_selected_workout_data_frag.xml"
+    },
+    {
         "merged": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-mergeDebugResources-56:\\layout\\display_selected_user_workout_frag.xml",
         "source": "C:\\Users\\Amona\\.gradle\\daemon\\8.0\\com.example.fitx.app-main-59:\\layout\\display_selected_user_workout_frag.xml"
     },
