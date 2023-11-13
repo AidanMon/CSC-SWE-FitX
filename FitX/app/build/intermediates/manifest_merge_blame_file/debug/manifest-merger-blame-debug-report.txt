@@ -9,17 +9,17 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
-12-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
+12-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:5-67
+12-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:5:22-64
 13    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-13-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:5-82
-13-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:22-79
+13-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:5-82
+13-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:37:22-79
 14    <uses-permission android:name="android.permission.WAKE_LOCK" />
-14-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:5-68
-14-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:22-65
+14-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:5-68
+14-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:38:22-65
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 15-->[core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:5-79
 15-->[core-12.1.0.aar] C:\Users\zenze\.gradle\caches\transforms-3\704f7d71ec6ecbab625cc4fe43f74f3c\transformed\core-12.1.0\AndroidManifest.xml:8:22-76
@@ -45,61 +45,61 @@
 24-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-35:19
+26-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:7:5-35:19
 27        android:allowBackup="true"
-27-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-35
+27-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:8:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.9.0] C:\Users\zenze\.gradle\caches\transforms-3\3cb301516bfd6dc5f94f801649e2d628\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 29        android:dataExtractionRules="@xml/data_extraction_rules"
-29-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-65
+29-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:9:9-65
 30        android:debuggable="true"
 31        android:extractNativeLibs="true"
 32        android:fullBackupContent="@xml/backup_rules"
-32-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-54
+32-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:10:9-54
 33        android:icon="@mipmap/ic_launcher"
-33-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-43
+33-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:11:9-43
 34        android:label="@string/app_name"
-34-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-41
+34-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:12:9-41
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-54
+35-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:13:9-54
 36        android:supportsRtl="true"
-36-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-35
+36-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:14:9-35
 37        android:testOnly="true"
 38        android:theme="@style/Theme.FitX" >
-38-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-42
+38-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:15:9-42
 39        <activity
-39-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:9-27:20
+39-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:17:9-27:20
 40            android:name="com.example.fitx.MainActivity"
-40-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-41
+40-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:18:13-41
 41            android:exported="true"
-41-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-36
+41-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:19:13-36
 42            android:label="@string/app_name"
-42-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-45
+42-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:20:13-45
 43            android:theme="@style/Theme.FitX" >
-43-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:13-46
+43-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:21:13-46
 44            <intent-filter>
-44-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:22:13-26:29
+44-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:22:13-26:29
 45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-69
-45-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:25-66
+45-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:17-69
+45-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:23:25-66
 46
 47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:17-77
-47-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:27-74
+47-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:17-77
+47-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:25:27-74
 48            </intent-filter>
 49        </activity>
 50
 51        <service
-51-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:28:9-34:19
+51-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:28:9-34:19
 52            android:name="com.example.fitx.repository.MessageService"
-52-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:29:13-54
+52-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:29:13-54
 53            android:exported="false" >
-53-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:30:13-37
+53-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:30:13-37
 54            <intent-filter>
-54-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:31:13-33:29
+54-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:31:13-33:29
 55                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-55-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:17-78
-55-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:25-75
+55-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:17-78
+55-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:25-75
 56            </intent-filter>
 57        </service>
 58        <service
@@ -200,10 +200,10 @@
 109            android:exported="false" >
 109-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\zenze\.gradle\caches\transforms-3\9d36fd1d5f5f13d0a83b25d2ea0622c4\transformed\firebase-messaging-23.2.1\AndroidManifest.xml:45:13-37
 110            <intent-filter android:priority="-500" >
-110-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:31:13-33:29
+110-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:31:13-33:29
 111                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-111-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:17-78
-111-->C:\Users\zenze\repo\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:25-75
+111-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:17-78
+111-->C:\Users\zenze\repo\fitX-branches\input-user-data\CSC-SWE-FitX\FitX\app\src\main\AndroidManifest.xml:32:25-75
 112            </intent-filter>
 113        </service>
 114

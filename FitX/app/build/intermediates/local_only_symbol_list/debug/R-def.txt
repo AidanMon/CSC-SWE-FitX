@@ -45,11 +45,8 @@ id FootballUpperBody
 id FootballWorkouts
 id HealthyTips
 id HomePage
-<<<<<<< HEAD
 id InputSelectedWorkoutData
 id InputUserWorkoutData
-=======
->>>>>>> origin/develop
 id LoginScreen
 id SaveWorkout
 id SoccerWorkouts
@@ -73,6 +70,7 @@ id action_HomePage_to_CreateAWorkout
 id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
+id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -211,6 +209,9 @@ id inclineWeightedSitupsInfo
 id inclineWeightedSitupsLayout
 id inclineWeightedSitupsPlayVideo
 id inclineWeightedSitupsText
+id inputSelectedWorkoutDataHeader
+id inputUserWorkoutDataButton
+id inputUserWorkoutDataHeader
 id jumpAndReachInfo
 id jumpAndReachLayout
 id jumpAndReachPlayVideo
@@ -284,6 +285,7 @@ id rowsPlayVideo
 id rowsText
 id saveCreatedWorkout
 id saveWorkoutButton
+id saveWorkoutDataButton
 id saveWorkoutHeader
 id scheduleHeader
 id scheduleWorkoutButton
@@ -408,6 +410,8 @@ layout fragment_first
 layout fragment_second
 layout healthy_tips
 layout home_page
+layout input_selected_workout_data_frag
+layout input_user_workout_data_frag
 layout list_item_tip
 layout login_screen
 layout save_workout_frag

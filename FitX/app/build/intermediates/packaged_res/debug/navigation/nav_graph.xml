@@ -99,7 +99,9 @@
             android:id="@+id/action_HomePage_to_FeedBack"
             app:destination="@id/FeedbackView"
             />
-
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
     </fragment>
 
     <!--All Exercises Fragment-->
@@ -179,7 +181,6 @@
 
 
     <fragment
-<<<<<<< HEAD
         android:id="@+id/InputUserWorkoutData"
         android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
         android:label="@string/input_user_workout_data_label"
@@ -202,12 +203,13 @@
         <action
             android:id="@+id/action_InputSelectedWorkoutData_to_HomePage"
             app:destination="@id/HomePage" />
-=======
+    </fragment>
+    
+    <fragment
         android:id="@+id/HealthyTips"
         android:name="com.example.fitx.view.HealthyTips"
         android:label="@string/healthy_tips_label"
         tools:layout="@layout/healthy_tips">
->>>>>>> origin/develop
     </fragment>
 
     <!--Added-->

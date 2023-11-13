@@ -267,12 +267,17 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_HomePage_to_FeedBack">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_HomePage_to_FootballWorkouts">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_HomePage_to_InputUserWorkoutData">
+                            <entry key="action_HomePage_to_HealthyTips">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -317,6 +322,27 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="InputSelectedWorkoutData">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="12" />
+                            <option name="y" value="12" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_InputSelectedWorkoutData_to_HomePage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="InputUserWorkoutData">
                     <value>
                       <LayoutPositions>
@@ -328,12 +354,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_HomePage_to_FeedBack">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                            <entry key="action_HomePage_to_HealthyTips">
+                            <entry key="action_InputUserWorkoutData_to_InputSelectedWorkoutData">
                               <value>
                                 <LayoutPositions />
                               </value>

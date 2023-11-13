@@ -29,6 +29,9 @@ public final class HomePageBinding implements ViewBinding {
   public final AppCompatButton createAWorkoutButton;
 
   @NonNull
+  public final AppCompatButton inputUserWorkoutDataButton;
+
+  @NonNull
   public final AppCompatButton toSports;
 
   @NonNull
@@ -39,12 +42,13 @@ public final class HomePageBinding implements ViewBinding {
 
   private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton AllExercises,
       @NonNull AppCompatButton HealthyTips, @NonNull AppCompatButton createAWorkoutButton,
-      @NonNull AppCompatButton toSports, @NonNull AppCompatButton userSport,
-      @NonNull AppCompatButton userWorkoutsButton) {
+      @NonNull AppCompatButton inputUserWorkoutDataButton, @NonNull AppCompatButton toSports,
+      @NonNull AppCompatButton userSport, @NonNull AppCompatButton userWorkoutsButton) {
     this.rootView = rootView;
     this.AllExercises = AllExercises;
     this.HealthyTips = HealthyTips;
     this.createAWorkoutButton = createAWorkoutButton;
+    this.inputUserWorkoutDataButton = inputUserWorkoutDataButton;
     this.toSports = toSports;
     this.userSport = userSport;
     this.userWorkoutsButton = userWorkoutsButton;
@@ -95,6 +99,12 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.inputUserWorkoutDataButton;
+      AppCompatButton inputUserWorkoutDataButton = ViewBindings.findChildViewById(rootView, id);
+      if (inputUserWorkoutDataButton == null) {
+        break missingId;
+      }
+
       id = R.id.toSports;
       AppCompatButton toSports = ViewBindings.findChildViewById(rootView, id);
       if (toSports == null) {
@@ -114,7 +124,8 @@ public final class HomePageBinding implements ViewBinding {
       }
 
       return new HomePageBinding((LinearLayout) rootView, AllExercises, HealthyTips,
-          createAWorkoutButton, toSports, userSport, userWorkoutsButton);
+          createAWorkoutButton, inputUserWorkoutDataButton, toSports, userSport,
+          userWorkoutsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

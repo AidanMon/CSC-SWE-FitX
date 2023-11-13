@@ -99,7 +99,9 @@
             android:id="@+id/action_HomePage_to_FeedBack"
             app:destination="@id/FeedbackView"
             />
-
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
     </fragment>
 
     <!--All Exercises Fragment-->
