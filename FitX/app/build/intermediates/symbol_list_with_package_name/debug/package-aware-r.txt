@@ -2808,6 +2808,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edittext_border
 drawable exercise_border
 drawable fitx_baseball_image
 drawable fitx_basketball_image
@@ -2929,14 +2930,19 @@ id CreateAccountView
 id CurrentCreatedWorkout
 id DisplaySelectedUserWorkouts
 id FUNCTION
+id FeedbackView
 id FootballExplosiveStrength
 id FootballLowerBody
 id FootballSaA
 id FootballUpperBody
 id FootballWorkouts
+id HealthyTips
 id HomePage
+<<<<<<< HEAD
 id InputSelectedWorkoutData
 id InputUserWorkoutData
+=======
+>>>>>>> origin/develop
 id LoginScreen
 id META
 id NO_DEBUG
@@ -2994,6 +3000,7 @@ id actionUp
 id action_CreateAWorkout_to_CurrentCreatedWorkout
 id action_CurrentCreatedWorkout_to_SaveWorkout
 id action_DisplaySelectedUserWorkout_to_HomePage
+id action_Feedback_to_HomePage
 id action_FootballWorkouts_to_FootballExplosiveStrength
 id action_FootballWorkouts_to_FootballLowerBody
 id action_FootballWorkouts_to_FootballSaA
@@ -3002,8 +3009,9 @@ id action_HomePage_to_AllExercises
 id action_HomePage_to_BaseballWorkouts
 id action_HomePage_to_BasketballWorkouts
 id action_HomePage_to_CreateAWorkout
+id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
-id action_HomePage_to_InputUserWorkoutData
+id action_HomePage_to_HealthyTips
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -3034,6 +3042,7 @@ id action_bar_title
 id action_container
 id action_context_bar
 id action_divider
+id action_feedback
 id action_image
 id action_loginScreen_to_BaseballWorkouts
 id action_loginScreen_to_BasketballWorkouts
@@ -3242,6 +3251,8 @@ id easeOut
 id east
 id edit_query
 id elastic
+id emailEditText
+id emailTextView
 id embed
 id end
 id endToStart
@@ -3253,6 +3264,7 @@ id expand_activities_button
 id expanded_menu
 id experiencelevellist
 id fade
+id feedbackTextView
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3319,9 +3331,6 @@ id inclineWeightedSitupsText
 id included
 id indeterminate
 id info
-id inputSelectedWorkoutDataHeader
-id inputUserWorkoutDataButton
-id inputUserWorkoutDataHeader
 id invisible
 id inward
 id italic
@@ -3401,6 +3410,9 @@ id medicineBallThrowSitupsLayout
 id medicineBallThrowSitupsPlayVideo
 id medicineBallThrowSitupsText
 id message
+id messageEditText
+id messageFrame
+id messageTextView
 id middle
 id militaryPressLayout
 id militaryPressPlayVideo
@@ -3437,6 +3449,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nameEditText
+id nameTextView
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
@@ -3525,7 +3539,6 @@ id rowsText
 id rtl
 id saveCreatedWorkout
 id saveWorkoutButton
-id saveWorkoutDataButton
 id saveWorkoutHeader
 id save_non_transition_alpha
 id save_overlay_view
@@ -3566,6 +3579,7 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id sendButton
 id setScheduleButton
 id sharedValueSet
 id sharedValueUnset
@@ -3700,6 +3714,9 @@ id textview_second
 id theVideoPlayer
 id time
 id timePicker
+id tipDesc
+id tipName
+id tipsListView
 id title
 id titleDividerNoCustom
 id title_template
@@ -3910,6 +3927,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout display_selected_user_workout_frag
+layout feed_back
 layout football_explosive_strength_frag
 layout football_lower_body_frag
 layout football_speed_and_agility_frag
@@ -3917,9 +3935,9 @@ layout football_upper_body_frag
 layout football_workouts_frag
 layout fragment_first
 layout fragment_second
+layout healthy_tips
 layout home_page
-layout input_selected_workout_data_frag
-layout input_user_workout_data_frag
+layout list_item_tip
 layout login_screen
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -4074,6 +4092,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string fcm_fallback_notification_channel_label
 string firebase_database_url
 string first_fragment_label
 string football_full_body_explosive_strength
@@ -4088,6 +4107,7 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string healthy_tips_label
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description

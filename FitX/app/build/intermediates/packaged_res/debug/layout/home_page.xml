@@ -60,11 +60,11 @@
         android:layout_marginTop="24dp"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/inputUserWorkoutDataButton"
+        android:id="@+id/HealthyTips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/workout_border"
-        android:text="Input Workout Data"
+        android:text="@string/healthy_tips_label"
         android:textColor="@color/red"
         android:textSize="32sp"
         android:layout_marginTop="24dp"/>

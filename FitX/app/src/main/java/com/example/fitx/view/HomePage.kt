@@ -12,6 +12,8 @@ import com.example.fitx.model.Exercise
 import com.example.fitx.repository.AllExerciseLists
 import com.example.fitx.repository.ExerciseRepository
 import com.example.fitx.repository.UserRepository
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
 
 /**
  * Home Page holds all the data that is going to displayed to the user to interact with
@@ -98,9 +100,8 @@ class HomePage: Fragment() {
         binding.userWorkoutsButton.setOnClickListener {
             findNavController().navigate((R.id.action_HomePage_to_UserWorkouts))
         }
-
-        binding.inputUserWorkoutDataButton.setOnClickListener {
-            findNavController().navigate((R.id.action_HomePage_to_InputUserWorkoutData))
+        binding.HealthyTips.setOnClickListener{
+            findNavController().navigate(R.id.action_HomePage_to_HealthyTips)
         }
 
         //Button for user sport
