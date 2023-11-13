@@ -62,7 +62,7 @@ class WorkoutDataRepository {
 
                 for(set in data.setList){   //For each set
                     var setDataHashMap = mutableMapOf("Count" to set.second.first, "Weight" to set.second.second)
-                    if(set.second.first != 0 && set.second.second != 0){    //If count or weight is zero, do not add the set
+                    if(set.second.first != 0){    //If rep count is zero, do not add the set
                         myDocument[set.first] = setDataHashMap
                     }
                 }
