@@ -2906,6 +2906,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable red_triple_border_bottom_gone
+drawable red_triple_border_top_gone
 drawable rounded_button
 drawable show_workout_button
 drawable test_level_drawable
@@ -2936,6 +2938,8 @@ id FootballUpperBody
 id FootballWorkouts
 id HealthyTips
 id HomePage
+id InputSelectedWorkoutData
+id InputUserWorkoutData
 id LoginScreen
 id META
 id NO_DEBUG
@@ -3005,6 +3009,7 @@ id action_HomePage_to_CreateAWorkout
 id action_HomePage_to_FeedBack
 id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
+id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
@@ -3012,6 +3017,8 @@ id action_HomePage_to_SwimmingWorkouts
 id action_HomePage_to_TennisWorkouts
 id action_HomePage_to_UserWorkouts
 id action_HomePage_to_VolleyballWorkouts
+id action_InputSelectedWorkoutData_to_HomePage
+id action_InputUserWorkoutData_to_InputSelectedWorkoutData
 id action_LoginScreen_to_CreateAccount
 id action_LoginScreen_to_HomePage
 id action_SaveWorkout_to_HomePage
@@ -3322,6 +3329,9 @@ id inclineWeightedSitupsText
 id included
 id indeterminate
 id info
+id inputSelectedWorkoutDataHeader
+id inputUserWorkoutDataButton
+id inputUserWorkoutDataHeader
 id invisible
 id inward
 id italic
@@ -3530,6 +3540,7 @@ id rowsText
 id rtl
 id saveCreatedWorkout
 id saveWorkoutButton
+id saveWorkoutDataButton
 id saveWorkoutHeader
 id save_non_transition_alpha
 id save_overlay_view
@@ -3928,6 +3939,8 @@ layout fragment_first
 layout fragment_second
 layout healthy_tips
 layout home_page
+layout input_selected_workout_data_frag
+layout input_user_workout_data_frag
 layout list_item_tip
 layout login_screen
 layout m3_alert_dialog
@@ -4102,6 +4115,7 @@ string healthy_tips_label
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string input_selected_workout_data_label
 string input_user_workout_data_label
 string item_view_role_description
 string lorem_ipsum

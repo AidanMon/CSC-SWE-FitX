@@ -99,7 +99,9 @@
             android:id="@+id/action_HomePage_to_FeedBack"
             app:destination="@id/FeedbackView"
             />
-
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
     </fragment>
 
     <!--All Exercises Fragment-->
@@ -178,6 +180,31 @@
     <!--Input user workout data Fragment-->
 
 
+    <fragment
+        android:id="@+id/InputUserWorkoutData"
+        android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
+        android:label="@string/input_user_workout_data_label"
+        tools:layout="@layout/input_user_workout_data_frag">
+
+        <!--To Specific workout input Navigation-->
+        <action
+            android:id="@+id/action_InputUserWorkoutData_to_InputSelectedWorkoutData"
+            app:destination="@id/InputSelectedWorkoutData" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+    <fragment
+        android:id="@+id/InputSelectedWorkoutData"
+        android:name="com.example.fitx.view.user_data.InputSelectedWorkoutDataFragBinding"
+        android:label="@string/input_selected_workout_data_label"
+        tools:layout="@layout/input_selected_workout_data_frag">
+
+        <!--Back to home page  Navigation-->
+        <action
+            android:id="@+id/action_InputSelectedWorkoutData_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+    
     <fragment
         android:id="@+id/HealthyTips"
         android:name="com.example.fitx.view.HealthyTips"

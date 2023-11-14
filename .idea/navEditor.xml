@@ -103,8 +103,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1563" />
-                            <option name="y" value="-361" />
+                            <option name="x" value="-1471" />
+                            <option name="y" value="-937" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -284,14 +284,44 @@
                       </LayoutPositions>
                     </value>
                   </entry>
+                  <entry key="InputSelectedWorkoutData">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-1430" />
+                            <option name="y" value="535" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_InputSelectedWorkoutData_to_HomePage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
                   <entry key="InputUserWorkoutData">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1496" />
-                            <option name="y" value="5" />
+                            <option name="x" value="-1541" />
+                            <option name="y" value="26" />
                           </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_InputUserWorkoutData_to_InputSelectedWorkoutData">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
                         </option>
                       </LayoutPositions>
                     </value>
@@ -395,8 +425,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1116" />
-                            <option name="y" value="452" />
+                            <option name="x" value="-984" />
+                            <option name="y" value="728" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -470,8 +500,8 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-1193" />
-                            <option name="y" value="-283" />
+                            <option name="x" value="-1481" />
+                            <option name="y" value="-535" />
                           </Point>
                         </option>
                         <option name="myPositions">
