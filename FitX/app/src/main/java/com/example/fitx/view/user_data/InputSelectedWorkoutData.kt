@@ -298,6 +298,11 @@ class InputSelectedWorkoutDataFragBinding : Fragment() {
         if(input != "" && input != "0"){    //Check to see if the EditText is empty
             val inputNum = input.toInt()
 
+            //Setting the max set count to 10
+            if(inputNum > 10){
+                inputNum = 10
+            }
+
             var dpValue = 112
             var widthValue = TypedValue.applyDimension(
                 TypedValue.COMPLEX_UNIT_DIP, dpValue.toFloat(), Resources.getSystem().displayMetrics
