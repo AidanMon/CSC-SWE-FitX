@@ -102,6 +102,9 @@
         <action
             android:id="@+id/action_HomePage_to_InputUserWorkoutData"
             app:destination="@id/InputUserWorkoutData" />
+        <action
+            android:id="@+id/action_HomePage_to_ProgressFragment"
+            app:destination="@id/ProgressFragment" />
     </fragment>
 
     <!--All Exercises Fragment-->
@@ -369,4 +372,13 @@
             android:id="@+id/action_Feedback_to_HomePage"
             app:destination="@id/HomePage"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/ProgressFragment"
+        android:name="com.example.fitx.view.home_page_links.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress">
+        <!-- Define actions if any for ProgressFragment -->
+    </fragment>
+
 </navigation>

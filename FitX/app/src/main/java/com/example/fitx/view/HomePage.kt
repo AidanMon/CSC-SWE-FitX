@@ -104,6 +104,10 @@ class HomePage: Fragment() {
         binding.HealthyTips.setOnClickListener{
             findNavController().navigate(R.id.action_HomePage_to_HealthyTips)
         }
+        binding.progressButton.setOnClickListener {
+            findNavController().navigate(R.id.action_HomePage_to_ProgressFragment)
+        }
+
 
         //Button for user sport
         binding.userSport.setOnClickListener {

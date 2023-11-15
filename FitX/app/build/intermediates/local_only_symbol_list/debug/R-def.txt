@@ -48,6 +48,7 @@ id HomePage
 id InputSelectedWorkoutData
 id InputUserWorkoutData
 id LoginScreen
+id ProgressFragment
 id SaveWorkout
 id SoccerWorkouts
 id SportWorkouts
@@ -72,6 +73,7 @@ id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
 id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
+id action_HomePage_to_ProgressFragment
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
 id action_HomePage_to_SwimmingWorkouts
@@ -270,6 +272,8 @@ id powerCleansInfo
 id powerCleansLayout
 id powerCleansPlayVideo
 id powerCleansText
+id progressButton
+id progressLayout
 id pullUpsLayout
 id pullUpsPlayVideo
 id pullUpsText
@@ -407,6 +411,7 @@ layout football_speed_and_agility_frag
 layout football_upper_body_frag
 layout football_workouts_frag
 layout fragment_first
+layout fragment_progress
 layout fragment_second
 layout healthy_tips
 layout home_page

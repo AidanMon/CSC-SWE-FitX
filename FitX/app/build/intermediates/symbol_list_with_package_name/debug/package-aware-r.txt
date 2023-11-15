@@ -2943,6 +2943,7 @@ id InputUserWorkoutData
 id LoginScreen
 id META
 id NO_DEBUG
+id ProgressFragment
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3011,6 +3012,7 @@ id action_HomePage_to_FootballWorkouts
 id action_HomePage_to_HealthyTips
 id action_HomePage_to_InputUserWorkoutData
 id action_HomePage_to_LoginScreen
+id action_HomePage_to_ProgressFragment
 id action_HomePage_to_SoccerWorkouts
 id action_HomePage_to_SportsWorkouts
 id action_HomePage_to_SwimmingWorkouts
@@ -3512,6 +3514,8 @@ id powerCleansLayout
 id powerCleansPlayVideo
 id powerCleansText
 id pressed
+id progressButton
+id progressLayout
 id progress_circular
 id progress_horizontal
 id pullUpsLayout
@@ -3936,6 +3940,7 @@ layout football_speed_and_agility_frag
 layout football_upper_body_frag
 layout football_workouts_frag
 layout fragment_first
+layout fragment_progress
 layout fragment_second
 layout healthy_tips
 layout home_page
