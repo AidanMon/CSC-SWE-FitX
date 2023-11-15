@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Add your app bar content here if needed -->
+
+    <!-- Frame layout for youtube player-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".view.home_page_links.AllExercises">
+
+        <!--Everything is in a constraint layout-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <!--Header-->
+            <TextView
+                android:id="@+id/currentWorkoutHeader"
+                android:layout_width="296dp"
+                android:layout_height="45dp"
+                android:text="@string/current_created_workout_header"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:translationZ="10000dp"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0" />
+
+            <!--Fullscreen video button-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/enterFullScreenButton"
+                android:layout_width="159dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_button"
+                android:text="Fullscreen Video"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/currentWorkoutHeader" />
+
+            <!--Notice for fullscreen button-->
+            <TextView
+                android:id="@+id/fullScreenNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_screen_notice"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/enterFullScreenButton"
+                app:layout_constraintTop_toTopOf="@+id/enterFullScreenButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <!--Fullscreen layout-->
+        <FrameLayout
+            android:id="@+id/full_screen_view_container"
+            android:layout_width="409dp"
+            android:layout_height="640dp"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone" />
+
+        <!--Main youtube player-->
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/theVideoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+
+            app:autoPlay="false"
+            app:videoId="0cXAp6WhSj4"></com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+    </FrameLayout>
+
+    <!-- Frame layout for saving workout-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_gravity="top"
+        >
+
+        <!--Save workout button-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveCreatedWorkout"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/show_workout_button"
+            android:visibility="gone"
+            android:text="Save Workout"
+            android:translationZ="100dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/legsText"
+            app:layout_constraintTop_toTopOf="@id/legsText" />
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

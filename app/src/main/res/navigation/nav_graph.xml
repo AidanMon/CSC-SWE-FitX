@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/LoginScreen">
+
+    <fragment
+        android:id="@+id/LoginScreen"
+        android:name="com.example.fitx.view.LoginScreenView"
+        android:label="Login Screen"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_LoginScreen_to_HomePage"
+            app:destination="@id/HomePage"/>
+        <action
+            android:id="@+id/action_LoginScreen_to_CreateAccount"
+            app:destination="@id/CreateAccountView"/>
+        <action
+            android:id="@+id/action_loginScreen_to_BaseballWorkouts"
+            app:destination="@id/BaseballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_BasketballWorkouts"
+            app:destination="@id/BasketballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_SoccerWorkouts"
+            app:destination="@id/SoccerWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_TennisWorkouts"
+            app:destination="@id/TennisWorkouts" />
+        <action
+            android:id="@+id/action_loginScreen_to_VolleyballWorkouts"
+            app:destination="@id/VolleyballWorkouts" />
+
+        <action
+            android:id="@+id/action_loginScreen_to_SwimmingWorkouts"
+            app:destination="@id/SwimmingWorkouts" />
+
+    </fragment>
+
+    <!-- Homepage Fragment-->
+    <fragment
+        android:id="@+id/HomePage"
+        android:name="com.example.fitx.view.HomePage"
+        android:label="Home Page"
+        tools:layout="@layout/home_page">
+        <action
+            android:id="@+id/action_HomePage_to_LoginScreen"
+            app:destination="@id/LoginScreen"
+            />
+        <action
+            android:id="@+id/action_HomePage_to_SportsWorkouts"
+            app:destination="@id/SportWorkouts"/>
+
+        <!--Homepage to specific sports-->
+        <action
+            android:id="@+id/action_HomePage_to_BaseballWorkouts"
+            app:destination="@id/BaseballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_BasketballWorkouts"
+            app:destination="@id/BasketballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_SoccerWorkouts"
+            app:destination="@id/SoccerWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_TennisWorkouts"
+            app:destination="@id/TennisWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_VolleyballWorkouts"
+            app:destination="@id/VolleyballWorkouts" />
+        <action
+            android:id="@+id/action_HomePage_to_SwimmingWorkouts"
+            app:destination="@id/SwimmingWorkouts" />
+
+        <!--All Exercises Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_AllExercises"
+            app:destination="@id/AllExercises" />
+        <!--User Workouts Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_UserWorkouts"
+            app:destination="@id/UserWorkoutsDisplay" />
+        <!--Create a workout Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_CreateAWorkout"
+            app:destination="@id/CreateAWorkout" />
+
+        <action
+            android:id="@+id/action_HomePage_to_HealthyTips"
+            app:destination="@id/HealthyTips"/>
+        <action
+            android:id="@+id/action_HomePage_to_FeedBack"
+            app:destination="@id/FeedbackView"
+            />
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
+        <action
+            android:id="@+id/action_HomePage_to_ProgressFragment"
+            app:destination="@id/ProgressFragment" />
+    </fragment>
+
+    <!--All Exercises Fragment-->
+    <fragment
+        android:id="@+id/AllExercises"
+        android:name="com.example.fitx.view.home_page_links.AllExercises"
+        android:label="@string/all_exercises_label"
+        tools:layout="@layout/all_exercises_frag">
+    </fragment>
+
+    <!--User Workouts Fragment-->
+    <fragment
+        android:id="@+id/UserWorkoutsDisplay"
+        android:name="com.example.fitx.view.home_page_links.UserWorkoutsDisplay"
+        android:label="@string/user_workouts_label"
+        tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To user selected workout Navigation-->
+        <action
+            android:id="@+id/action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts"
+            app:destination="@id/DisplaySelectedUserWorkouts" />
+    </fragment>
+
+    <!--User Workout Display Fragment-->
+    <fragment
+        android:id="@+id/DisplaySelectedUserWorkouts"
+        android:name="com.example.fitx.view.created_workouts.DisplaySelectedUserWorkout"
+        android:label="@string/display_selected_user_workout_label"
+        tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To home Navigation-->
+        <action
+            android:id="@+id/action_DisplaySelectedUserWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+
+    <!--Create a workout Fragment-->
+    <fragment
+        android:id="@+id/CreateAWorkout"
+        android:name="com.example.fitx.view.home_page_links.CreateAWorkout"
+        android:label="@string/create_a_workout_label"
+        tools:layout="@layout/create_a_workout_frag">
+
+        <!--To current created workout Navigation-->
+        <action
+            android:id="@+id/action_CreateAWorkout_to_CurrentCreatedWorkout"
+            app:destination="@id/CurrentCreatedWorkout" />
+    </fragment>
+
+    <!--Current created workout Fragment-->
+    <fragment
+        android:id="@+id/CurrentCreatedWorkout"
+        android:name="com.example.fitx.view.created_workouts.CurrentCreatedWorkout"
+        android:label="@string/current_created_workout_label"
+        tools:layout="@layout/current_created_workout_frag">
+
+        <!--To save workout Navigation-->
+        <action
+            android:id="@+id/action_CurrentCreatedWorkout_to_SaveWorkout"
+            app:destination="@id/SaveWorkout" />
+    </fragment>
+
+    <!--Save workout Fragment-->
+    <fragment
+        android:id="@+id/SaveWorkout"
+        android:name="com.example.fitx.view.created_workouts.SaveWorkout"
+        android:label="@string/save_workout_label"
+        tools:layout="@layout/save_workout_frag">
+
+        <!--Back to Home Navigation-->
+        <action
+            android:id="@+id/action_SaveWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+
+
+    <fragment
+        android:id="@+id/InputUserWorkoutData"
+        android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
+        android:label="@string/input_user_workout_data_label"
+        tools:layout="@layout/input_user_workout_data_frag">
+
+        <!--To Specific workout input Navigation-->
+        <action
+            android:id="@+id/action_InputUserWorkoutData_to_InputSelectedWorkoutData"
+            app:destination="@id/InputSelectedWorkoutData" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+    <fragment
+        android:id="@+id/InputSelectedWorkoutData"
+        android:name="com.example.fitx.view.user_data.InputSelectedWorkoutDataFragBinding"
+        android:label="@string/input_selected_workout_data_label"
+        tools:layout="@layout/input_selected_workout_data_frag">
+
+        <!--Back to home page  Navigation-->
+        <action
+            android:id="@+id/action_InputSelectedWorkoutData_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/HealthyTips"
+        android:name="com.example.fitx.view.HealthyTips"
+        android:label="@string/healthy_tips_label"
+        tools:layout="@layout/healthy_tips">
+    </fragment>
+
+    <!--Added-->
+    <!--Sport selector Fragment-->
+    <fragment
+        android:id="@+id/SportWorkouts"
+        android:name="com.example.fitx.view.home_page_links.SportWorkouts"
+        android:label="@string/sport_workouts_label"
+        tools:layout="@layout/sport_workouts_frag">
+        <!--To football workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_FootballWorkouts"
+            app:destination="@id/FootballWorkouts" />
+        <!--To baseball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_BaseballWorkouts"
+            app:destination="@+id/BaseballWorkouts"/>
+        <!--To basketball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_BasketballWorkouts"
+            app:destination="@+id/BasketballWorkouts"/>
+        <!--To soccer workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_SoccerWorkouts"
+            app:destination="@+id/SoccerWorkouts"/>
+        <!--To swimming workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_SwimmingWorkouts"
+            app:destination="@+id/SwimmingWorkouts"/>
+        <!--To tennis workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_TennisWorkouts"
+            app:destination="@+id/TennisWorkouts"/>
+        <!--To volleyball workouts-->
+        <action
+            android:id="@+id/action_SportWorkouts_to_VolleyballWorkouts"
+            app:destination="@+id/VolleyballWorkouts"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/CreateAccountView"
+        android:name="com.example.fitx.view.CreateAccountView"
+        android:label="Create Account"
+        tools:layout="@layout/create_account">
+
+    </fragment>
+
+    <!--Football workout selector fragment-->
+    <fragment
+        android:id="@+id/FootballWorkouts"
+        android:name="com.example.fitx.view.sports.FootballWorkouts"
+        android:label="@string/football_workouts_label"
+        tools:layout="@layout/football_workouts_frag">
+        <!--To football upper body workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballUpperBody"
+            app:destination="@+id/FootballUpperBody"/>
+        <!--To football lower body workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballLowerBody"
+            app:destination="@+id/FootballLowerBody"/>
+        <!--To football speed and agility workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballSaA"
+            app:destination="@+id/FootballSaA"/>
+        <!--To football explosive strength workout-->
+        <action
+            android:id="@+id/action_FootballWorkouts_to_FootballExplosiveStrength"
+            app:destination="@+id/FootballExplosiveStrength"/>
+    </fragment>
+
+    <!--Football pages-->
+    <!--Football upper body workout-->
+    <fragment
+        android:id="@+id/FootballUpperBody"
+        android:name="com.example.fitx.view.sports.FootballUpperBody"
+        android:label="@string/football_upper_body"
+        tools:layout="@layout/football_upper_body_frag">
+    </fragment>
+    <!--Football lower body workout-->
+    <fragment
+        android:id="@+id/FootballLowerBody"
+        android:name="com.example.fitx.view.sports.FootballLowerBody"
+        android:label="@string/football_lower_body"
+        tools:layout="@layout/football_lower_body_frag">
+    </fragment>
+    <!--Football speed and agility workout-->
+    <fragment
+        android:id="@+id/FootballSaA"
+        android:name="com.example.fitx.view.sports.FootballSaA"
+        android:label="@string/football_speed_and_agility"
+        tools:layout="@layout/football_speed_and_agility_frag">
+    </fragment>
+    <!--Football explosive strength workout-->
+    <fragment
+        android:id="@+id/FootballExplosiveStrength"
+        android:name="com.example.fitx.view.sports.FootballExplosiveStrength"
+        android:label="@string/football_full_body_explosive_strength"
+        tools:layout="@layout/football_explosive_strength_frag">
+    </fragment>
+    <!--End football pages-->
+
+    <!--Baseball workout-->
+    <fragment
+        android:id="@+id/BaseballWorkouts"
+        android:name="com.example.fitx.view.sports.BaseballWorkouts"
+        android:label="@string/baseball_workouts_label"
+        tools:layout="@layout/baseball_workouts_frag">
+    </fragment>
+
+    <!--Basketball workout-->
+    <fragment
+        android:id="@+id/BasketballWorkouts"
+        android:name="com.example.fitx.view.sports.BasketballWorkouts"
+        android:label="@string/basketball_workouts_label"
+        tools:layout="@layout/basketball_workouts_frag">
+    </fragment>
+
+    <!--Soccer workout-->
+    <fragment
+        android:id="@+id/SoccerWorkouts"
+        android:name="com.example.fitx.view.sports.SoccerWorkouts"
+        android:label="@string/soccer_workouts_label"
+        tools:layout="@layout/soccer_workouts_frag">
+    </fragment>
+
+    <!--Swimming workout-->
+    <fragment
+        android:id="@+id/SwimmingWorkouts"
+        android:name="com.example.fitx.view.sports.SwimmingWorkouts"
+        android:label="@string/swimming_workouts_label"
+        tools:layout="@layout/swimming_workouts_frag">
+    </fragment>
+
+    <!--Tennis workout-->
+    <fragment
+        android:id="@+id/TennisWorkouts"
+        android:name="com.example.fitx.view.sports.TennisWorkouts"
+        android:label="@string/tennis_workouts_label"
+        tools:layout="@layout/tennis_workouts_frag">
+    </fragment>
+
+    <!--Volleyball workout-->
+    <fragment
+        android:id="@+id/VolleyballWorkouts"
+        android:name="com.example.fitx.view.sports.VolleyballWorkouts"
+        android:label="@string/volleyball_workouts_label"
+        tools:layout="@layout/volleyball_workouts_frag">
+    </fragment>
+    <fragment
+        android:id="@+id/FeedbackView"
+        android:name="com.example.fitx.view.FeedBackView"
+        android:label="FeedBack"
+        tools:layout="@layout/feed_back">
+
+        <action
+            android:id="@+id/action_Feedback_to_HomePage"
+            app:destination="@id/HomePage"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProgressFragment"
+        android:name="com.example.fitx.view.home_page_links.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress">
+        <!-- Define actions if any for ProgressFragment -->
+    </fragment>
+
+</navigation>

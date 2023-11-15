@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home_page_links.SportWorkouts">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:padding="16dp">
+
+        <!--Sport workout header-->
+        <TextView
+            android:id="@+id/sportWorkoutsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport Specific Workouts"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0" />
+
+        <!--Button to go to baseball workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toBaseballWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Baseball Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sportWorkoutsHeader" />
+
+        <!--Image for baseball workouts-->
+        <ImageView
+            android:id="@+id/baseballImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_baseball_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toBaseballWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toBaseballWorkouts" />
+        <!-- End baseball items-->
+
+        <!--Button to go to basketball workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toBasketballWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Basketball Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toBaseballWorkouts" />
+
+        <!--Image for basketball workouts-->
+        <ImageView
+            android:id="@+id/basketballImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_basketball_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toBasketballWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toBasketballWorkouts" />
+        <!-- End basketball items-->
+
+        <!--Button to go to football workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toFootballWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Football Workouts"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toBasketballWorkouts" />
+
+        <!--Image for football workouts-->
+        <ImageView
+            android:id="@+id/footballImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_football_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toFootballWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toFootballWorkouts" />
+        <!-- End football items-->
+
+        <!--Button to go to soccer workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toSoccerWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Soccer Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toFootballWorkouts" />
+
+        <!--Image for soccer workouts-->
+        <ImageView
+            android:id="@+id/soccerImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_soccer_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toSoccerWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toSoccerWorkouts" />
+        <!-- End soccer items-->
+
+
+
+
+        <!--Button to go to swimming workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toSwimmingWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Swimming Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toSoccerWorkouts" />
+
+        <!--Image for swimming workouts-->
+        <ImageView
+            android:id="@+id/swimmingImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_swimming_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toSwimmingWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toSwimmingWorkouts" />
+        <!-- End swimming items-->
+
+        <!--Button to go to tennis workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toTennisWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Tennis Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toSwimmingWorkouts" />
+
+        <!--Image for tennis workouts-->
+        <ImageView
+            android:id="@+id/tennisImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_tennis_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toTennisWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toTennisWorkouts" />
+        <!-- End tennis items-->
+
+        <!--Button to go to volleyball workouts-->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/toVolleyballWorkouts"
+            android:layout_width="380dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/workout_border"
+            android:text="Volleyball Exercises"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textAlignment="textStart"
+            android:paddingLeft="6sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toTennisWorkouts" />
+
+        <!--Image for volleyball workouts-->
+        <ImageView
+            android:id="@+id/volleyballImage"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/fitx_volleyball_image"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/toVolleyballWorkouts"
+            app:layout_constraintTop_toTopOf="@+id/toVolleyballWorkouts" />
+        <!-- End soccer items-->
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

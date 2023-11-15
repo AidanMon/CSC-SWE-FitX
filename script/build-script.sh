@@ -1,0 +1,2 @@
+./gradlew assembleDebug
+./gradlew installDebug
