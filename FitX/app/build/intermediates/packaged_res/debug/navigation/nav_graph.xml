@@ -105,6 +105,9 @@
         <action
             android:id="@+id/action_HomePage_to_ProgressFragment"
             app:destination="@id/ProgressFragment" />
+        <action
+            android:id="@+id/action_HomePage_to_Recommendation"
+            app:destination="@id/Recommendation" />
     </fragment>
 
     <!--All Exercises Fragment-->
@@ -181,6 +184,12 @@
     </fragment>
 
     <!--Input user workout data Fragment-->
+
+    <fragment
+        android:id="@+id/Recommendation"
+        android:name="com.example.fitx.view.recommendation.Recommendation"
+        android:label="Recommendation"
+        tools:layout="@layout/recommendation_frag"/>
 
 
     <fragment
