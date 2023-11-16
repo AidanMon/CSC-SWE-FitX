@@ -296,7 +296,7 @@ class InputSelectedWorkoutDataFragBinding : Fragment() {
         layoutList[indexNum].removeAllViewsInLayout()
         resetOneLayout(indexNum)
         if(input != "" && input != "0"){    //Check to see if the EditText is empty
-            val inputNum = input.toInt()
+            var inputNum = input.toInt()
 
             //Setting the max set count to 10
             if(inputNum > 10){

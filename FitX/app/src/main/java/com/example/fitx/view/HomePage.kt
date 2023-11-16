@@ -107,6 +107,9 @@ class HomePage: Fragment() {
         binding.progressButton.setOnClickListener {
             findNavController().navigate(R.id.action_HomePage_to_ProgressFragment)
         }
+        binding.recommendationButton.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_Recommendation))
+        }
 
 
         //Button for user sport
