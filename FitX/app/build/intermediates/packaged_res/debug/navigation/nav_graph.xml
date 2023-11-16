@@ -42,6 +42,7 @@
 
     </fragment>
 
+    <!-- Homepage Fragment-->
     <fragment
         android:id="@+id/HomePage"
         android:name="com.example.fitx.view.HomePage"
@@ -55,7 +56,7 @@
             android:id="@+id/action_HomePage_to_SportsWorkouts"
             app:destination="@id/SportWorkouts"/>
 
-        <!--Added all these actions-->
+        <!--Homepage to specific sports-->
         <action
             android:id="@+id/action_HomePage_to_BaseballWorkouts"
             app:destination="@id/BaseballWorkouts" />
@@ -74,17 +75,160 @@
         <action
             android:id="@+id/action_HomePage_to_VolleyballWorkouts"
             app:destination="@id/VolleyballWorkouts" />
-
         <action
             android:id="@+id/action_HomePage_to_SwimmingWorkouts"
             app:destination="@id/SwimmingWorkouts" />
+
+        <!--All Exercises Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_AllExercises"
+            app:destination="@id/AllExercises" />
+        <!--User Workouts Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_UserWorkouts"
+            app:destination="@id/UserWorkoutsDisplay" />
+        <!--Create a workout Navigation-->
+        <action
+            android:id="@+id/action_HomePage_to_CreateAWorkout"
+            app:destination="@id/CreateAWorkout" />
+
+        <action
+            android:id="@+id/action_HomePage_to_HealthyTips"
+            app:destination="@id/HealthyTips"/>
+        <action
+            android:id="@+id/action_HomePage_to_FeedBack"
+            app:destination="@id/FeedbackView"
+            />
+        <action
+            android:id="@+id/action_HomePage_to_InputUserWorkoutData"
+            app:destination="@id/InputUserWorkoutData" />
+        <action
+            android:id="@+id/action_HomePage_to_ProgressFragment"
+            app:destination="@id/ProgressFragment" />
+        <action
+            android:id="@+id/action_HomePage_to_Recommendation"
+            app:destination="@id/Recommendation" />
+    </fragment>
+
+    <!--All Exercises Fragment-->
+    <fragment
+        android:id="@+id/AllExercises"
+        android:name="com.example.fitx.view.home_page_links.AllExercises"
+        android:label="@string/all_exercises_label"
+        tools:layout="@layout/all_exercises_frag">
+    </fragment>
+
+    <!--User Workouts Fragment-->
+    <fragment
+        android:id="@+id/UserWorkoutsDisplay"
+        android:name="com.example.fitx.view.home_page_links.UserWorkoutsDisplay"
+        android:label="@string/user_workouts_label"
+        tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To user selected workout Navigation-->
+        <action
+            android:id="@+id/action_UserWorkoutsDisplay_to_DisplaySelectedUserWorkouts"
+            app:destination="@id/DisplaySelectedUserWorkouts" />
+    </fragment>
+
+    <!--User Workout Display Fragment-->
+    <fragment
+        android:id="@+id/DisplaySelectedUserWorkouts"
+        android:name="com.example.fitx.view.created_workouts.DisplaySelectedUserWorkout"
+        android:label="@string/display_selected_user_workout_label"
+        tools:layout="@layout/user_workouts_display_frag">
+
+        <!--To home Navigation-->
+        <action
+            android:id="@+id/action_DisplaySelectedUserWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+
+    <!--Create a workout Fragment-->
+    <fragment
+        android:id="@+id/CreateAWorkout"
+        android:name="com.example.fitx.view.home_page_links.CreateAWorkout"
+        android:label="@string/create_a_workout_label"
+        tools:layout="@layout/create_a_workout_frag">
+
+        <!--To current created workout Navigation-->
+        <action
+            android:id="@+id/action_CreateAWorkout_to_CurrentCreatedWorkout"
+            app:destination="@id/CurrentCreatedWorkout" />
+    </fragment>
+
+    <!--Current created workout Fragment-->
+    <fragment
+        android:id="@+id/CurrentCreatedWorkout"
+        android:name="com.example.fitx.view.created_workouts.CurrentCreatedWorkout"
+        android:label="@string/current_created_workout_label"
+        tools:layout="@layout/current_created_workout_frag">
+
+        <!--To save workout Navigation-->
+        <action
+            android:id="@+id/action_CurrentCreatedWorkout_to_SaveWorkout"
+            app:destination="@id/SaveWorkout" />
+    </fragment>
+
+    <!--Save workout Fragment-->
+    <fragment
+        android:id="@+id/SaveWorkout"
+        android:name="com.example.fitx.view.created_workouts.SaveWorkout"
+        android:label="@string/save_workout_label"
+        tools:layout="@layout/save_workout_frag">
+
+        <!--Back to Home Navigation-->
+        <action
+            android:id="@+id/action_SaveWorkout_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+
+    <fragment
+        android:id="@+id/Recommendation"
+        android:name="com.example.fitx.view.recommendation.Recommendation"
+        android:label="Recommendation"
+        tools:layout="@layout/recommendation_frag"/>
+
+
+    <fragment
+        android:id="@+id/InputUserWorkoutData"
+        android:name="com.example.fitx.view.home_page_links.InputUserWorkoutData"
+        android:label="@string/input_user_workout_data_label"
+        tools:layout="@layout/input_user_workout_data_frag">
+
+        <!--To Specific workout input Navigation-->
+        <action
+            android:id="@+id/action_InputUserWorkoutData_to_InputSelectedWorkoutData"
+            app:destination="@id/InputSelectedWorkoutData" />
+    </fragment>
+
+    <!--Input user workout data Fragment-->
+    <fragment
+        android:id="@+id/InputSelectedWorkoutData"
+        android:name="com.example.fitx.view.user_data.InputSelectedWorkoutDataFragBinding"
+        android:label="@string/input_selected_workout_data_label"
+        tools:layout="@layout/input_selected_workout_data_frag">
+
+        <!--Back to home page  Navigation-->
+        <action
+            android:id="@+id/action_InputSelectedWorkoutData_to_HomePage"
+            app:destination="@id/HomePage" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/HealthyTips"
+        android:name="com.example.fitx.view.HealthyTips"
+        android:label="@string/healthy_tips_label"
+        tools:layout="@layout/healthy_tips">
     </fragment>
 
     <!--Added-->
     <!--Sport selector Fragment-->
     <fragment
         android:id="@+id/SportWorkouts"
-        android:name="com.example.fitx.view.sports.SportWorkouts"
+        android:name="com.example.fitx.view.home_page_links.SportWorkouts"
         android:label="@string/sport_workouts_label"
         tools:layout="@layout/sport_workouts_frag">
         <!--To football workouts-->
@@ -227,4 +371,23 @@
         android:label="@string/volleyball_workouts_label"
         tools:layout="@layout/volleyball_workouts_frag">
     </fragment>
+    <fragment
+        android:id="@+id/FeedbackView"
+        android:name="com.example.fitx.view.FeedBackView"
+        android:label="FeedBack"
+        tools:layout="@layout/feed_back">
+
+        <action
+            android:id="@+id/action_Feedback_to_HomePage"
+            app:destination="@id/HomePage"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProgressFragment"
+        android:name="com.example.fitx.view.home_page_links.ProgressFragment"
+        android:label="Progress"
+        tools:layout="@layout/fragment_progress">
+        <!-- Define actions if any for ProgressFragment -->
+    </fragment>
+
 </navigation>

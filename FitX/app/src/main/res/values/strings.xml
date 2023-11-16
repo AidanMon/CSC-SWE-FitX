@@ -6,17 +6,28 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="full_screen_notice">**May have to \npress a few times</string>
+    <string name="all_exercises_header">All Exercises</string>
+    <string name="all_exercises_label">List Of Exercises</string>
+    <string name="create_a_workout_label">Create A Workout</string>
+    <string name="current_created_workout_label">Current Workout</string>
+    <string name="current_created_workout_header">Current Workout</string>
+    <string name="save_workout_label">Save Your Workout</string>
+    <string name="user_workouts_label">My Workouts</string>
+    <string name="display_selected_user_workout_label">My Workout</string>
+    <string name="input_user_workout_data_label">Select Workout To Input Data</string>
+    <string name="input_selected_workout_data_label">Input Data</string>
 
     <string-array name="sportItems">
         <item>Baseball</item>
         <item>Football</item>
-        <item>Soccor</item>
+        <item>Soccer</item>
         <item>Tennis</item>
         <item>Basketball</item>
     </string-array>
     <string-array name="experienceItems">
         <item>Beginner</item>
-        <item>Intermidate</item>
+        <item>Intermediate</item>
         <item>Expert</item>
     </string-array>
 
@@ -30,6 +41,7 @@
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>
     <string name="volleyball_workouts_label">Volleyball Exercises</string>
+    <string name="healthy_tips_label">Healthy Tips</string>
 
     <!-- Sub Football strings -->
     <string name="football_workouts_description">
@@ -42,7 +54,6 @@
     <string name="football_upper_body">Upper Body Football</string>
     <string name="football_speed_and_agility">Speed and Agility Football</string>
     <string name="football_full_body_explosive_strength">Explosive Strength Football</string>
-
 
     <string name="description">Description</string>
     <string name="example">Example</string>
@@ -83,4 +94,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

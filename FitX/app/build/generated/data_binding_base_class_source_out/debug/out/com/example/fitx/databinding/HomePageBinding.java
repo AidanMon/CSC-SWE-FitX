@@ -4,9 +4,7 @@ package com.example.fitx.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -19,13 +17,25 @@ import java.lang.String;
 
 public final class HomePageBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ScrollView rootView;
 
   @NonNull
-  public final TextView loginMessageTextView;
+  public final AppCompatButton AllExercises;
 
   @NonNull
-  public final Button logoutButton;
+  public final AppCompatButton HealthyTips;
+
+  @NonNull
+  public final AppCompatButton createAWorkoutButton;
+
+  @NonNull
+  public final AppCompatButton inputUserWorkoutDataButton;
+
+  @NonNull
+  public final AppCompatButton progressButton;
+
+  @NonNull
+  public final AppCompatButton recommendationButton;
 
   @NonNull
   public final AppCompatButton toSports;
@@ -33,19 +43,29 @@ public final class HomePageBinding implements ViewBinding {
   @NonNull
   public final AppCompatButton userSport;
 
-  private HomePageBinding(@NonNull LinearLayout rootView, @NonNull TextView loginMessageTextView,
-      @NonNull Button logoutButton, @NonNull AppCompatButton toSports,
-      @NonNull AppCompatButton userSport) {
+  @NonNull
+  public final AppCompatButton userWorkoutsButton;
+
+  private HomePageBinding(@NonNull ScrollView rootView, @NonNull AppCompatButton AllExercises,
+      @NonNull AppCompatButton HealthyTips, @NonNull AppCompatButton createAWorkoutButton,
+      @NonNull AppCompatButton inputUserWorkoutDataButton, @NonNull AppCompatButton progressButton,
+      @NonNull AppCompatButton recommendationButton, @NonNull AppCompatButton toSports,
+      @NonNull AppCompatButton userSport, @NonNull AppCompatButton userWorkoutsButton) {
     this.rootView = rootView;
-    this.loginMessageTextView = loginMessageTextView;
-    this.logoutButton = logoutButton;
+    this.AllExercises = AllExercises;
+    this.HealthyTips = HealthyTips;
+    this.createAWorkoutButton = createAWorkoutButton;
+    this.inputUserWorkoutDataButton = inputUserWorkoutDataButton;
+    this.progressButton = progressButton;
+    this.recommendationButton = recommendationButton;
     this.toSports = toSports;
     this.userSport = userSport;
+    this.userWorkoutsButton = userWorkoutsButton;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ScrollView getRoot() {
     return rootView;
   }
 
@@ -70,15 +90,39 @@ public final class HomePageBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.loginMessageTextView;
-      TextView loginMessageTextView = ViewBindings.findChildViewById(rootView, id);
-      if (loginMessageTextView == null) {
+      id = R.id.AllExercises;
+      AppCompatButton AllExercises = ViewBindings.findChildViewById(rootView, id);
+      if (AllExercises == null) {
         break missingId;
       }
 
-      id = R.id.logoutButton;
-      Button logoutButton = ViewBindings.findChildViewById(rootView, id);
-      if (logoutButton == null) {
+      id = R.id.HealthyTips;
+      AppCompatButton HealthyTips = ViewBindings.findChildViewById(rootView, id);
+      if (HealthyTips == null) {
+        break missingId;
+      }
+
+      id = R.id.createAWorkoutButton;
+      AppCompatButton createAWorkoutButton = ViewBindings.findChildViewById(rootView, id);
+      if (createAWorkoutButton == null) {
+        break missingId;
+      }
+
+      id = R.id.inputUserWorkoutDataButton;
+      AppCompatButton inputUserWorkoutDataButton = ViewBindings.findChildViewById(rootView, id);
+      if (inputUserWorkoutDataButton == null) {
+        break missingId;
+      }
+
+      id = R.id.progressButton;
+      AppCompatButton progressButton = ViewBindings.findChildViewById(rootView, id);
+      if (progressButton == null) {
+        break missingId;
+      }
+
+      id = R.id.recommendationButton;
+      AppCompatButton recommendationButton = ViewBindings.findChildViewById(rootView, id);
+      if (recommendationButton == null) {
         break missingId;
       }
 
@@ -94,8 +138,15 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new HomePageBinding((LinearLayout) rootView, loginMessageTextView, logoutButton,
-          toSports, userSport);
+      id = R.id.userWorkoutsButton;
+      AppCompatButton userWorkoutsButton = ViewBindings.findChildViewById(rootView, id);
+      if (userWorkoutsButton == null) {
+        break missingId;
+      }
+
+      return new HomePageBinding((ScrollView) rootView, AllExercises, HealthyTips,
+          createAWorkoutButton, inputUserWorkoutDataButton, progressButton, recommendationButton,
+          toSports, userSport, userWorkoutsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

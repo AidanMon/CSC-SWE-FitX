@@ -1,6 +1,7 @@
 package com.example.fitx.repository
 import android.util.Log
 import com.example.fitx.model.User
+import com.example.fitx.model.enums.SportName
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -10,6 +11,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 class UserRepository {
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
+    private var messageService = MessageService()
 
     /**
     Gets the users full name from the firebase users collection
@@ -49,21 +51,6 @@ class UserRepository {
     }
 
     /**
-    Gets the Sport ID from the string Value of a sport
-     */
-    fun getSportID(sport:String, callback: (Number) -> Unit){
-        firestore = FirebaseFirestore.getInstance()
-        firestore.collection("Sports").document(sport).get().addOnSuccessListener{documentSnapShot ->
-            if(documentSnapShot.exists()) {
-                val sportId = documentSnapShot.data
-                for(num in sportId?.values!!)
-                    callback(num as Number)
-            }
-        }
-
-    }
-
-    /**
     When user is registering on the app, it will send there info to the users table in firebase
      */
     fun SignUp(email: String, password: String, fname:String, lname: String, age:Number, weight:Number, sport: String, experienceLevel: String, callback: (Boolean) -> Unit){
@@ -78,19 +65,32 @@ class UserRepository {
                 userMap["Last Name"] = lname
                 userMap["Age"] = age
                 userMap["Weight"] = weight
-                Log.d("Hashmap",userMap.toString())
                 userMap["ExpLevel"] = experienceLevel
-                getSportID(sport) {
-                    Log.d("SportID", it.toString())
-                    userMap["Sport ID"] = it.toInt()
-
+                userMap["Sport ID"] = SportName.valueOf(sport).ordinal
+                messageService.getFCMToken{ token ->
+                    userMap["Token"] = token
                     firestore.collection("users")
                         .document(user?.uid ?: "")
                         .set(userMap)
+                    }
                 }
-
-           }
             callback(isRegistered)
+        }
+    }
+
+    /**
+     * When the user provides feedback on the application. It will save the response in the database.
+     */
+    fun retrieveFeedback(message: String){
+        firestore = FirebaseFirestore.getInstance()
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser?.uid
+        if (user != null) {
+            val messageMap = HashMap<String, Any>()
+            messageMap["Message"] = message
+            firestore.collection("users").
+            document(user).collection("FeedBack").
+            document().set(messageMap)
         }
     }
     /**

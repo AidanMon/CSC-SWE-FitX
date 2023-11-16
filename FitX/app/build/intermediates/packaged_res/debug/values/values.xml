@@ -2,25 +2,32 @@
 <resources>
     <string-array name="experienceItems">
         <item>Beginner</item>
-        <item>Intermidate</item>
+        <item>Intermediate</item>
         <item>Expert</item>
     </string-array>
     <string-array name="sportItems">
         <item>Baseball</item>
         <item>Football</item>
-        <item>Soccor</item>
+        <item>Soccer</item>
         <item>Tennis</item>
         <item>Basketball</item>
     </string-array>
     <color name="black">#FF000000</color>
+    <color name="purple">#8C07DD</color>
     <color name="red">#ff0000</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="fab_margin">16dp</dimen>
     <string name="action_logout">Logout</string>
+    <string name="all_exercises_header">All Exercises</string>
+    <string name="all_exercises_label">List Of Exercises</string>
     <string name="app_name">FitX</string>
     <string name="baseball_workouts_label">Baseball Exercises</string>
     <string name="basketball_workouts_label">Basketball Exercises</string>
+    <string name="create_a_workout_label">Create A Workout</string>
+    <string name="current_created_workout_header">Current Workout</string>
+    <string name="current_created_workout_label">Current Workout</string>
     <string name="description">Description</string>
+    <string name="display_selected_user_workout_label">My Workout</string>
     <string name="example">Example</string>
     <string name="firebase_database_url" translatable="false">https://fitx-group9-default-rtdb.firebaseio.com</string>
     <string name="first_fragment_label">First Fragment</string>
@@ -35,11 +42,16 @@
         in the gym focusing on steady state cardio for 30-60 minutes.
     </string>
     <string name="football_workouts_label">Football Workouts</string>
+    <string name="full_screen_notice">**May have to \npress a few times</string>
     <string name="gcm_defaultSenderId" translatable="false">933672858220</string>
     <string name="google_api_key" translatable="false">AIzaSyBPnVsUMMz9_XVbeytgB0zELGxlBkXE1Ow</string>
     <string name="google_app_id" translatable="false">1:933672858220:android:30c25f773bd12d54cc1e49</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBPnVsUMMz9_XVbeytgB0zELGxlBkXE1Ow</string>
     <string name="google_storage_bucket" translatable="false">fitx-group9.appspot.com</string>
+    <string name="healthy_tips_label">Healthy Tips</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="input_selected_workout_data_label">Input Data</string>
+    <string name="input_user_workout_data_label">Select Workout To Input Data</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
@@ -80,11 +92,13 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="project_id" translatable="false">fitx-group9</string>
+    <string name="save_workout_label">Save Your Workout</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="soccer_workouts_label">Soccer Exercises</string>
     <string name="sport_workouts_label">Sport Specific Workouts</string>
     <string name="swimming_workouts_label">Swimming Exercises</string>
     <string name="tennis_workouts_label">Tennis Exercises</string>
+    <string name="user_workouts_label">My Workouts</string>
     <string name="volleyball_workouts_label">Volleyball Exercises</string>
     <style name="Base.Theme.FitX" parent="Theme.Material3.DayNight.NoActionBar">
         
