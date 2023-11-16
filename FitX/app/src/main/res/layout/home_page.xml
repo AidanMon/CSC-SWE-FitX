@@ -59,4 +59,15 @@
         android:textSize="32sp"
         android:layout_marginTop="24dp"/>
 
+    <!-- Add this to deploy-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recommendationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/workout_border"
+        android:text="Recommendations"
+        android:textColor="@color/red"
+        android:textSize="32sp"
+        android:layout_marginTop="24dp"/>
+
 </LinearLayout>

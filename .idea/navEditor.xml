@@ -107,6 +107,15 @@
                             <option name="y" value="-361" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_DisplaySelectedUserWorkout_to_HomePage">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -235,6 +244,11 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
+                            <entry key="action_HomePage_to_Recommendation">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
                             <entry key="action_HomePage_to_SoccerWorkouts">
                               <value>
                                 <LayoutPositions />
@@ -322,6 +336,27 @@
                               </value>
                             </entry>
                             <entry key="action_loginScreen_to_VolleyballWorkouts">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="Recommendation">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="117" />
+                            <option name="y" value="-311" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_Recommendation_to_HomePage">
                               <value>
                                 <LayoutPositions />
                               </value>

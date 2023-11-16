@@ -24,6 +24,9 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final ConstraintLayout boxJumpsLayout;
 
   @NonNull
@@ -102,20 +105,18 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final YouTubePlayerView theVideoPlayer;
 
   @NonNull
   public final TextView volleyballHeader;
 
   private VolleyballWorkoutsFragBinding(@NonNull NestedScrollView rootView,
-      @NonNull ConstraintLayout boxJumpsLayout, @NonNull AppCompatButton boxJumpsPlayVideo,
-      @NonNull TextView boxJumpsText, @NonNull AppCompatButton enterFullScreenButton,
-      @NonNull TextView fullScreenNotice, @NonNull FrameLayout fullScreenViewContainer,
-      @NonNull ConstraintLayout highKneesLayout, @NonNull AppCompatButton highKneesPlayVideo,
-      @NonNull TextView highKneesText, @NonNull ConstraintLayout lateralShufflesLayout,
+      @NonNull TextView Workouts, @NonNull ConstraintLayout boxJumpsLayout,
+      @NonNull AppCompatButton boxJumpsPlayVideo, @NonNull TextView boxJumpsText,
+      @NonNull AppCompatButton enterFullScreenButton, @NonNull TextView fullScreenNotice,
+      @NonNull FrameLayout fullScreenViewContainer, @NonNull ConstraintLayout highKneesLayout,
+      @NonNull AppCompatButton highKneesPlayVideo, @NonNull TextView highKneesText,
+      @NonNull ConstraintLayout lateralShufflesLayout,
       @NonNull AppCompatButton lateralShufflesPlayVideo, @NonNull TextView lateralShufflesText,
       @NonNull ConstraintLayout lungesLayout, @NonNull AppCompatButton lungesPlayVideo,
       @NonNull TextView lungesText, @NonNull ConstraintLayout overHeadPressLayout,
@@ -124,9 +125,9 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
       @NonNull TextView planksText, @NonNull ConstraintLayout pushUpsLayout,
       @NonNull AppCompatButton pushUpsPlayVideo, @NonNull TextView pushUpsText,
       @NonNull ConstraintLayout squatsLayout, @NonNull AppCompatButton squatsPlayVideo,
-      @NonNull TextView squatsText, @NonNull YouTubePlayerView theVideoPlayer,
-      @NonNull TextView volleyballHeader) {
+      @NonNull YouTubePlayerView theVideoPlayer, @NonNull TextView volleyballHeader) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.boxJumpsLayout = boxJumpsLayout;
     this.boxJumpsPlayVideo = boxJumpsPlayVideo;
     this.boxJumpsText = boxJumpsText;
@@ -153,7 +154,6 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
     this.pushUpsText = pushUpsText;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.theVideoPlayer = theVideoPlayer;
     this.volleyballHeader = volleyballHeader;
   }
@@ -185,6 +185,12 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.boxJumpsLayout;
       ConstraintLayout boxJumpsLayout = ViewBindings.findChildViewById(rootView, id);
       if (boxJumpsLayout == null) {
@@ -341,12 +347,6 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.theVideoPlayer;
       YouTubePlayerView theVideoPlayer = ViewBindings.findChildViewById(rootView, id);
       if (theVideoPlayer == null) {
@@ -359,13 +359,13 @@ public final class VolleyballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      return new VolleyballWorkoutsFragBinding((NestedScrollView) rootView, boxJumpsLayout,
-          boxJumpsPlayVideo, boxJumpsText, enterFullScreenButton, fullScreenNotice,
+      return new VolleyballWorkoutsFragBinding((NestedScrollView) rootView, Workouts,
+          boxJumpsLayout, boxJumpsPlayVideo, boxJumpsText, enterFullScreenButton, fullScreenNotice,
           fullScreenViewContainer, highKneesLayout, highKneesPlayVideo, highKneesText,
           lateralShufflesLayout, lateralShufflesPlayVideo, lateralShufflesText, lungesLayout,
           lungesPlayVideo, lungesText, overHeadPressLayout, overHeadPressPlayVideo,
           overHeadPressText, planksLayout, planksPlayVideo, planksText, pushUpsLayout,
-          pushUpsPlayVideo, pushUpsText, squatsLayout, squatsPlayVideo, squatsText, theVideoPlayer,
+          pushUpsPlayVideo, pushUpsText, squatsLayout, squatsPlayVideo, theVideoPlayer,
           volleyballHeader);
     }
     String missingId = rootView.getResources().getResourceName(id);

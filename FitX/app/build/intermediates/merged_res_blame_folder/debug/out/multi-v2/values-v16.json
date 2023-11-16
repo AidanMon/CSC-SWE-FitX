@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-v16/values-v16.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-56:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Amona\\.gradle\\caches\\transforms-3\\3cb301516bfd6dc5f94f801649e2d628\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\FutileActions\\.gradle\\caches\\transforms-3\\3cb301516bfd6dc5f94f801649e2d628\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Amona\\.gradle\\caches\\transforms-3\\19a91b6dfd3a08d64986b078be06808d\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\FutileActions\\.gradle\\caches\\transforms-3\\19a91b6dfd3a08d64986b078be06808d\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

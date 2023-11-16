@@ -88,7 +88,7 @@
 
             <!--Title for squats-->
             <TextView
-                android:id="@+id/squatsText"
+                android:id="@+id/Workouts"
                 android:layout_width="380dp"
                 android:layout_height="64dp"
                 android:background="@drawable/exercise_border"
@@ -112,7 +112,7 @@
                 android:text="@string/example"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/squatsText" />
+                app:layout_constraintTop_toTopOf="@id/Workouts" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         <!--End squats layout-->

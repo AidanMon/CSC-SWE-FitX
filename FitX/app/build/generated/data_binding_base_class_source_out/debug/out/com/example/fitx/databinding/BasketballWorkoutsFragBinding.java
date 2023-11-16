@@ -24,6 +24,9 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final TextView basketballHeader;
 
   @NonNull
@@ -96,9 +99,6 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final YouTubePlayerView theVideoPlayer;
 
   @NonNull
@@ -111,7 +111,8 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
   public final TextView trapBarDeadliftsText;
 
   private BasketballWorkoutsFragBinding(@NonNull NestedScrollView rootView,
-      @NonNull TextView basketballHeader, @NonNull ConstraintLayout dumbbellBenchPressLayout,
+      @NonNull TextView Workouts, @NonNull TextView basketballHeader,
+      @NonNull ConstraintLayout dumbbellBenchPressLayout,
       @NonNull AppCompatButton dumbbellBenchPressPlayVideo,
       @NonNull TextView dumbbellBenchPressText, @NonNull AppCompatButton enterFullScreenButton,
       @NonNull TextView fullScreenNotice, @NonNull FrameLayout fullScreenViewContainer,
@@ -124,10 +125,10 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
       @NonNull TextView pullUpsText, @NonNull ConstraintLayout rowsLayout,
       @NonNull AppCompatButton rowsPlayVideo, @NonNull TextView rowsText,
       @NonNull ConstraintLayout squatsLayout, @NonNull AppCompatButton squatsPlayVideo,
-      @NonNull TextView squatsText, @NonNull YouTubePlayerView theVideoPlayer,
-      @NonNull ConstraintLayout trapBarDeadliftsLayout,
+      @NonNull YouTubePlayerView theVideoPlayer, @NonNull ConstraintLayout trapBarDeadliftsLayout,
       @NonNull AppCompatButton trapBarDeadliftsPlayVideo, @NonNull TextView trapBarDeadliftsText) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.basketballHeader = basketballHeader;
     this.dumbbellBenchPressLayout = dumbbellBenchPressLayout;
     this.dumbbellBenchPressPlayVideo = dumbbellBenchPressPlayVideo;
@@ -152,7 +153,6 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
     this.rowsText = rowsText;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.theVideoPlayer = theVideoPlayer;
     this.trapBarDeadliftsLayout = trapBarDeadliftsLayout;
     this.trapBarDeadliftsPlayVideo = trapBarDeadliftsPlayVideo;
@@ -186,6 +186,12 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.basketballHeader;
       TextView basketballHeader = ViewBindings.findChildViewById(rootView, id);
       if (basketballHeader == null) {
@@ -330,12 +336,6 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.theVideoPlayer;
       YouTubePlayerView theVideoPlayer = ViewBindings.findChildViewById(rootView, id);
       if (theVideoPlayer == null) {
@@ -360,14 +360,14 @@ public final class BasketballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      return new BasketballWorkoutsFragBinding((NestedScrollView) rootView, basketballHeader,
-          dumbbellBenchPressLayout, dumbbellBenchPressPlayVideo, dumbbellBenchPressText,
-          enterFullScreenButton, fullScreenNotice, fullScreenViewContainer, gobletSquatsLayout,
-          gobletSquatsPlayVideo, gobletSquatsText, lateralBoundsLayout, lateralBoundsPlayVideo,
-          lateralBoundsText, lateralLungesLayout, lateralLungesPlayVideo, lateralLungesText,
-          pullUpsLayout, pullUpsPlayVideo, pullUpsText, rowsLayout, rowsPlayVideo, rowsText,
-          squatsLayout, squatsPlayVideo, squatsText, theVideoPlayer, trapBarDeadliftsLayout,
-          trapBarDeadliftsPlayVideo, trapBarDeadliftsText);
+      return new BasketballWorkoutsFragBinding((NestedScrollView) rootView, Workouts,
+          basketballHeader, dumbbellBenchPressLayout, dumbbellBenchPressPlayVideo,
+          dumbbellBenchPressText, enterFullScreenButton, fullScreenNotice, fullScreenViewContainer,
+          gobletSquatsLayout, gobletSquatsPlayVideo, gobletSquatsText, lateralBoundsLayout,
+          lateralBoundsPlayVideo, lateralBoundsText, lateralLungesLayout, lateralLungesPlayVideo,
+          lateralLungesText, pullUpsLayout, pullUpsPlayVideo, pullUpsText, rowsLayout,
+          rowsPlayVideo, rowsText, squatsLayout, squatsPlayVideo, theVideoPlayer,
+          trapBarDeadliftsLayout, trapBarDeadliftsPlayVideo, trapBarDeadliftsText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

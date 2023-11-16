@@ -24,6 +24,9 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final ConstraintLayout benchPressLayout;
 
   @NonNull
@@ -102,15 +105,12 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final TextView tennisHeader;
 
   @NonNull
   public final YouTubePlayerView theVideoPlayer;
 
-  private TennisWorkoutsFragBinding(@NonNull NestedScrollView rootView,
+  private TennisWorkoutsFragBinding(@NonNull NestedScrollView rootView, @NonNull TextView Workouts,
       @NonNull ConstraintLayout benchPressLayout, @NonNull AppCompatButton benchPressPlayVideo,
       @NonNull TextView benchPressText, @NonNull ConstraintLayout burpeesLayout,
       @NonNull AppCompatButton burpeesPlayVideo, @NonNull TextView burpeesText,
@@ -124,9 +124,10 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
       @NonNull AppCompatButton sprintsPlayVideo, @NonNull TextView sprintsText,
       @NonNull ConstraintLayout squatJumpsLayout, @NonNull AppCompatButton squatJumpsPlayVideo,
       @NonNull TextView squatJumpsText, @NonNull ConstraintLayout squatsLayout,
-      @NonNull AppCompatButton squatsPlayVideo, @NonNull TextView squatsText,
-      @NonNull TextView tennisHeader, @NonNull YouTubePlayerView theVideoPlayer) {
+      @NonNull AppCompatButton squatsPlayVideo, @NonNull TextView tennisHeader,
+      @NonNull YouTubePlayerView theVideoPlayer) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.benchPressLayout = benchPressLayout;
     this.benchPressPlayVideo = benchPressPlayVideo;
     this.benchPressText = benchPressText;
@@ -153,7 +154,6 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
     this.squatJumpsText = squatJumpsText;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.tennisHeader = tennisHeader;
     this.theVideoPlayer = theVideoPlayer;
   }
@@ -185,6 +185,12 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.benchPressLayout;
       ConstraintLayout benchPressLayout = ViewBindings.findChildViewById(rootView, id);
       if (benchPressLayout == null) {
@@ -341,12 +347,6 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.tennisHeader;
       TextView tennisHeader = ViewBindings.findChildViewById(rootView, id);
       if (tennisHeader == null) {
@@ -359,13 +359,13 @@ public final class TennisWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      return new TennisWorkoutsFragBinding((NestedScrollView) rootView, benchPressLayout,
+      return new TennisWorkoutsFragBinding((NestedScrollView) rootView, Workouts, benchPressLayout,
           benchPressPlayVideo, benchPressText, burpeesLayout, burpeesPlayVideo, burpeesText,
           cableChestPressLayout, cableChestPressPlayVideo, cableChestPressText,
           enterFullScreenButton, fullScreenNotice, fullScreenViewContainer, lungesLayout,
           lungesPlayVideo, lungesText, planksLayout, planksPlayVideo, planksText, sprintsLayout,
           sprintsPlayVideo, sprintsText, squatJumpsLayout, squatJumpsPlayVideo, squatJumpsText,
-          squatsLayout, squatsPlayVideo, squatsText, tennisHeader, theVideoPlayer);
+          squatsLayout, squatsPlayVideo, tennisHeader, theVideoPlayer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

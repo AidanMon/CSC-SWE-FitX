@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/swimmingHeader"
+            app:layout_constraintTop_toBottomOf="@+id/Header"
             app:layout_constraintVertical_bias="0" />
 
         <TextView
@@ -41,7 +41,7 @@
 
         <!--Baseball header-->
         <TextView
-            android:id="@+id/swimmingHeader"
+            android:id="@+id/Header"
             android:layout_width="296dp"
             android:layout_height="45dp"
             android:text="Swimming Exercises"
@@ -88,7 +88,7 @@
 
             <!--Title for squats-->
             <TextView
-                android:id="@+id/squatsText"
+                android:id="@+id/Workouts"
                 android:layout_width="380dp"
                 android:layout_height="64dp"
                 android:background="@drawable/exercise_border"
@@ -111,7 +111,7 @@
                 android:text="@string/example"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/squatsText" />
+                app:layout_constraintTop_toTopOf="@id/Workouts" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         <!--End squats layout-->

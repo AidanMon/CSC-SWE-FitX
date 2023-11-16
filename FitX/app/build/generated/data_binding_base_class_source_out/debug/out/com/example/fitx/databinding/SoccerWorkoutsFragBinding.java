@@ -24,6 +24,9 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final ConstraintLayout benchPressLayout;
 
   @NonNull
@@ -105,12 +108,9 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final YouTubePlayerView theVideoPlayer;
 
-  private SoccerWorkoutsFragBinding(@NonNull NestedScrollView rootView,
+  private SoccerWorkoutsFragBinding(@NonNull NestedScrollView rootView, @NonNull TextView Workouts,
       @NonNull ConstraintLayout benchPressLayout, @NonNull AppCompatButton benchPressPlayVideo,
       @NonNull TextView benchPressText, @NonNull ConstraintLayout boxJumpsLayout,
       @NonNull AppCompatButton boxJumpsPlayVideo, @NonNull TextView boxJumpsText,
@@ -124,9 +124,9 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
       @NonNull AppCompatButton sprintsPlayVideo, @NonNull TextView sprintsText,
       @NonNull ConstraintLayout squatJumpsLayout, @NonNull AppCompatButton squatJumpsPlayVideo,
       @NonNull TextView squatJumpsText, @NonNull ConstraintLayout squatsLayout,
-      @NonNull AppCompatButton squatsPlayVideo, @NonNull TextView squatsText,
-      @NonNull YouTubePlayerView theVideoPlayer) {
+      @NonNull AppCompatButton squatsPlayVideo, @NonNull YouTubePlayerView theVideoPlayer) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.benchPressLayout = benchPressLayout;
     this.benchPressPlayVideo = benchPressPlayVideo;
     this.benchPressText = benchPressText;
@@ -154,7 +154,6 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
     this.squatJumpsText = squatJumpsText;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.theVideoPlayer = theVideoPlayer;
   }
 
@@ -185,6 +184,12 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.benchPressLayout;
       ConstraintLayout benchPressLayout = ViewBindings.findChildViewById(rootView, id);
       if (benchPressLayout == null) {
@@ -347,26 +352,19 @@ public final class SoccerWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.theVideoPlayer;
       YouTubePlayerView theVideoPlayer = ViewBindings.findChildViewById(rootView, id);
       if (theVideoPlayer == null) {
         break missingId;
       }
 
-      return new SoccerWorkoutsFragBinding((NestedScrollView) rootView, benchPressLayout,
+      return new SoccerWorkoutsFragBinding((NestedScrollView) rootView, Workouts, benchPressLayout,
           benchPressPlayVideo, benchPressText, boxJumpsLayout, boxJumpsPlayVideo, boxJumpsText,
           deadliftsLayout, deadliftsPlayVideo, deadliftsText, enterFullScreenButton,
           fullScreenNotice, fullScreenViewContainer, highKneesLayout, highKneesPlayVideo,
           highKneesText, kettlebellSwingsLayout, kettlebellSwingsPlayVideo, kettlebellSwingsText,
           soccerHeader, sprintsLayout, sprintsPlayVideo, sprintsText, squatJumpsLayout,
-          squatJumpsPlayVideo, squatJumpsText, squatsLayout, squatsPlayVideo, squatsText,
-          theVideoPlayer);
+          squatJumpsPlayVideo, squatJumpsText, squatsLayout, squatsPlayVideo, theVideoPlayer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

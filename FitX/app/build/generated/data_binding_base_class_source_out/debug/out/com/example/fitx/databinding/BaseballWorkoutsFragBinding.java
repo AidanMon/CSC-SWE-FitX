@@ -24,6 +24,9 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final TextView baseballHeader;
 
   @NonNull
@@ -87,9 +90,6 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final ConstraintLayout standingBicepCurlsLayout;
 
   @NonNull
@@ -111,23 +111,24 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
   public final TextView tricepKickbacksText;
 
   private BaseballWorkoutsFragBinding(@NonNull NestedScrollView rootView,
-      @NonNull TextView baseballHeader, @NonNull ConstraintLayout dumbbellRowsLayout,
-      @NonNull AppCompatButton dumbbellRowsPlayVideo, @NonNull TextView dumbbellRowsText,
-      @NonNull AppCompatButton enterFullScreenButton, @NonNull TextView fullScreenNotice,
-      @NonNull FrameLayout fullScreenViewContainer, @NonNull ConstraintLayout lungesLayout,
-      @NonNull AppCompatButton lungesPlayVideo, @NonNull TextView lungesText,
-      @NonNull ConstraintLayout militaryPressLayout,
+      @NonNull TextView Workouts, @NonNull TextView baseballHeader,
+      @NonNull ConstraintLayout dumbbellRowsLayout, @NonNull AppCompatButton dumbbellRowsPlayVideo,
+      @NonNull TextView dumbbellRowsText, @NonNull AppCompatButton enterFullScreenButton,
+      @NonNull TextView fullScreenNotice, @NonNull FrameLayout fullScreenViewContainer,
+      @NonNull ConstraintLayout lungesLayout, @NonNull AppCompatButton lungesPlayVideo,
+      @NonNull TextView lungesText, @NonNull ConstraintLayout militaryPressLayout,
       @NonNull AppCompatButton militaryPressPlayVideo, @NonNull TextView militaryPressText,
       @NonNull ConstraintLayout pushUpsLayout, @NonNull AppCompatButton pushUpsPlayVideo,
       @NonNull TextView pushUpsText, @NonNull ConstraintLayout sideLatRaisesLayout,
       @NonNull AppCompatButton sideLatRaisesPlayVideo, @NonNull TextView sideLatRaisesText,
       @NonNull ConstraintLayout squatsLayout, @NonNull AppCompatButton squatsPlayVideo,
-      @NonNull TextView squatsText, @NonNull ConstraintLayout standingBicepCurlsLayout,
+      @NonNull ConstraintLayout standingBicepCurlsLayout,
       @NonNull AppCompatButton standingBicepCurlsPlayVideo,
       @NonNull TextView standingBicepCurlsText, @NonNull YouTubePlayerView theVideoPlayer,
       @NonNull ConstraintLayout tricepKickbacksLayout,
       @NonNull AppCompatButton tricepKickbacksPlayVideo, @NonNull TextView tricepKickbacksText) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.baseballHeader = baseballHeader;
     this.dumbbellRowsLayout = dumbbellRowsLayout;
     this.dumbbellRowsPlayVideo = dumbbellRowsPlayVideo;
@@ -149,7 +150,6 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
     this.sideLatRaisesText = sideLatRaisesText;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.standingBicepCurlsLayout = standingBicepCurlsLayout;
     this.standingBicepCurlsPlayVideo = standingBicepCurlsPlayVideo;
     this.standingBicepCurlsText = standingBicepCurlsText;
@@ -186,6 +186,12 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.baseballHeader;
       TextView baseballHeader = ViewBindings.findChildViewById(rootView, id);
       if (baseballHeader == null) {
@@ -312,12 +318,6 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.standingBicepCurlsLayout;
       ConstraintLayout standingBicepCurlsLayout = ViewBindings.findChildViewById(rootView, id);
       if (standingBicepCurlsLayout == null) {
@@ -360,12 +360,12 @@ public final class BaseballWorkoutsFragBinding implements ViewBinding {
         break missingId;
       }
 
-      return new BaseballWorkoutsFragBinding((NestedScrollView) rootView, baseballHeader,
+      return new BaseballWorkoutsFragBinding((NestedScrollView) rootView, Workouts, baseballHeader,
           dumbbellRowsLayout, dumbbellRowsPlayVideo, dumbbellRowsText, enterFullScreenButton,
           fullScreenNotice, fullScreenViewContainer, lungesLayout, lungesPlayVideo, lungesText,
           militaryPressLayout, militaryPressPlayVideo, militaryPressText, pushUpsLayout,
           pushUpsPlayVideo, pushUpsText, sideLatRaisesLayout, sideLatRaisesPlayVideo,
-          sideLatRaisesText, squatsLayout, squatsPlayVideo, squatsText, standingBicepCurlsLayout,
+          sideLatRaisesText, squatsLayout, squatsPlayVideo, standingBicepCurlsLayout,
           standingBicepCurlsPlayVideo, standingBicepCurlsText, theVideoPlayer,
           tricepKickbacksLayout, tricepKickbacksPlayVideo, tricepKickbacksText);
     }

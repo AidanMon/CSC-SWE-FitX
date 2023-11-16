@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fitx.app-mergeDebugResources-55:/values-w1240dp-v13/values-w1240dp-v13.xml",
+            "outputFile": "com.example.fitx.app-mergeDebugResources-56:/values-w1240dp-v13/values-w1240dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Amona\\AndroidStudioProjects\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
+                    "source": "C:\\Users\\FutileActions\\Documents\\GitHub\\CSC-SWE-FitX\\FitX\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

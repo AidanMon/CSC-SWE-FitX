@@ -91,6 +91,10 @@
         <action
             android:id="@+id/action_HomePage_to_CreateAWorkout"
             app:destination="@id/CreateAWorkout" />
+        <!--Add this to deploy Recommendation-->
+        <action
+            android:id="@+id/action_HomePage_to_Recommendation"
+            app:destination="@id/Recommendation" />
 
     </fragment>
 
@@ -166,6 +170,13 @@
             android:id="@+id/action_SaveWorkout_to_HomePage"
             app:destination="@id/HomePage" />
     </fragment>
+
+    <!--Add this to deploy Recommendation-->
+    <fragment
+        android:id="@+id/Recommendation"
+        android:name="com.example.fitx.view.recommendation.Recommendation"
+        android:label="Recommendation"
+        tools:layout="@layout/recommendation_frag"/>
 
     <!--Added-->
     <!--Sport selector Fragment-->

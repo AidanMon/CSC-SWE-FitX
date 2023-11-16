@@ -24,6 +24,9 @@ public final class FootballLowerBodyFragBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final TextView Workouts;
+
+  @NonNull
   public final TextView calfRaisesInfo;
 
   @NonNull
@@ -96,27 +99,24 @@ public final class FootballLowerBodyFragBinding implements ViewBinding {
   public final AppCompatButton squatsPlayVideo;
 
   @NonNull
-  public final TextView squatsText;
-
-  @NonNull
   public final YouTubePlayerView theVideoPlayer;
 
   private FootballLowerBodyFragBinding(@NonNull NestedScrollView rootView,
-      @NonNull TextView calfRaisesInfo, @NonNull ConstraintLayout calfRaisesLayout,
-      @NonNull AppCompatButton calfRaisesPlayVideo, @NonNull TextView calfRaisesText,
-      @NonNull AppCompatButton deadliftConventionalPlayVideo, @NonNull TextView deadliftInfo,
-      @NonNull ConstraintLayout deadliftLayout, @NonNull AppCompatButton deadliftStraightPlayVideo,
-      @NonNull TextView deadliftText, @NonNull AppCompatButton enterFullScreenButton,
-      @NonNull TextView footballLowerBodyHeader, @NonNull TextView fullScreenNotice,
-      @NonNull FrameLayout fullScreenViewContainer, @NonNull TextView lungesInfo,
-      @NonNull ConstraintLayout lungesLayout, @NonNull AppCompatButton lungesPlayVideo,
-      @NonNull TextView lungesText, @NonNull TextView lyingLegCurlsInfo,
-      @NonNull ConstraintLayout lyingLegCurlsLayout,
+      @NonNull TextView Workouts, @NonNull TextView calfRaisesInfo,
+      @NonNull ConstraintLayout calfRaisesLayout, @NonNull AppCompatButton calfRaisesPlayVideo,
+      @NonNull TextView calfRaisesText, @NonNull AppCompatButton deadliftConventionalPlayVideo,
+      @NonNull TextView deadliftInfo, @NonNull ConstraintLayout deadliftLayout,
+      @NonNull AppCompatButton deadliftStraightPlayVideo, @NonNull TextView deadliftText,
+      @NonNull AppCompatButton enterFullScreenButton, @NonNull TextView footballLowerBodyHeader,
+      @NonNull TextView fullScreenNotice, @NonNull FrameLayout fullScreenViewContainer,
+      @NonNull TextView lungesInfo, @NonNull ConstraintLayout lungesLayout,
+      @NonNull AppCompatButton lungesPlayVideo, @NonNull TextView lungesText,
+      @NonNull TextView lyingLegCurlsInfo, @NonNull ConstraintLayout lyingLegCurlsLayout,
       @NonNull AppCompatButton lyingLegCurlsPlayVideo, @NonNull TextView lyingLegCurlsText,
       @NonNull TextView squatsInfo, @NonNull ConstraintLayout squatsLayout,
-      @NonNull AppCompatButton squatsPlayVideo, @NonNull TextView squatsText,
-      @NonNull YouTubePlayerView theVideoPlayer) {
+      @NonNull AppCompatButton squatsPlayVideo, @NonNull YouTubePlayerView theVideoPlayer) {
     this.rootView = rootView;
+    this.Workouts = Workouts;
     this.calfRaisesInfo = calfRaisesInfo;
     this.calfRaisesLayout = calfRaisesLayout;
     this.calfRaisesPlayVideo = calfRaisesPlayVideo;
@@ -141,7 +141,6 @@ public final class FootballLowerBodyFragBinding implements ViewBinding {
     this.squatsInfo = squatsInfo;
     this.squatsLayout = squatsLayout;
     this.squatsPlayVideo = squatsPlayVideo;
-    this.squatsText = squatsText;
     this.theVideoPlayer = theVideoPlayer;
   }
 
@@ -172,6 +171,12 @@ public final class FootballLowerBodyFragBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Workouts;
+      TextView Workouts = ViewBindings.findChildViewById(rootView, id);
+      if (Workouts == null) {
+        break missingId;
+      }
+
       id = R.id.calfRaisesInfo;
       TextView calfRaisesInfo = ViewBindings.findChildViewById(rootView, id);
       if (calfRaisesInfo == null) {
@@ -316,25 +321,19 @@ public final class FootballLowerBodyFragBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.squatsText;
-      TextView squatsText = ViewBindings.findChildViewById(rootView, id);
-      if (squatsText == null) {
-        break missingId;
-      }
-
       id = R.id.theVideoPlayer;
       YouTubePlayerView theVideoPlayer = ViewBindings.findChildViewById(rootView, id);
       if (theVideoPlayer == null) {
         break missingId;
       }
 
-      return new FootballLowerBodyFragBinding((NestedScrollView) rootView, calfRaisesInfo,
+      return new FootballLowerBodyFragBinding((NestedScrollView) rootView, Workouts, calfRaisesInfo,
           calfRaisesLayout, calfRaisesPlayVideo, calfRaisesText, deadliftConventionalPlayVideo,
           deadliftInfo, deadliftLayout, deadliftStraightPlayVideo, deadliftText,
           enterFullScreenButton, footballLowerBodyHeader, fullScreenNotice, fullScreenViewContainer,
           lungesInfo, lungesLayout, lungesPlayVideo, lungesText, lyingLegCurlsInfo,
           lyingLegCurlsLayout, lyingLegCurlsPlayVideo, lyingLegCurlsText, squatsInfo, squatsLayout,
-          squatsPlayVideo, squatsText, theVideoPlayer);
+          squatsPlayVideo, theVideoPlayer);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

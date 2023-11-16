@@ -26,6 +26,9 @@ public final class HomePageBinding implements ViewBinding {
   public final AppCompatButton createAWorkoutButton;
 
   @NonNull
+  public final AppCompatButton recommendationButton;
+
+  @NonNull
   public final AppCompatButton toSports;
 
   @NonNull
@@ -35,11 +38,13 @@ public final class HomePageBinding implements ViewBinding {
   public final AppCompatButton userWorkoutsButton;
 
   private HomePageBinding(@NonNull LinearLayout rootView, @NonNull AppCompatButton AllExercises,
-      @NonNull AppCompatButton createAWorkoutButton, @NonNull AppCompatButton toSports,
-      @NonNull AppCompatButton userSport, @NonNull AppCompatButton userWorkoutsButton) {
+      @NonNull AppCompatButton createAWorkoutButton, @NonNull AppCompatButton recommendationButton,
+      @NonNull AppCompatButton toSports, @NonNull AppCompatButton userSport,
+      @NonNull AppCompatButton userWorkoutsButton) {
     this.rootView = rootView;
     this.AllExercises = AllExercises;
     this.createAWorkoutButton = createAWorkoutButton;
+    this.recommendationButton = recommendationButton;
     this.toSports = toSports;
     this.userSport = userSport;
     this.userWorkoutsButton = userWorkoutsButton;
@@ -84,6 +89,12 @@ public final class HomePageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recommendationButton;
+      AppCompatButton recommendationButton = ViewBindings.findChildViewById(rootView, id);
+      if (recommendationButton == null) {
+        break missingId;
+      }
+
       id = R.id.toSports;
       AppCompatButton toSports = ViewBindings.findChildViewById(rootView, id);
       if (toSports == null) {
@@ -103,7 +114,7 @@ public final class HomePageBinding implements ViewBinding {
       }
 
       return new HomePageBinding((LinearLayout) rootView, AllExercises, createAWorkoutButton,
-          toSports, userSport, userWorkoutsButton);
+          recommendationButton, toSports, userSport, userWorkoutsButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

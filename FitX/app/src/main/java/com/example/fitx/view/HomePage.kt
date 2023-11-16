@@ -13,6 +13,7 @@ import com.example.fitx.repository.AllExerciseLists
 import com.example.fitx.repository.ExerciseRepository
 import com.example.fitx.repository.UserRepository
 
+
 /**
  * Home Page holds all the data that is going to displayed to the user to interact with
  */
@@ -71,9 +72,6 @@ class HomePage: Fragment() {
                 AllExerciseLists.userMadeWorkouts = allUserWorkouts
             }
         })
-
-
-
         _binding = HomePageBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -98,6 +96,9 @@ class HomePage: Fragment() {
         binding.userWorkoutsButton.setOnClickListener {
             findNavController().navigate((R.id.action_HomePage_to_UserWorkouts))
         }
+        binding.recommendationButton.setOnClickListener {
+            findNavController().navigate((R.id.action_HomePage_to_Recommendation))
+        }
 
         //Button for user sport
         binding.userSport.setOnClickListener {
@@ -113,8 +114,6 @@ class HomePage: Fragment() {
                     6 -> findNavController().navigate(R.id.action_HomePage_to_TennisWorkouts)
                 }
             }
-
-
         }
 
     }

@@ -52,6 +52,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
     implementation("com.google.firebase:firebase-firestore-ktx:24.8.1")
+    implementation("androidx.legacy:legacy-support-v4:1.0.0")
     // implementation("androidx.databinding:baseLibrary:3.2.0-alpha11")
     // implementation ("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
     testImplementation("junit:junit:4.13.2")
